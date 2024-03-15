@@ -1,0 +1,56 @@
+.HomeBackground {
+    background-image: url('../src/assets/hero-background.jpg');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.content {
+    margin-left: 60px;
+    margin-top: -130px;
+    text-align: left;
+}
+
+.text h1 {
+    font-weight: 400;
+    font-size: 80px;
+    color: #fff;
+}
+.grayButton {
+    margin-top: 25px !important;
+    font-size: 1.2rem !important;
+    background-color: gray !important;
+}
+
+.gateway-wrapper{
+    height: 60vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+}
+.gateway-wrapper h1{
+
+    font-size: 3rem;
+    margin: 0px 0px;
+    margin-top: 80px;
+}
+.sep-line{
+    height: 7px;
+    border-radius: 50px;
+    margin: 40px 0px;
+    background-color: black;
+    width: 20vw;
+}
+.gateway-wrapper-para{
+    width: 40vw;
+}
+.gateway-wrapper-para p{
+    font-size: 1.3rem;
+}
