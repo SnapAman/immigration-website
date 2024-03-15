@@ -3,11 +3,11 @@ import { BrowserRouter as Router, Routes, Route, NavLink } from 'react-router-do
 import './App.css';
 import logo from '../src/assets/BLACK_LOGO.png';
 import Home from './Components/Home/Home.jsx';
-import VisaInfo from './Components/VisaInfo';
-import AboutUs from './Components/AboutUs';
-import Services from './Components/Service';
-import NewsInfo from './Components/NewsInfo';
-import ContactUs from './Components/ContactUs';
+import VisaInfo from './Components/VisaInfo/VisaInfo';
+import AboutUs from './Components/AboutUs/AboutUs';
+import Services from './Components/Service/Service'
+import NewsInfo from './Components/NewsInfo/NewsInfo'
+import ContactUs from './Components/ContactUs/ContactUs';
 
 function App() {
   const [scrolling, setScrolling] = useState(false);
