@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, NavLink } from 'react-router-dom';
 import './App.css';
 import logo from '../src/assets/BLACK_LOGO.png';
-import Home from './Components/Home';
+import Home from './Components/Home/Home.jsx';
 import VisaInfo from './Components/VisaInfo';
 import AboutUs from './Components/AboutUs';
 import Services from './Components/Service';

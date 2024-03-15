@@ -1,5 +1,5 @@
 import React from 'react';
-import '../Components/Home.css';
+import '../Home/Home.css';
 import Button from '@mui/material/Button';
 import HomeCarosel from './HomeCarosel';
 
