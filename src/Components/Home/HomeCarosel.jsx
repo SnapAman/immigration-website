@@ -8,7 +8,7 @@ import './HomeCarosel.css'; // Import external CSS file
 
 function HomeCarosel() {
     const settings = {
-        dots: true,
+        // dots: true,
         infinite: true,
         speed: 500,
         slidesToShow: 3,

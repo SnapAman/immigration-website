@@ -28,7 +28,7 @@
 }
 
 .gateway-wrapper{
-    height: 60vh;
+    height: 55vh;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -52,5 +52,35 @@
     width: 40vw;
 }
 .gateway-wrapper-para p{
+    font-size: 1.3rem;
+}
+
+.ourteam-wrapper{
+    margin-top: 20px;
+    height: 60vh;
+    background-color: #D9D9D9;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ourteam-wrapper h1{
+
+    font-size: 3rem;
+    margin: 0px 0px;
+    margin-top: 40px;
+}
+.sep-line{
+    height: 7px;
+    border-radius: 50px;
+    margin: 40px 0px;
+    background-color: black;
+    width: 20vw;
+}
+.ourteam-wrapper-para{
+    width: 60vw;
+}
+.ourteam-wrapper-para p{
+    margin: 30px 0px;
     font-size: 1.3rem;
 }

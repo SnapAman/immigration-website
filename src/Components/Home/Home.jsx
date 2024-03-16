@@ -29,6 +29,15 @@ function Home() {
     <div>
         <HomeCarosel></HomeCarosel>
     </div>
+    <div className='ourteam-wrapper'>
+    <h1>Gateway to New Beginnings </h1>
+      {/* <div className='sep-line'></div> */}
+      <div className='ourteam-wrapper-para'>
+        <p>
+        Compared to most countries in the world, New Zealand offers a great work-life balance. That’s reflected time and time again in international surveys. As a team of thirteen staff, we have four licensed immigration advisers and one registered lawyer. We speak multi-languages including English, Hindi, Punjabi, Mandarin, Filipino, Malayalam, Spanish, Slovak and Czech.
+        </p>
+      </div>
+    </div>
     </>
   );
 }
