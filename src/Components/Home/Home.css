@@ -53,11 +53,13 @@
 }
 .gateway-wrapper-para p{
     font-size: 1.3rem;
+    /* letter-spacing: 3px; */
+    font-family: 'poppins';
 }
 
 .ourteam-wrapper{
     margin-top: 20px;
-    height: 60vh;
+    /* height: 100vh; */
     background-color: #D9D9D9;
     text-align: center;
     display: flex;
@@ -65,7 +67,6 @@
     align-items: center;
 }
 .ourteam-wrapper h1{
-
     font-size: 3rem;
     margin: 0px 0px;
     margin-top: 40px;
@@ -82,5 +83,11 @@
 }
 .ourteam-wrapper-para p{
     margin: 30px 0px;
+    font-family: 'poppins';
     font-size: 1.3rem;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    display: none;
 }

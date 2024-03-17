@@ -2,6 +2,8 @@ import React from 'react';
 import '../Home/Home.css';
 import Button from '@mui/material/Button';
 import HomeCarosel from './HomeCarosel';
+import TeamCarousel from './TeamCarousel';
+import Footer from '../Footer/Footer';
 
 function Home() {
   return (
@@ -19,7 +21,7 @@ function Home() {
       </div>
     </div>
     <div className='gateway-wrapper'>
-      <h1>Gateway to New Beginnings </h1>
+      <h1>GATEWAY TO NEW BEGINNINGS</h1>
       <div className='sep-line'></div>
       <div className='gateway-wrapper-para'>
         <p>With years of experience and a dedicated team of experts, we understand the challenges and uncertainties that come with immigration. Whether you're seeking a new job opportunity, reuniting with loved ones, or pursuing higher education abroad, we are here to assist you every step of the way.</p>
@@ -30,14 +32,16 @@ function Home() {
         <HomeCarosel></HomeCarosel>
     </div>
     <div className='ourteam-wrapper'>
-    <h1>Gateway to New Beginnings </h1>
+    <h1>OUR TEAM</h1>
       {/* <div className='sep-line'></div> */}
       <div className='ourteam-wrapper-para'>
         <p>
         Compared to most countries in the world, New Zealand offers a great work-life balance. That’s reflected time and time again in international surveys. As a team of thirteen staff, we have four licensed immigration advisers and one registered lawyer. We speak multi-languages including English, Hindi, Punjabi, Mandarin, Filipino, Malayalam, Spanish, Slovak and Czech.
         </p>
       </div>
+        <TeamCarousel/>
     </div>
+    <Footer/>
     </>
   );
 }
