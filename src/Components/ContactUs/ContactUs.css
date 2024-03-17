@@ -1,20 +1,14 @@
 .ContactBackground {
     background-image: url('../src/assets/Contact.jpg');
-    height: 90vh;
+    height: 100vh;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-
     display: flex;
-    justify-content: left;
+    justify-content: center;
     align-items: center;
 }
 
-.Content-Contact {
-    position: absolute;
-    top: 63%;
-    left: 29%;
-}
 
 .txt1 {
     color: black;

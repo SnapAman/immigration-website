@@ -9,11 +9,9 @@ function ContactUs() {
   return (
     <>
       <div className="ContactBackground">
-        <div className="Content-Contact">
           <div className="txt1">
             <h1>Contact Us</h1>
           </div>
-        </div>
       </div>
 
       <div className="contact-info">
@@ -29,7 +27,7 @@ function ContactUs() {
               </svg>
               <div className="main-txt">
                 <h1 className='title'>Address:</h1>
-                <h3 className='main-Content-Contact'>Level 1, 166 Harris Road East <br />Tamaki, Auckland</h3>
+                <h3 className='main-Contact'>Level 1, 166 Harris Road East <br />Tamaki, Auckland</h3>
               </div>
             </div>
 
@@ -41,7 +39,7 @@ function ContactUs() {
 
               <div className="main-txt">
                 <h1 className='title'>Timing:</h1>
-                <h3 className='main-Content-Contact'>Monday - Friday: 9:30 AM - 06:00 PM</h3>
+                <h3 className='main-Contact'>Monday - Friday: 9:30 AM - 06:00 PM</h3>
               </div>
             </div>
           </div>
@@ -54,7 +52,7 @@ function ContactUs() {
               </svg>
               <div className="main-txt">
                 <h1 className='title'>Have any question?</h1>
-                <h3 className='main-Content-Contact'>(+64) 09 272 4424</h3>
+                <h3 className='main-Contact'>(+64) 09 272 4424</h3>
               </div>
             </div>
 
@@ -66,7 +64,7 @@ function ContactUs() {
 
               <div className="main-txt">
                 <h1 className='title'>Write Email</h1>
-                <h3 className='main-Content-Contact'>contact@msimmigration.co.nz</h3>
+                <h3 className='main-Contact'>contact@msimmigration.co.nz</h3>
               </div>
             </div>
           </div>
