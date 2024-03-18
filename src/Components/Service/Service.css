@@ -1,0 +1,126 @@
+.bannerBox{
+    position: relative;
+}
+.serviceBanner{
+    width: 100%;
+    object-fit: cover;
+    height: 85vh;
+}
+
+.bannerBox h1{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+
+    font-size: 96px;
+    font-weight: 600;
+}
+
+.reachUsBox{
+    position: relative;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    max-width: 800px;
+
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    border-radius: 40px;
+    border: 0;
+    padding: 20px;
+}
+
+.reachUsBox .left{
+    display: flex;
+    padding: 20px 0;
+    gap: 10px;
+    align-items: center;
+    min-width: 40%;
+}
+.reachUsBox .left img{
+    border-radius: 50%;
+    border: gray 3px solid;
+    object-fit: cover;
+    height: 60px;
+    width: 60px;
+}
+.reachUsBox .left .call{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    font-size: 20px;
+}
+.reachUsBox .left .call p:nth-child(2){
+    font-weight:600;
+    font-size: 22px;
+}
+
+.reachUsBox .middleStick{
+    width: 4px;
+    background-color: #808080;
+    margin: 0 10px;
+}
+
+.reachUsBox .right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    gap: 10px;
+    min-width: 40%;
+    max-width: 50%;
+}
+.reachUsBox .right p{
+    font-size: 16px;
+    text-align: center;
+}
+.reachUsBox .right button{
+    width: fit-content;
+    margin: 0 auto;
+    background-color: #808080;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.information{
+    padding: 50px 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.information .upper{
+    display: flex;
+    gap: 50px;
+}
+.information .upper img{
+    width: 1000px;
+    object-fit: cover;
+    border: 0;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.information .upperRight{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.information .upperRight h1{
+    font-size: 50px;
+    font-weight: 400;
+}
+.information .upperRight p{
+    font-size: 30px;
+}
+
+.information .bottom li{
+    font-size: 20px;
+    padding: 2px 5px;
+    margin-left: 30px;
+}

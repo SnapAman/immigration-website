@@ -1,0 +1,37 @@
+.btnBox{
+    display: flex;
+    justify-content: center;
+}
+.btnBox button{
+    background-color: black;
+    opacity: .5;
+    color: white;
+    font-size: 18px;
+    border-radius: 20px;
+    padding: 10px;
+}
+.slideWrapper{
+    margin: 10px;
+    min-height: 450px;
+    overflow: hidden;
+}
+
+.visaSlide{
+    border: 1px solid gray;
+    border-radius: 20px ;
+    padding: 10px;
+}
+
+.service-main .slide-content{
+    padding: 10px 20px;
+}
+
+.service-main .slick-slide{
+    transition: transform 500ms linear,opacity 500ms linear;
+    transform: scale(0.9);
+    opacity: 0.5;
+}
+.service-main .slick-slide.slick-center{
+    transform: scale(1);
+    opacity: 1;
+}
