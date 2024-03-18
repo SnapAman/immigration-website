@@ -46,8 +46,8 @@ function Service() {
   ];
   function changeContent(idx){
     setTitle(data[idx].name);
-    setReview(data[0].review);
-    setImg(data[0].img);
+    setReview(data[idx].review);
+    setImg(data[idx].img);
   }
   const [title,setTitle] = useState(data[0].name)
   const [review,setReview] = useState(data[0].review)
