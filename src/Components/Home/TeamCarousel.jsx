@@ -13,7 +13,21 @@ function TeamCarousel() {
         infinite: true,
         speed: 500,
         slidesToShow: 3,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        centerPadding: "0px",
+        autoplay: true,
+        autoplaySpeed: 2000,
+        pauseOnHover: false,
+        responsive: [
+            {
+                breakpoint: 700,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: true,
+                }
+            }
+        ],
     };
 
     const sliderRef = React.useRef(null);
@@ -25,12 +39,6 @@ function TeamCarousel() {
     const handleNext = () => {
         sliderRef.current.slickNext();
     };
-    useEffect(()=>{
-        const sliding = setInterval(()=>{
-            sliderRef.current.slickNext();
-        },3000)
-        return ()=>clearInterval(sliding)
-    },[])
 
     return (
         <>

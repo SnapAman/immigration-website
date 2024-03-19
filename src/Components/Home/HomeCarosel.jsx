@@ -12,7 +12,20 @@ function HomeCarosel() {
         infinite: true,
         speed: 500,
         slidesToShow: 3,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        // pauseOnHover: true,
+        responsive: [
+            {
+              breakpoint: 700,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                infinite: true,
+              }
+            }
+        ]
     };
 
     const sliderRef = React.useRef(null);
@@ -24,12 +37,6 @@ function HomeCarosel() {
     const handleNext = () => {
         sliderRef.current.slickNext();
     };
-    useEffect(()=>{
-        const sliding = setInterval(()=>{
-            sliderRef.current.slickNext();
-        },3000)
-        return ()=>clearInterval(sliding)
-    },[])
     return (
         <>
             <div className="carousel-container">

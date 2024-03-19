@@ -21,13 +21,14 @@
     font-size: 80px;
     color: #fff;
 }
+
 .grayButton {
     margin-top: 25px !important;
     font-size: 1.2rem !important;
     background-color: gray !important;
 }
 
-.gateway-wrapper{
+.gateway-wrapper {
     height: 55vh;
     text-align: center;
     display: flex;
@@ -35,29 +36,33 @@
     align-items: center;
     /* justify-content: center; */
 }
-.gateway-wrapper h1{
+
+.gateway-wrapper h1 {
 
     font-size: 3rem;
     margin: 0px 0px;
     margin-top: 80px;
 }
-.sep-line{
+
+.sep-line {
     height: 7px;
     border-radius: 50px;
     margin: 40px 0px;
     background-color: black;
     width: 20vw;
 }
-.gateway-wrapper-para{
+
+.gateway-wrapper-para {
     width: 40vw;
 }
-.gateway-wrapper-para p{
+
+.gateway-wrapper-para p {
     font-size: 1.3rem;
     /* letter-spacing: 3px; */
     font-family: 'poppins';
 }
 
-.ourteam-wrapper{
+.ourteam-wrapper {
     margin-top: 20px;
     /* height: 100vh; */
     background-color: #D9D9D9;
@@ -66,22 +71,22 @@
     flex-direction: column;
     align-items: center;
 }
-.ourteam-wrapper h1{
+
+.ourteam-wrapper h1 {
     font-size: 3rem;
     margin: 0px 0px;
     margin-top: 40px;
 }
-.sep-line{
+
+.sep-line {
     height: 7px;
     border-radius: 50px;
     margin: 40px 0px;
     background-color: black;
     width: 20vw;
 }
-.ourteam-wrapper-para{
-    width: 60vw;
-}
-.ourteam-wrapper-para p{
+
+.ourteam-wrapper-para p {
     margin: 30px 0px;
     font-family: 'poppins';
     font-size: 1.3rem;
@@ -92,6 +97,53 @@
     display: none;
 }
 
-.mt-3{
+.mt-3 {
     margin-top: 4rem;
+}
+
+@media (max-width:700px) {
+
+    .content {
+        margin-left: 30px;
+        /* margin-top: -130px; */
+    }
+
+    .text h1 {
+        font-size: 50px;
+    }
+
+    .gateway-wrapper h1 {
+        font-size: 2rem;
+        margin: 0px 0px;
+        margin-top: 60px;
+    }
+
+    .sep-line {
+        height: 7px;
+        border-radius: 50px;
+        margin: 20px 0px;
+        background-color: black;
+        width: 20vw;
+    }
+
+    .gateway-wrapper-para {
+        width: 90vw;
+    }
+
+    .gateway-wrapper-para p {
+        font-size: 1rem;
+        /* letter-spacing: 3px; */
+        font-family: 'poppins';
+    }
+    
+    .ourteam-wrapper h1 {
+        font-size: 2rem;
+        margin-top: 30px;
+    }
+    .ourteam-wrapper-para p{
+        margin: 20px 10px;
+        font-size: 1rem;
+    }
+
+
 }
