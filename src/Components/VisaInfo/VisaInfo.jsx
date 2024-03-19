@@ -1,16 +1,8 @@
+// VisaInfo.js
 import React from 'react';
-import '../VisaInfo/VisaInfo.css'
-import VisaVerticalTab from './VisaVerticalTab';
 
 function VisaInfo() {
-  return (
-    <>
-    <div className="VisaTypeBackground">
-      
-    </div>
-    <VisaVerticalTab/>
-  </>
-  );
+  return <h2>VisaInfo</h2>;
 }
 
 export default VisaInfo;
