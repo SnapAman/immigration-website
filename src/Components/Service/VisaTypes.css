@@ -29,7 +29,7 @@
 .service-main .slick-slide{
     transition: transform 500ms linear,opacity 500ms linear;
     transform: scale(0.9);
-    opacity: 0.5;
+    opacity: 0.9;
 }
 .service-main .slick-slide.slick-center{
     transform: scale(1);
