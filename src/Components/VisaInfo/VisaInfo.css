@@ -1,0 +1,35 @@
+.VisaInfoBackground {
+    background-image: url('../src/assets/Rectangle.jpg');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.VisaInfoContent {
+    margin-left: 60px;
+    text-align: left;
+}
+
+.VisaInfoText h1 {
+    font-weight: 600;
+    font-size: 4rem;
+    color: #000;
+}
+.VisaInfoText h2 {
+    margin-top: 40px;
+    width: 70%;
+    font-size: 2rem;
+    color: #fff;
+}
+.VisaInfoButton{
+    margin-top: 30px;
+}
+.grayButton {
+    margin-top: 25px !important;
+    font-size: 1.2rem !important;
+    background-color: gray !important;
+}
+

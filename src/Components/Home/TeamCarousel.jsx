@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -8,7 +8,8 @@ import './TeamCarousel.css'; // Import external CSS file
 
 function TeamCarousel() {
     const settings = {
-        // dots: true,
+        className: "center",
+        centerMode: true,
         infinite: true,
         speed: 500,
         slidesToShow: 3,
@@ -24,6 +25,12 @@ function TeamCarousel() {
     const handleNext = () => {
         sliderRef.current.slickNext();
     };
+    useEffect(()=>{
+        const sliding = setInterval(()=>{
+            sliderRef.current.slickNext();
+        },3000)
+        return ()=>clearInterval(sliding)
+    },[])
 
     return (
         <>

@@ -66,3 +66,13 @@
 .slick-arrow {
     display: none;
 }
+
+.carousel-team-container .slick-slide{
+    transition: transform 500ms linear,opacity 500ms linear;
+    transform: scale(0.9);
+    opacity: 0.9;
+}
+.carousel-team-container .slick-slide.slick-center{
+    transform: scale(1);
+    opacity: 1;
+}
