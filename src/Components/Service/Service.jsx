@@ -6,6 +6,7 @@ import VisaTypes from './VisaTypes';
 import visaImg from '../../assets/visa.png'
 import Footer from '../Footer/Footer';
 import { useState } from 'react';
+import { motion } from "framer-motion";
 
 function Service() {
   const data = [
@@ -74,31 +75,43 @@ function Service() {
           </div>
         </div>
       </div>
-      <div className="visaTypeCrousal">
-        <VisaTypes data={data} changeContent={changeContent} />
-      </div>
-      <div className="information">
-        <div className="upper">
-          <img src={img} alt="" />
-          <div className="upperRight">
-            <h1>{title}</h1>
-            <p>{review}</p>
+      <motion.div
+        initial={{ opacity: 0.3 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: .5  }}
+      >
+        <div className="visaTypeCrousal">
+          <VisaTypes data={data} changeContent={changeContent} />
+        </div>
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0.3,x:-100 }}
+        whileInView={{ opacity: 1, x:0 }}
+        transition={{ ease: "linear", duration: 0.5  }}
+      >
+        <div className="information">
+          <div className="upper">
+            <img src={img} alt="" />
+            <div className="upperRight">
+              <h1>{title}</h1>
+              <p>{review}</p>
+            </div>
           </div>
-        </div>
-        <div className="bottom">
-          <h2>Application Process: Applying for a resident visa involves several steps:</h2>
-          <ol>
-            <li>Determine the appropriate residency category based on your circumstances (e.g., skilled migrant, family reunification, investment).</li>
-            <li>Complete the resident visa application form accurately and truthfully.</li>
-            <li>Gather the required supporting documents, including proof of employment or family relationship, financial stability, and health records.</li>
-            <li>Pay the resident visa application fee through the designated payment method.</li>
-            <li>Submit your application online or at the nearest embassy/consulate of [Country Name].</li>
-            <li>Wait for the application to be processed and attend any required interviews or biometric appointments.</li>
-            <li>Upon approval, receive your resident visa and follow any additional instructions provided.</li>
-          </ol>
-        </div>
+          <div className="bottom">
+            <h2>Application Process: Applying for a resident visa involves several steps:</h2>
+            <ol>
+              <li>Determine the appropriate residency category based on your circumstances (e.g., skilled migrant, family reunification, investment).</li>
+              <li>Complete the resident visa application form accurately and truthfully.</li>
+              <li>Gather the required supporting documents, including proof of employment or family relationship, financial stability, and health records.</li>
+              <li>Pay the resident visa application fee through the designated payment method.</li>
+              <li>Submit your application online or at the nearest embassy/consulate of [Country Name].</li>
+              <li>Wait for the application to be processed and attend any required interviews or biometric appointments.</li>
+              <li>Upon approval, receive your resident visa and follow any additional instructions provided.</li>
+            </ol>
+          </div>
 
-      </div>
+        </div>
+      </motion.div>
       <Footer />
     </div>
   );

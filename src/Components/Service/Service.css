@@ -100,7 +100,8 @@
     gap: 50px;
 }
 .information .upper img{
-    width: 1000px;
+    min-width: 300px;
+    max-width: 300px;
     object-fit: cover;
     border: 0;
     border-radius: 20px;
@@ -114,13 +115,20 @@
 .information .upperRight h1{
     font-size: 50px;
     font-weight: 400;
+    font-size: rgb(38, 38, 38);
 }
 .information .upperRight p{
     font-size: 30px;
+    font-size: rgb(63, 63, 63);
+}
+.information .bottom {
+    font-size: rgb(63, 63, 63);
+
 }
 
 .information .bottom li{
     font-size: 20px;
     padding: 2px 5px;
     margin-left: 30px;
+    font-size: rgb(63, 63, 63);
 }

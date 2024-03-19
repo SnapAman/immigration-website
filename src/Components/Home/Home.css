@@ -91,3 +91,7 @@
 .slick-next:before {
     display: none;
 }
+
+.mt-3{
+    margin-top: 4rem;
+}
