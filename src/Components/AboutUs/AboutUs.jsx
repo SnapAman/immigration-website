@@ -12,16 +12,10 @@ function AboutUs() {
 
       <div className="header-body">
         <div className="image-sec">
-          <div className="image-sec1">
-            <img src="../src/assets/About-img1.jpg" alt="abc" className='im1' />
-          </div>
+          <img src="../src/assets/About-img1.jpg" alt="abc" className='im1' />
           <div className="image-sec2">
-            <div>
-              <img src="../src/assets/About-img2.jpg" alt="pqr" className='im2' />
-            </div>
-            <div>
-              <img src="../src/assets/About-img3.jpg" alt="xyz" className='im3' />
-            </div>
+            <img src="../src/assets/About-img2.jpg" alt="pqr" className='im2' />
+            <img src="../src/assets/About-img3.jpg" alt="xyz" className='im3' />
           </div>
           <img src="../src/assets/center.svg" className='centerImg' alt="" />
         </div>
@@ -65,9 +59,7 @@ function AboutUs() {
         <div className="our-team">
           <h1 className='team-head'>Meet Our Team:</h1>
           <div className="member">
-            <div className="member-img">
-              <img src="../src/assets/Member1.jpg" alt="abc" className='mimage1' />
-            </div>
+            <img src="../src/assets/Member1.jpg" alt="abc" className='mimage1' />
             <div className="member-info">
               <h1 className='mtitle'>Alastair McClymont</h1>
               <p className='mpara'>Alastair McClymont has experience in Immigration Law since 1997. He began work in Auckland as a lawyer in 1996 for a large litigation and immigration law firm. By 2000 Alastair was specialising solely in immigration work including refugee applications and appeals and appearance on immigration reviews in the New Zealand High Court and Court of Appeal. Alastair set up his own firm in 2001 under the name Monk and McClymont, a two lawyer firm based in central Auckland concentrating solely on immigration. In 2005 Alastair began working on his own as a barrister and solicitor continuing to concentrate solely on immigration work. Since 2005 the firm has expanded and now operates under the name McClymont and Associates. In what spare time Alastair can get he enjoys sailing, mountain biking, travel and spending time with his wife and young children..</p>
@@ -79,15 +71,12 @@ function AboutUs() {
               <h1 className='mtitle'>Aakanksha McClymont</h1>
               <p className='mpara'>Aakanksha McClymont has been working with Alastair in this firm for more than 10 years. Originally from Chandigarh in India she graduated with a BA in Psychology but is most proud of her Master's degree in Common Sense. Aakanksha is the point of contact for most clients of the firm looking out for their best interests, helping them navigate the difficulties of the immigration process and managing the workload of the lawyers and admin staff working on the files. Aakanksha loves being busy and when not running the office she loves travel, socialising, exercising, friends and family.</p>
             </div>
-            <div className="member-img">
-              <img src="../src/assets/Member2.jpg" alt="abc" className='mimage1' />
-            </div>
+            <img src="../src/assets/Member2.jpg" alt="abc" className='mimage1' />
           </div>
 
           <div className="member">
-            <div className="member-img">
-              <img src="../src/assets/Member3.jpg" alt="abc" className='mimage1' />
-            </div>
+            <img src="../src/assets/Member3.jpg" alt="abc" className='mimage1' />
+
             <div className="member-info">
               <h1 className='mtitle'>Lydia Li</h1>
               <p className='mpara'>With 7 years of experience in the legal sector, Lydia Li is a dedicated expert in immigration matters. Residing in New Zealand for two decades, she has made this beautiful country her home. Lydia holds a bachelor degree from the University of Auckland and is currently working towards her LLB degree. Her journey also includes a decade of valuable experience in large corporations, during which she cultivated strong customer relationships.

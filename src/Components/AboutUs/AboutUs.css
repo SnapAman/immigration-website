@@ -29,24 +29,28 @@
     font-size: 40px;
     text-align: center;
 }
+
 /* Section 2:Experinced lawyer */
-.header-body{
-    margin: 40px;
+.header-body {
+    /* margin: 40px; */
+    padding: 40px 100px;
     display: flex;
     justify-content: space-between;
 }
 
-.content-sect{
+.content-sect {
     height: auto;
     width: 55%;
 }
-.title-head{
+
+.title-head {
     color: black;
     font-size: 30px;
     text-align: center;
     line-height: 50px;
 }
-.para{
+
+.para {
     color: black;
     font-size: 20px;
     font-weight: 100;
@@ -56,101 +60,111 @@
 
 }
 
-.mission-vision{
+.mission-vision {
     margin: 20px;
     display: flex;
     justify-content: space-between;
     margin-left: 15px;
 }
-.mission-content{
+
+.mission-content {
     margin: 30px;
     margin-top: 4px;
 }
-.t-head{
+
+.t-head {
     color: black;
     font-size: 27px;
     text-align: left;
 }
-.t-body{
+
+.t-body {
     color: black;
     font-size: 23px;
     text-align: left;
 }
+
 /* .image-sec1{
     
 } */
-.image-sec{
+.image-sec {
     background-color: white;
-    width: 45%;
-    height: auto;
+    width: 500px;
+    height: 600px;
     position: relative;
-   }
-.im1{
-    height: 40vh;
-    width: 90vh;
-    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
+
+.im1{
+    width: 100%;
+    object-fit: cover;
+    height: 50%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
 .image-sec2{
     display: flex;
-    justify-content: space-between;
-    margin: 10px;
+    gap: 20px;
 }
-.im2{
-    height: auto;
-    width: 43vh;
+.im2, .im3{
+    width: 50%;
+    border-radius: 20px;
+    overflow: hidden;
 }
-.im3{
-    height: 62vh;
-    width: 43vh;
-    margin-left: 15px;
-}
-.centerImg{
+
+.centerImg {
     position: absolute;
-    top: 0;
-    width: 10px;
-    height: 10px;
+    top: 45%;
+    left: 50%;
+    width: 150px;
+    height: 150px;
+    transform: translateX(-50%) translateY(-50%);
 }
 
 
- /* section 3:Our Team */
- .scrollable-div {
-    width: 50;
-    height: 500px;
-    overflow: auto; /* or overflow: scroll; */
+/* section 3:Our Team */
+.scrollable-div {
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    /* or overflow: scroll; */
     box-shadow: 10px 10px 10px rgba(136, 135, 135, 0.5);
-    padding: 10px;
-    margin: 40px;
+    /* padding: 10px; */
+    padding: 40px;
     /* background-color: black; */
 }
-.team-head{
-    font-size:60px;
+
+.team-head {
+    font-size: 60px;
 }
-.member{
+
+.member {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     margin-top: 30px;
+    gap: 30px;
 }
-.member-img{
-    width: 90px;
-    height: 90px;
-    margin: 20px;
-    margin-top: 30px;
-}
-.mimage1{
+.mimage1 {
     width: 250px;
     height: 300px;
+    border-radius: 20px;
 }
-.member-info{
-    width: 77%;
-    margin-top: 28px;
-    margin-left: 23px;
+
+.member-info {
+    display: flex;
+    flex-direction: column;
 }
-.mtitle{
-    font-size:40px;
+
+.mtitle {
+    font-size: 40px;
     /* align-items: left; */
     font-weight: 200;
 }
-.mpara{
+
+.mpara {
     font-size: 20px;
     font-weight: 300;
     margin-top: 30px;
