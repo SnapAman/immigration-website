@@ -47,7 +47,7 @@ function App() {
       <div>
         <nav id="navbar" className={scrolling ? 'scrolled' : ''}>
           <div className="logo">
-            <NavLink to="/"><img width="200px" height="auto" src={logo} alt="Logo"/></NavLink>
+            <NavLink to="/"><img width="200px" height="auto" src={logo} alt="Logo" /></NavLink>
           </div>
           <ul id="menu">
             <li><NavLink to="/">Home</NavLink></li>

@@ -19,7 +19,9 @@ function VisaInfo() {
           </div>
         </div>
     </div>
-    <VisaIndoTabs/>
+    <div style={{padding : '30px'}}>
+      <VisaIndoTabs/>
+    </div>
 
     </>
 );

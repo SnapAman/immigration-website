@@ -1,91 +1,131 @@
 import * as React from 'react';
-import PropTypes from 'prop-types';
-import Tabs from '@mui/material/Tabs';
-import Tab from '@mui/material/Tab';
-import Typography from '@mui/material/Typography';
-import Box from '@mui/material/Box';
-
-function TabPanel(props) {
-  const { children, value, index, ...other } = props;
-
-  return (
-    <div
-      role="tabpanel"
-      hidden={value !== index}
-      id={`vertical-tabpanel-${index}`}
-      aria-labelledby={`vertical-tab-${index}`}
-      {...other}
-    >
-      {value === index && (
-        <Box sx={{ p: 3 }}>
-          <Typography>{children}</Typography>
-        </Box>
-      )}
-    </div>
-  );
-}
-
-TabPanel.propTypes = {
-  children: PropTypes.node,
-  index: PropTypes.number.isRequired,
-  value: PropTypes.number.isRequired,
-};
-
-function a11yProps(index) {
-  return {
-    id: `vertical-tab-${index}`,
-    'aria-controls': `vertical-tabpanel-${index}`,
-  };
-}
+import { styled } from '@mui/system';
+import { Tabs as BaseTabs } from '@mui/base/Tabs';
+import { TabsList as BaseTabsList } from '@mui/base/TabsList';
+import { TabPanel as BaseTabPanel } from '@mui/base/TabPanel';
+import Button from '@mui/material/Button';
+import { Tab as BaseTab, tabClasses } from '@mui/base/Tab';
+import '../VisaInfo/VisaInfoTabs.css';
+import ReplyIcon from '@mui/icons-material/Reply';
+import studentvisa from '../../assets/StudentVisa.jpg'
 
 export default function VisaInfoTabs() {
-  const [value, setValue] = React.useState(0);
-
-  const handleChange = (event, newValue) => {
-    setValue(newValue);
-  };
-
   return (
-    <Box
-      sx={{ flexGrow: 1, bgcolor: 'background.paper', display: 'flex', height: 224 }}
-    >
-      <Tabs
-        orientation="vertical"
-        variant="scrollable"
-        value={value}
-        onChange={handleChange}
-        aria-label="Vertical tabs example"
-        sx={{ borderRight: 1, borderColor: 'divider' }}
-      >
-        <Tab label="Item One" {...a11yProps(0)} />
-        <Tab label="Item Two" {...a11yProps(1)} />
-        <Tab label="Item Three" {...a11yProps(2)} />
-        <Tab label="Item Four" {...a11yProps(3)} />
-        <Tab label="Item Five" {...a11yProps(4)} />
-        <Tab label="Item Six" {...a11yProps(5)} />
-        <Tab label="Item Seven" {...a11yProps(6)} />
-      </Tabs>
-      <TabPanel value={value} index={0}>
-        Item One
+    <Tabs defaultValue={0} orientation="vertical">
+      <TabsList>
+        <Tab> <div className='tabContent'>Resident Visa<span><ReplyIcon /></span></div> </Tab>
+        <Tab><div className='tabContent'>Student Visa<span><ReplyIcon /></span></div></Tab>
+        <Tab><div className='tabContent'>Tourist Visa<span><ReplyIcon /></span></div></Tab>
+        <Tab><div className='tabContent'>Visitor Visa<span><ReplyIcon /></span></div></Tab>
+        <Tab><div className='tabContent'>Work Visa<span><ReplyIcon /></span></div></Tab>
+        <Tab><div className='tabContent'>Post-Study Visa<span><ReplyIcon /></span></div></Tab>
+      </TabsList>
+      <TabPanel value={0}>
+        <div class="student-visa">
+          <h1>STUDENT VISA</h1>
+        </div>
+        <div className="VisaInfocContainer">
+          <div className="image-container">
+            <img src={studentvisa} alt=" " />
+          </div>
+          {/* Div with information about Student Visa */}
+          <div className="info-container">
+            <div className='info-box'>
+              <h3>About</h3>
+              <p>Our student visa service is designed to assist individuals who wish to pursue their academic goals abroad. Whether you're planning to enroll in a university, college we provide support to help you with application.</p>
+            </div>
+            <div className='info-box'>
+            <h3>Eligibility Criteria</h3>
+            <p>Eligibility Criteria:Applicants must have acceptance from a recognized educational institution, financial stability, valid passport, health requirements fulfilled, and a clean criminal record.</p>
+            
+            </div>
+            <Button variant="contained" disableElevation className="grayButton">Learn more</Button>
+          </div>
+        </div>
+        {/* <div>
+          <div>
+
+          </div>
+          <div>
+            <div></div>
+            <div></div>
+          </div>
+          </div>
+
+          <img class="visa-image" src={studentvisa} alt="Student Visa" />
+
+          <div class="info-container">
+            <div class="info-box">
+              <h3>About</h3>
+              <p>Our student visa service is designed to assist individuals who wish to pursue their academic goals abroad. Whether you're planning to enroll in a university, college we provide support to help you with application.</p>
+            </div>
+
+            <div class="info-box">
+              <h3>Eligibility Criteria</h3>
+              <p>Applicants must have acceptance from a recognized educational institution, financial stability, valid passport, health requirements fulfilled, and a clean criminal record.</p>
+            </div>
+          </div> */}
       </TabPanel>
-      <TabPanel value={value} index={1}>
-        Item Two
-      </TabPanel>
-      <TabPanel value={value} index={2}>
-        Item Three
-      </TabPanel>
-      <TabPanel value={value} index={3}>
-        Item Four
-      </TabPanel>
-      <TabPanel value={value} index={4}>
-        Item Five
-      </TabPanel>
-      <TabPanel value={value} index={5}>
-        Item Six
-      </TabPanel>
-      <TabPanel value={value} index={6}>
-        Item Seven
-      </TabPanel>
-    </Box>
+      <TabPanel value={1}>Second page</TabPanel>
+      <TabPanel value={2}>Third page</TabPanel>
+      <TabPanel value={3}>Fourth page</TabPanel>
+      <TabPanel value={4}>Fifth page</TabPanel>
+      <TabPanel value={5}>Sixth page</TabPanel>
+    </Tabs>
   );
 }
+
+const grey = {
+  50: '#F3F6F9',
+  100: '#E5EAF2',
+  200: '#DAE2ED',
+  300: '#C7D0DD',
+  400: '#B0B8C4',
+  500: '#9DA8B7',
+  600: '#6B7A90',
+  700: '#434D5B',
+  800: '#303740',
+  900: '#1C2025',
+};
+
+const Tab = styled(BaseTab)`
+  font-family: 'IBM Plex Sans', sans-serif;
+  color: white; /* Set tab text color to white */
+  cursor: pointer;
+  font-size: 0.875rem;
+  font-weight: bold;
+  background-color: transparent;
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 7px;
+  display: flex;
+  justify-content: center;
+`;
+
+const TabPanel = styled(BaseTabPanel)`
+  width: 100%;
+  font-size: 1rem;
+  `;
+
+const Tabs = styled(BaseTabs)`
+  display: flex;
+  gap: 16px;
+`;
+
+const TabsList = styled(BaseTabsList)(
+  ({ theme }) => `
+  min-width: 180px;
+  background-color: #C1C1C1;
+  border-radius: 12px;
+  display: flex;
+  padding: 15px;
+  gap: 40px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-content: space-between;
+  box-shadow: 0px 4px 8px ${theme.palette.mode === 'dark' ? grey[900] : grey[200]
+    };
+  `,
+);
