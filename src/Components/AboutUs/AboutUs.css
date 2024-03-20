@@ -9,18 +9,18 @@
     align-items: center;
 
     animation: AboutBackground-animation linear forwards;
-    animation-timeline: scroll();
+    animation-timeline: view();
     animation-range: exit;
 }
 
 @keyframes AboutBackground-animation {
-    30% {
+    25% {
         opacity: 1;
     }
 
-    70% {
+    85% {
         opacity: 0;
-        scale: 1;
+        scale: 2;
     }
 }
 
@@ -133,7 +133,7 @@
     /* or overflow: scroll; */
     box-shadow: 10px 10px 10px rgba(136, 135, 135, 0.5);
     /* padding: 10px; */
-    padding: 40px;
+    padding: 30px;
     /* background-color: black; */
 }
 

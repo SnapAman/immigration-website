@@ -84,6 +84,23 @@ function AboutUs() {
             </div>
           </div>
 
+          <div className="member">
+            <div className="member-info">
+              <h1 className='mtitle'>Sarfaraz Shaikh</h1>
+              <p className='mpara'>Introducing Sarfaraz Shaikh, a vital member of our immigration team. With a wealth of experience in navigating the complexities of immigration law, Sarfaraz brings expertise, dedication, and a personalized approach to each case he handles. His commitment to client satisfaction, combined with his empathetic nature, ensures that individuals receive tailored guidance and support throughout their immigration journey. Sarfaraz is passionate about empowering clients to achieve their immigration goals with confidence and ease. With over 15 years experience in the Immigration industry, Saif is one of the most experienced Licensed Immigration Advisers in New Zealand and widely known for his expertise to handle difficult applications. He is also a former NZ Immigration Officer and the Director of New Zealand Association for Migration & Immigration.</p>
+            </div>
+            <img src="../src/assets/Member5.jpg" alt="abc" className='mimage1' />
+          </div>
+
+          <div className="member">
+            <img src="../src/assets/Member4.jpg" alt="abc" className='mimage1' />
+
+            <div className="member-info">
+              <h1 className='mtitle'>Naved Shaikh</h1>
+              <p className='mpara'>Meet Naved Shaikh, an invaluable member of our immigration team. With years of experience in navigating the intricacies of immigration law, Naved brings a wealth of expertise and a steadfast commitment to client success. His dedication, coupled with his empathetic approach, ensures that each client receives personalized guidance and support on their immigration journey. Naved is passionate about making the process as smooth and stress-free as possible, empowering clients to achieve their immigration goals with confidence. Naved is a hard working and down to earth adviser. He works closely with clients, providing them proper and accurate advice. No matter how complicated the case is, his team are always providing the top class service. Over years of work, he has gained a number of loyal clients, who have also became good friends with him. </p>
+            </div>
+          </div>
+
         </div>
       </div>
 
