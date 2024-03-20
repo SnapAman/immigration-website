@@ -8,6 +8,7 @@
     justify-content: center;
     align-items: center;
 }
+
 .VisaInfoContent {
     margin-left: 60px;
     text-align: left;
@@ -18,18 +19,76 @@
     font-size: 4rem;
     color: #000;
 }
+
 .VisaInfoText h2 {
     margin-top: 40px;
     width: 70%;
     font-size: 2rem;
     color: #fff;
 }
-.VisaInfoButton{
+
+.VisaInfoButton {
     margin-top: 30px;
 }
+
 .grayButton {
     margin-top: 25px !important;
     font-size: 1.2rem !important;
     background-color: gray !important;
 }
 
+.DownloadDiv {
+    padding: 30px;
+    height: auto;
+    display: flex;
+}
+
+.DownloadDivOuter {
+    background-color: rgba(192, 192, 192, 0.15000000596046448);
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.DownloadDivInner {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    height: 250px;
+    background-color: #ffffff;
+    width: 232px;
+    filter: drop-shadow(8px 8px 7.800000190734863px rgba(0, 0, 0, 0.25));
+    border-radius: 20px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ________________________________  */
+.parentDiv {
+    display: grid;
+    width: 100%;
+    place-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    /* Adjust the gap between child divs */
+}
+
+.childDiv {
+    background-color: lightblue;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.uniqueClass {
+    background-color: #ffffff;
+    height: 160px;
+    width: 406px;
+    filter: drop-shadow(6px 10px 6.599999904632568px rgba(0, 0, 0, 0.25));
+    border-radius: 12px;
+    border: 1px solid #808080;
+}

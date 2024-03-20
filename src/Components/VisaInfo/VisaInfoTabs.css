@@ -85,7 +85,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     width: 50%;
-    align-items: center;
+    align-items: start;
 }
 
 .info-box {
