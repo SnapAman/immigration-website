@@ -11,12 +11,12 @@ function TeamCarousel() {
         className: "center",
         centerMode: true,
         infinite: true,
-        speed: 500,
+        speed: 1000,
         slidesToShow: 3,
         slidesToScroll: 1,
         centerPadding: "0px",
         autoplay: true,
-        autoplaySpeed: 2000,
+        autoplaySpeed: 4000,
         pauseOnHover: false,
         responsive: [
             {
@@ -76,34 +76,29 @@ function TeamCarousel() {
 
 const data = [
     {
-        name: 'Resident Visa',
-        img: 'src/assets/Rectangle 3.jpg',
-        review:
-            'Compared to most countries in the world, New Zealand offers a great work-life balance. That’s reflected time and time again in international surveys.'
+        name: 'Sarfraz (Saif) Shaikh',
+        img: 'src/assets/Sarfraz.jpg',
+        review:"Saif, a seasoned Immigration Adviser in New Zealand, with 15+ years' experience, specializes in complex cases. Former NZ Immigration Officer and Association Director."
     },
     {
-        name: 'Visitor Visa',
-        img: 'src/assets/Rectangle 3.jpg',
-        review:
-            'We handle the submission of your visa application to the appropriate immigration authorities, ensuring compliance with all regulations and deadlines.'
+        name: 'Alastair McClymont',
+        img: 'src/assets/Alastair.jpg',
+        review:'Alastair started in law in 1997, focusing on immigration. He founded Monk & McClymont in 2001, later expanding to McClymont Shaikh Immigration. Enjoys biking and learning.'
     },
     {
-        name: 'Student Visa',
-        img: 'src/assets/Rectangle 3.jpg',
-        review:
-            'The New Zealand government has strong quality assurance systems to ensure high-quality education at all levels of the education system, both public and private.'
+        name: 'Aakanksha McClymont',
+        img: 'src/assets/Aakanksha.jpg',
+        review:'Aakanksha from Chandigarh, India, has worked at McClymont & Associates for 20 years. She helps clients with immigration, holding degrees in Psychology and Common Sense. She enjoys travel and family time.'
     },
     {
-        name: 'Tourist Visa',
-        img: 'src/assets/Rectangle 3.jpg',
-        review:
-            'Issued to individuals traveling to a country for leisure, sightseeing, or recreational purposes. Generally, it prohibits engaging in any form of employment during the visit'
+        name: 'Naved Shaikh',
+        img: 'src/assets/Naved.jpg',
+        review:'Naved is a diligent advisor who gives reliable advice to clients. His team offers excellent service, building strong relationships with loyal clients.'
     },
     {
-        name: 'Family Visa',
-        img: 'src/assets/Rectangle 3.jpg',
-        review:
-            ' Granted to spouses, children, or other dependents of individuals who hold a valid visa in the host country. It allows family members to join the primary visa holder during their stay.'
+        name: 'Shazia Gill',
+        img: 'src/assets/Shazia.jpg',
+        review:'Shazia, vital since 2013 at McClymont and Associates, excels in immigration law, especially with the Indian community. Fluent in English, Hindi, and Punjabi, offering expert support.'
     }
 ];
 

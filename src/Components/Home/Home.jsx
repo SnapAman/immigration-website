@@ -37,7 +37,15 @@ function Home() {
           transition={{ duration: 0.5 }}
         >
           <div className='gateway-wrapper-para'>
-            <p>With years of experience and a dedicated team of experts, we understand the challenges and uncertainties that come with immigration. Whether you're seeking a new job opportunity, reuniting with loved ones, or pursuing higher education abroad, we are here to assist you every step of the way.</p>
+            <p>Navigating New Zealand's immigration process can be complex and challenging. At
+              McClymont Shaikh Immigration, we understand the intricacies of immigration Policy
+              and are dedicated to guiding you through every step of your journey.</p>
+            <p>
+              Our experienced team, deeply understands New Zealand immigration laws, policies,
+              and procedures. We specialize exclusively in immigration, ensuring you benefit from
+              our focused knowledge and expertise. With McClymont Shaikh Immigration, you can be assured of receiving expert advice
+              and personalized assistance every step of the way.
+            </p>
           </div>
         </motion.div>
 
@@ -54,13 +62,18 @@ function Home() {
       </motion.div>
       <div className='ourteam-wrapper'>
         <h1>OUR TEAM</h1>
-        {/* <div className='sep-line'></div> */}
         <div className='ourteam-wrapper-para'>
-          <p>
-            Compared to most countries in the world, New Zealand offers a great work-life balance. That’s reflected time and time again in international surveys. As a team of thirteen staff, we have four licensed immigration advisers and one registered lawyer. We speak multi-languages including English, Hindi, Punjabi, Mandarin, Filipino, Malayalam, Spanish, Slovak and Czech.
-          </p>
+          <p>We are a specialist Immigration Consultancy, based in Auckland, New Zealand. Our team
+consists of both Licensed Barristers &amp; Solicitors, and Licensed Immigration Advisors. Our
+team of specialised Immigration Practitioners have a high level of expertise that only comes
+from working exclusively with New Zealand Immigration rules and regulations.</p>
+          
         </div>
         <TeamCarousel />
+      </div>
+      <div className='conclusion-div'>
+        <h1>Join Over 5,600+ Clients Enjoying Our Service</h1>
+        <h2>Plan Your Career And Your Life In New Zealand With Us</h2>
       </div>
       <Footer />
     </>
