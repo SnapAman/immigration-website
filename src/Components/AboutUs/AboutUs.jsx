@@ -23,7 +23,8 @@ function AboutUs() {
 
         <div className="content-sect">
           <h1 className='title-head'>Experienced Lawyers Provide Immigration Services.</h1>
-          <p className='para'>We provide legal professionals who specialize in immigration law and offer their expertise to individuals or entities navigating immigration processes.We provide comprehensive support to ensure compliance with immigration requirements, streamline the application process, and facilitate successful placements, enabling businesses to access top talent globally and individuals to pursue rewarding career opportunities abroad."</p>
+          <p className='para'>We are a specialist Immigration Consultancy, based in Auckland, New Zealand. Our team consists of both Licensed Barristers & Solicitors, and Licensed Immigration Advisors. Our team of specialised Immigration Practitioners have a high level of expertise that only comes from working exclusively with New Zealand Immigration rules and regulations.
+            Being one of the largest and most experienced specialist immigration consultancies in New Zealand, we offer extensive experience and specialized training to help with any of your New Zealand immigration and citizenship needs. We provide legal advice and representation for clients seeking assistance with Resident Visas, Appeals, Deportation hearings, complaints, Work Visas, Visitor Visas, Student Visas,</p>
           <div className="mission-vision">
             <div className="icon">
               <svg width="90" height="90" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -34,7 +35,9 @@ function AboutUs() {
 
             <div className="mission-content">
               <h1 className='t-head'>Our Mission:</h1>
-              <p className='t-body'>Our mission is to provide immigration legal services with compassion,  and advocacy.</p>
+              <p className='t-body'>To provide expert and accurate Immigration Support in an understanding, sympathetic and supportive personal environment. </p>
+                <p className='t-body'>We aim to provide Happiness through our Expertise.</p>
+             
             </div>
           </div>
 
@@ -48,7 +51,7 @@ function AboutUs() {
 
             <div className="mission-content">
               <h1 className='t-head'>Our Vision:</h1>
-              <p className='t-body'>Our vision is to foster communities by facilitating integration and equitable opportunities for immigrants.</p>
+               <p className='t-body'>Our clients deserve to have accurate, up to date and transparent information regarding their immigration journey.Our clients deserve our respect, empathy and understanding regardless of race, gender, religion or beliefs.</p>
             </div>
           </div>
 
@@ -59,35 +62,37 @@ function AboutUs() {
         <div className="our-team">
           <h1 className='team-head'>Meet Our Team:</h1>
           <div className="member">
-            <img src="../src/assets/Member1.jpg" alt="abc" className='mimage1' />
-            <div className="member-info">
-              <h1 className='mtitle'>Alastair McClymont</h1>
-              <p className='mpara'>Alastair McClymont has experience in Immigration Law since 1997. He began work in Auckland as a lawyer in 1996 for a large litigation and immigration law firm. By 2000 Alastair was specialising solely in immigration work including refugee applications and appeals and appearance on immigration reviews in the New Zealand High Court and Court of Appeal. Alastair set up his own firm in 2001 under the name Monk and McClymont, a two lawyer firm based in central Auckland concentrating solely on immigration. In 2005 Alastair began working on his own as a barrister and solicitor continuing to concentrate solely on immigration work. Since 2005 the firm has expanded and now operates under the name McClymont and Associates. In what spare time Alastair can get he enjoys sailing, mountain biking, travel and spending time with his wife and young children..</p>
-            </div>
-          </div>
-
-          <div className="member">
-            <div className="member-info">
-              <h1 className='mtitle'>Aakanksha McClymont</h1>
-              <p className='mpara'>Aakanksha McClymont has been working with Alastair in this firm for more than 10 years. Originally from Chandigarh in India she graduated with a BA in Psychology but is most proud of her Master's degree in Common Sense. Aakanksha is the point of contact for most clients of the firm looking out for their best interests, helping them navigate the difficulties of the immigration process and managing the workload of the lawyers and admin staff working on the files. Aakanksha loves being busy and when not running the office she loves travel, socialising, exercising, friends and family.</p>
-            </div>
-            <img src="../src/assets/Member2.jpg" alt="abc" className='mimage1' />
-          </div>
-
-          <div className="member">
-            <img src="../src/assets/Member3.jpg" alt="abc" className='mimage1' />
-
-            <div className="member-info">
-              <h1 className='mtitle'>Lydia Li</h1>
-              <p className='mpara'>With 7 years of experience in the legal sector, Lydia Li is a dedicated expert in immigration matters. Residing in New Zealand for two decades, she has made this beautiful country her home. Lydia holds a bachelor degree from the University of Auckland and is currently working towards her LLB degree. Her journey also includes a decade of valuable experience in large corporations, during which she cultivated strong customer relationships.
-                Lydia's exceptional expertise shines through her impressive track record of successfully handling complex cases, such as s61, ministerial directions, and exceptions in immigration instructions. Her profound understanding of immigration policy, combined with her proficiency in Mandarin, English, and Cantonese, empowers her to effectively assist clients from diverse backgrounds. You can reach her at lydia@amlaw.co.nz </p>
-            </div>
-          </div>
-
-          <div className="member">
+          <img src="../src/assets/Member6.jpg" alt="abc" className='mimage1' />
             <div className="member-info">
               <h1 className='mtitle'>Sarfaraz Shaikh</h1>
               <p className='mpara'>Introducing Sarfaraz Shaikh, a vital member of our immigration team. With a wealth of experience in navigating the complexities of immigration law, Sarfaraz brings expertise, dedication, and a personalized approach to each case he handles. His commitment to client satisfaction, combined with his empathetic nature, ensures that individuals receive tailored guidance and support throughout their immigration journey. Sarfaraz is passionate about empowering clients to achieve their immigration goals with confidence and ease. With over 15 years experience in the Immigration industry, Saif is one of the most experienced Licensed Immigration Advisers in New Zealand and widely known for his expertise to handle difficult applications. He is also a former NZ Immigration Officer and the Director of New Zealand Association for Migration & Immigration.</p>
+            </div>
+          </div>
+
+
+          <div className="member">
+            <div className="member-info">
+              <h1 className='mtitle'>Alastair McClymont</h1>
+              <p className='mpara'>McClymont has dedicated himself to Immigration Law since 1997. Graduating from Otago University with degrees in both History and Law, his legal career began in Auckland in 1997 at a large litigation and immigration firm. By 2000, he had honed his focus solely on immigration, specializing in refugee applications and appeals, along with appearances before the New Zealand High Court and Court of Appeal in immigration reviews. In 2001, Alastair founded Monk and McClymont, a two-lawyer firm in central Auckland dedicated solely to immigration matters. Transitioning to independent practice in 2005 as a barrister and solicitor, he maintained his exclusive focus on immigration law. Under his leadership, the firm expanded and operated as McClymont and Associates, a law firm now operating as a partner in McClymont Shaikh Immigration.
+When not immersed in the intricacies of the law, Alastair enjoys mountain biking, studying toward post graduate qualifications and exploring new destinations.
+</p>
+            </div>
+            <img src="../src/assets/Member1.jpg" alt="abc" className='mimage1' />
+          </div>
+
+          <div className="member">
+          <img src="../src/assets/Member2.jpg" alt="abc" className='mimage1' />
+            <div className="member-info">
+              <h1 className='mtitle'>Aakanksha McClymont</h1>
+              <p className='mpara'>Aakanksha McClymont, originally from Chandigarh, India, has been a dedicated member of McClymont & Associates for over twenty years. A graduate with a BA in Psychology, she takes immense pride in her Master's degree in Common Sense, a quality that shines through in her work. As the primary point of contact for many clients, Aakanksha champions their needs, guiding them through the intricacies of the immigration process and providing that personal touch. Aakanksha embraces a vibrant life filled with travel, social connections, exercise, and cherished time with loved ones.</p>
+            
+            </div>
+          </div>
+
+          <div className="member">
+            <div className="member-info">
+              <h1 className='mtitle'>Shazia Gill</h1>
+              <p className='mpara'>An indispensable member of McClymont and Associates since 2013, Shazia brings invaluable expertise to our immigration practice. Her deep understanding of the Indian community is a remarkable asset. For expert guidance and unwavering support, Shazia is your go-to resource. Fluent in English, Hindi, and Punjabi, she ensures seamless communication tailored to your comfort</p>
             </div>
             <img src="../src/assets/Member5.jpg" alt="abc" className='mimage1' />
           </div>
