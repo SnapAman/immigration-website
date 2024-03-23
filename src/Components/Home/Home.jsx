@@ -16,7 +16,6 @@ function Home() {
             <h1>to New Zealand</h1>
           </div>
           <div className="button">
-            {/* <Button variant="outlined">Book a Consultation</Button> */}
             <Button variant="contained" disableElevation className="grayButton">Book a Consultation</Button>
           </div>
         </div>
@@ -64,10 +63,10 @@ function Home() {
         <h1>OUR TEAM</h1>
         <div className='ourteam-wrapper-para'>
           <p>We are a specialist Immigration Consultancy, based in Auckland, New Zealand. Our team
-consists of both Licensed Barristers &amp; Solicitors, and Licensed Immigration Advisors. Our
-team of specialised Immigration Practitioners have a high level of expertise that only comes
-from working exclusively with New Zealand Immigration rules and regulations.</p>
-          
+            consists of both Licensed Barristers &amp; Solicitors, and Licensed Immigration Advisors. Our
+            team of specialised Immigration Practitioners have a high level of expertise that only comes
+            from working exclusively with New Zealand Immigration rules and regulations.</p>
+
         </div>
         <TeamCarousel />
       </div>

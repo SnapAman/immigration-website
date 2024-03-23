@@ -108,7 +108,18 @@
     margin-top: 4rem;
 }
 
+@media (max-width:1100px) {
+    .HomeBackground {
+        background-position-x: -400px ;
+    }
+    
+}
+
 @media (max-width:700px) {
+
+    .HomeBackground {
+        background-position-x: -980px ;
+    }
 
     .content {
         margin-left: 30px;

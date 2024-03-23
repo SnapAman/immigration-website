@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, NavLink } from 'react-router-dom';
 import './App.css';
+import MenuIcon from '@mui/icons-material/Menu';
+import CloseIcon from '@mui/icons-material/Close';
+
 import logo from '../src/assets/BLACK_LOGO.png';
 import Home from './Components/Home/Home.jsx';
 import VisaInfo from './Components/VisaInfo/VisaInfo';
@@ -28,62 +31,67 @@ function App() {
     };
   }, []);
 
-  const toggleNav = () => {
-    const nav = document.querySelector('.overlay-menu');
-    if (nav.style.transform !== 'translateX(0%)') {
-      nav.style.transform = 'translateX(0%)';
-      nav.style.transition = 'transform 0.2s ease-out';
-    } else {
-      nav.style.transform = 'translateX(-100%)';
-      nav.style.transition = 'transform 0.2s ease-out';
-    }
+  const [showMenu, setShowMenu] = useState(false);
 
-    const toggleIcon = document.querySelector('.menuIcon');
-    toggleIcon.classList.toggle('toggle');
+  const toggleMenu = () => {
+    setShowMenu(!showMenu);
+  };
+
+  const closeMenuOnMobile = () => {
+    if (window.innerWidth <= 1150) {
+      setShowMenu(false);
+    }
   };
 
   return (
+
     <Router>
-      <div>
-        <nav id="navbar" className={scrolling ? 'scrolled' : ''}>
-          <div className="logo">
-            <NavLink to="/"><img width="200px" height="auto" src={logo} alt="Logo" /></NavLink>
+
+      <header id="header" className={scrolling ? 'navbar scrolled' : 'navbar'}>
+        <nav className="nav container">
+
+          <NavLink to="/"><img width="200px" height="auto" src={logo} alt="Logo" /></NavLink>
+          <div
+            className={`nav__menu ${showMenu ? "show-menu" : ""}`}
+            id="nav-menu"
+          >
+            <ul className="nav__list">
+              <li className="nav__item">
+                <NavLink to="/" className="nav__link" onClick={closeMenuOnMobile}>HOME</NavLink>
+              </li>
+              <li className="nav__item">
+                <NavLink to="/visa" className="nav__link" onClick={closeMenuOnMobile}>VISA INFO</NavLink>
+              </li>
+              <li className="nav__item">
+                <NavLink to="/about" className="nav__link" onClick={closeMenuOnMobile}>ABOUT US</NavLink></li>
+              <li className="nav__item">
+                <NavLink to="/services" className="nav__link" onClick={closeMenuOnMobile}>SERVICES</NavLink>
+                </li>
+              <li className="nav__item"><NavLink to="/news" className="nav__link" onClick={closeMenuOnMobile}>NEWS / INFO</NavLink>
+              </li>
+              <li className="nav__item">
+                <NavLink to="/contact" className="nav__link" onClick={closeMenuOnMobile}>CONTACT</NavLink>
+              </li>
+            </ul>
+            <div className="nav__close" id="nav-close" onClick={toggleMenu}>
+              <CloseIcon />
+            </div>
           </div>
-          <ul id="menu">
-            <li><NavLink to="/">Home</NavLink></li>
-            <li><NavLink to="/visa">Visa Info</NavLink></li>
-            <li><NavLink to="/about">About Us</NavLink></li>
-            <li><NavLink to="/services">Services</NavLink></li>
-            <li><NavLink to="/news">News/Info</NavLink></li>
-            <li><NavLink to="/contact">Contact US</NavLink></li>
-          </ul>
+
+          <div className="nav__toggle" id="nav-toggle" onClick={toggleMenu}>
+            <MenuIcon />
+          </div>
         </nav>
+      </header>
 
-        <div className="menuIcon" onClick={toggleNav}>
-          <span className="icon icon-bars"></span>
-          <span className="icon icon-bars overlay"></span>
-        </div>
-
-        <div className="overlay-menu">
-          <ul id="menu">
-            <li><NavLink to="/">Home</NavLink></li>
-            <li><NavLink to="/visa">Visa Info</NavLink></li>
-            <li><NavLink to="/about">About Us</NavLink></li>
-            <li><NavLink to="/services">Services</NavLink></li>
-            <li><NavLink to="/news">News/Info</NavLink></li>
-            <li><NavLink to="/contact">Contact US</NavLink></li>
-          </ul>
-        </div>
-
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/visa" element={<VisaInfo />} />
-          <Route path="/about" element={<AboutUs />} />
-          <Route path="/services" element={<Services />} />
-          <Route path="/news" element={<NewsInfo />} />
-          <Route path="/contact" element={<ContactUs />} />
-        </Routes>
-      </div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/visa" element={<VisaInfo />} />
+        <Route path="/about" element={<AboutUs />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/news" element={<NewsInfo />} />
+        <Route path="/contact" element={<ContactUs />} />
+      </Routes>
     </Router>
   );
 }
