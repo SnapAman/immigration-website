@@ -91,4 +91,13 @@
     filter: drop-shadow(6px 10px 6.599999904632568px rgba(0, 0, 0, 0.25));
     border-radius: 12px;
     border: 1px solid #808080;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.uniquclassText{
+    text-align: start;
+}
+.uniquclassText h4{
+    margin-top: 10px;
 }
