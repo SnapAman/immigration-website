@@ -11,48 +11,48 @@ import { motion } from "framer-motion";
 function Service() {
   const data = [
     {
-      id:1,
-      name: 'Residence Class Visa',
+      id: 1,
+      name: 'Residence Class Visa-Family Categories',
       img: 'src/assets/visa.png',
-      review: 'Our company specializes in facilitating the acquisition of residence class visas, ensuring smooth transitions for individuals seeking to establish legal residency in their desired country'
+      review: 'Discover our Residence Class Visa - Family Categories, designed to reunite families in [Country Name]. From spouse and child visas to parent and dependent relative options, we provide pathways for family members to join their loved ones.'
     },
     {
-      id:2,
+      id: 2,
       name: 'Visitor Visa',
       img: 'src/assets/visa.png',
       review:
         'We handle the submission of your visa application to the appropriate immigration authorities, ensuring compliance with all regulations and deadlines.'
     },
     {
-      id:3,
+      id: 3,
       name: 'Student Visa',
       img: 'src/assets/visa.png',
       review:
         'The New Zealand government has strong quality assurance systems to ensure high-quality education at all levels of the education system, both public and private.'
     },
     {
-      id:4,
+      id: 4,
       name: 'Tourist Visa',
       img: 'src/assets/visa.png',
       review:
         'Issued to individuals traveling to a country for leisure, sightseeing, or recreational purposes. Generally, it prohibits engaging in any form of employment during the visit'
     },
     {
-      id:5,
+      id: 5,
       name: 'Family Visa',
       img: 'src/assets/visa.png',
       review:
         ' Granted to spouses, children, or other dependents of individuals who hold a valid visa in the host country. It allows family members to join the primary visa holder during their stay.'
     }
   ];
-  function changeContent(idx){
+  function changeContent(idx) {
     setTitle(data[idx].name);
     setReview(data[idx].review);
     setImg(data[idx].img);
   }
-  const [title,setTitle] = useState(data[0].name)
-  const [review,setReview] = useState(data[0].review)
-  const [img,setImg] = useState(data[0].img)
+  const [title, setTitle] = useState(data[0].name)
+  const [review, setReview] = useState(data[0].review)
+  const [img, setImg] = useState(data[0].img)
   return (
     <div className="service-main">
       <div className="bannerBox">
@@ -78,16 +78,16 @@ function Service() {
       <motion.div
         initial={{ opacity: 0.3 }}
         whileInView={{ opacity: 1 }}
-        transition={{ duration: .5  }}
+        transition={{ duration: .5 }}
       >
         <div className="visaTypeCrousal">
           <VisaTypes data={data} changeContent={changeContent} />
         </div>
       </motion.div>
       <motion.div
-        initial={{ opacity: 0.3,x:-100 }}
-        whileInView={{ opacity: 1, x:0 }}
-        transition={{ ease: "linear", duration: 0.5  }}
+        initial={{ opacity: 0.3, x: -100 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ ease: "linear", duration: 0.5 }}
       >
         <div className="information">
           <div className="upper">
@@ -112,6 +112,9 @@ function Service() {
 
         </div>
       </motion.div>
+      <div className="conclusion">
+        <h1>Unlocking Borders, Empowering Journeys: Your Trusted Partner in Immigration Services.</h1>
+      </div>
       <Footer />
     </div>
   );

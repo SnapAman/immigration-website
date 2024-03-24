@@ -40,13 +40,14 @@
 
 .student-visa {
     margin-bottom: 20px;
-    font-size: larger;
+    font-size: 2rem;
     text-align: center;
     position: relative;
 }
 
 .student-visa h1 {
     margin-top: 0;
+    margin-bottom: 40px;
     display: inline-block;
     position: relative;
 }
@@ -97,14 +98,14 @@
     margin-bottom: 20px;
 }
 
-.info-box h3 {
-    font-size: 1.2rem;
+.info-box h2 {
+    font-size: 2rem;
 }
 
 .info-box p {
     font-family: 'poppins';
     margin-top: 13px;
-    font-size: 1.1rem;
+    font-size: 1.4rem;
 }
 
 .title {

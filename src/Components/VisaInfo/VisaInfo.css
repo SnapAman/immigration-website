@@ -1,5 +1,5 @@
 .VisaInfoBackground {
-    background-image: url('../src/assets/Rectangle.jpg');
+    background-image: url('../src/assets/VisaInfo.jpg');
     height: 100vh;
     background-repeat: no-repeat;
     background-position: center;
@@ -17,14 +17,14 @@
 .VisaInfoText h1 {
     font-weight: 600;
     font-size: 4rem;
-    color: #000;
+    color: white;
 }
 
 .VisaInfoText h2 {
     margin-top: 40px;
     width: 70%;
     font-size: 2rem;
-    color: #fff;
+    color: white;
 }
 
 .VisaInfoButton {
@@ -76,28 +76,51 @@
     gap: 10px;
     /* Adjust the gap between child divs */
 }
-
+.title-head{
+    color: black;
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 30px;
+}
 .childDiv {
     background-color: lightblue;
-    padding: 20px;
+    padding: 10px;
     text-align: center;
     border-radius: 8px;
+    margin: 10px;
 }
 
 .uniqueClass {
     background-color: #ffffff;
     height: 160px;
-    width: 406px;
+    width: 606px;
     filter: drop-shadow(6px 10px 6.599999904632568px rgba(0, 0, 0, 0.25));
     border-radius: 12px;
-    border: 1px solid #808080;
+    border: 1px solid #c4c4c4;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 .uniquclassText{
-    text-align: start;
+    text-align: center;
+    font-size:1.4rem ;
 }
 .uniquclassText h4{
-    margin-top: 10px;
+    font-size: 1.5rem;
+    margin-top: 15px;
+    font-weight: 100;
+}
+.conclusion-container{
+    height: 30%;
+    background-color: rgba(0, 0, 0, 0.66);
+}
+.conclusion-container h2{
+    color: white;
+    font-size: 2rem;
+    display: grid;
+    /* place-items: center; */
+    text-align: center;
+    margin-top: 40px;
+    padding: 40px;
+    font-family: "Poppins", sans-serif;
 }

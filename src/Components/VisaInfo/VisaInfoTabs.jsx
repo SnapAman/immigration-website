@@ -33,11 +33,11 @@ export default function VisaInfoTabs() {
           </div>
           <div className="info-container">
             <div className='info-box'>
-              <h3>About</h3>
+              <h2>About</h2>
               <p>Essential Work Visa / Resident Visa allows individuals to work and reside in a foreign country based on their essential skills or qualifications. It facilitates workforce mobility to fill critical roles in sectors experiencing shortages or high demand.</p>
             </div>
             <div className='info-box'>
-            <h3>Eligibility Criteria</h3>
+            <h2>Eligibility Criteria</h2>
             <p>Eligibility criteria typically include possessing relevant skills or qualifications in demand, securing a job offer from an approved employer, meeting health and character requirements, and demonstrating the ability to support oneself financially during the stay.</p>
             </div>
             <Button variant="contained" disableElevation className="grayButton">Learn more</Button>
@@ -54,11 +54,11 @@ export default function VisaInfoTabs() {
           </div>
           <div className="info-container">
             <div className='info-box'>
-              <h3>About</h3>
+              <h2>About</h2>
               <p>Partnership work/resident visas are designed for individuals in committed relationships with New Zealand citizens or residents. These visas enable partners to live, work, and study in New Zealand while supporting their partner's application for residency.</p>
             </div>
             <div className='info-box'>
-            <h3>Eligibility Criteria</h3>
+            <h2>Eligibility Criteria</h2>
             <p>Eligibility typically requires proof of a genuine and stable relationship, such as cohabitation or marriage, with a New Zealand citizen or resident. Applicants must meet health and character requirements and demonstrate financial stability to support themselves during their stay in New Zealand.</p>
             </div>
             <Button variant="contained" disableElevation className="grayButton">Learn more</Button>
@@ -75,11 +75,11 @@ export default function VisaInfoTabs() {
           </div>
           <div className="info-container">
             <div className='info-box'>
-              <h3>About</h3>
+              <h2>About</h2>
               <p>This visa allows parents to visit or reside with their children who are citizens or residents of a particular country. It enables family reunification and facilitates spending extended periods of time together.</p>
             </div>
             <div className='info-box'>
-            <h3>Eligibility Criteria</h3>
+            <h2>Eligibility Criteria</h2>
             <p>Eligibility typically requires proof of relationship, financial stability, health insurance, and sometimes evidence of accommodation. Some countries may impose additional criteria, such as income thresholds or sponsorship requirements.</p>
             </div>
             <Button variant="contained" disableElevation className="grayButton">Learn more</Button>
@@ -96,11 +96,11 @@ export default function VisaInfoTabs() {
           </div>
           <div className="info-container">
             <div className='info-box'>
-              <h3>About</h3>
+              <h2>About</h2>
               <p>Our student visa service is designed to assist individuals who wish to pursue their academic goals abroad. Whether you're planning to enroll in a university, college we provide support to help you with application.</p>
             </div>
             <div className='info-box'>
-            <h3>Eligibility Criteria</h3>
+            <h2>Eligibility Criteria</h2>
             <p>Eligibility Criteria:Applicants must have acceptance from a recognized educational institution, financial stability, valid passport, health requirements fulfilled, and a clean criminal record.</p>
             </div>
             <Button variant="contained" disableElevation className="grayButton">Learn more</Button>
@@ -117,11 +117,11 @@ export default function VisaInfoTabs() {
           </div>
           <div className="info-container">
             <div className='info-box'>
-              <h3>About</h3>
+              <h2>About</h2>
               <p>A visitor visa allows individuals to travel to another country for tourism, visiting family or friends, attending business meetings, or medical treatment. It's typically a temporary authorization granted by the destination country's government.</p>
             </div>
             <div className='info-box'>
-            <h3>Eligibility Criteria</h3>
+            <h2>Eligibility Criteria</h2>
             <p>Eligibility criteria for a visitor visa often include having a valid passport, demonstrating sufficient funds to cover expenses during the visit, providing evidence of ties to the home country to ensure the applicant's return, and not having a criminal record or any immigration violations.</p>
             </div>
             <Button variant="contained" disableElevation className="grayButton">Learn more</Button>
