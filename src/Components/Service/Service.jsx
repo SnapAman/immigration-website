@@ -47,7 +47,7 @@ function Service() {
     {
       id: 6,
       name: 'Humanitarian Appeals',
-      img: 'src/assets/Humanitarianvisa.jpg',
+      img: 'src/assets/Humanitarianvisa.jpg ',
       review:
         'Explore our Humanitarian Appeals services tailored for New Zealand. If youre seeking refuge or facing persecution, our compassionate team is here to support you through the appeal process. We work tirelessly to ensure your voice is heard and your rights are upheld. Contact us today to learn more about how we can assist you in seeking humanitarian relief in New Zealand.'
     },
