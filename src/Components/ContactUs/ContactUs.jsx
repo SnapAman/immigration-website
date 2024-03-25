@@ -1,5 +1,5 @@
 // ContactUs.js
-import React from 'react';
+import React, { useState } from 'react';
 import '../ContactUs/ContactUs.css';
 import HomeIcon from '@mui/icons-material/Home';
 import Button from '@mui/material/Button';
@@ -11,6 +11,29 @@ import CallIcon from '@mui/icons-material/Call';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
 
 function ContactUs() {
+
+  const [name, setName] = useState("")
+  const[email,setEmail]=useState("")
+  const[phone,setPhone]=useState("")
+  const[subject,setSubject]=useState("")
+  const[message,setMessage]=useState("")
+
+  function submit() {
+    console.log(name)
+    console.log(email)
+    console.log(phone)
+    console.log(subject)
+    console.log(message)
+  }
+
+  function reset() {
+    setName("")
+    setEmail("")
+    setPhone("")
+    setSubject("")
+    setMessage("")
+  }
+
   return (
     <>
       <div className="ContactBackground">
@@ -21,7 +44,7 @@ function ContactUs() {
 
       <div className="contact-info">
         <div className="Contactcontainer" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-        <h1 className='txt2'>GET IN TOUCH WITH US</h1>
+          <h1 className='txt2'>GET IN TOUCH WITH US</h1>
           <div className="phone-mail" style={{ width: '100%', maxWidth: '400px', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
             <div className="sect2-body" style={{ display: 'flex', alignItems: 'center', width: '100%' }}>
               <div style={{ backgroundColor: 'black', borderRadius: '50%', width: '50px', height: '50px', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
@@ -71,12 +94,12 @@ function ContactUs() {
         <div className="contact-form">
           <h1 className="txt2">FEEL FREE TO WRITE</h1>
           <div className="input1">
-            <TextField id="outlined-basic" label="Enter Name" variant="outlined" />
-            <TextField id="outlined-basic" label="Enter Email" variant="outlined" />
+            <TextField id="outlined-basic" label="Enter Name" value={name} onChange={(e) => { setName(e.target.value) }} variant="outlined" required/>
+            <TextField id="outlined-basic" label="Enter Email" value={email} onChange={(e) => { setEmail(e.target.value) }} variant="outlined" required/>
           </div>
           <div className="input1">
-            <TextField id="outlined-basic" label="Enter Phone" variant="outlined" />
-            <TextField id="outlined-basic" label="Enter Subject" variant="outlined" />
+            <TextField id="outlined-basic" label="Enter Phone" value={phone} onChange={(e) => { setPhone(e.target.value) }} variant="outlined" required />
+            <TextField id="outlined-basic" label="Enter Subject" value={subject} onChange={(e) => { setSubject(e.target.value) }} variant="outlined" required />
           </div>
           <div className="input1">
             <TextField
@@ -84,18 +107,19 @@ function ContactUs() {
               label="Enter Message"
               multiline
               rows={4}
-              defaultValue=" "
+              value={message} onChange={(e) => { setMessage(e.target.value) }}
+              required
             />
           </div>
           <div className='button-div'>
-            <Button variant="contained" style={{ marginRight: '20px' }} className='btn1'>Submit</Button>
-            <Button variant="contained" style={{ marginLeft: '20px' }} className='btn1'>ResetS</Button>
+            <Button variant="contained" style={{ marginRight: '20px' }} className='btn1' onClick={submit}>Submit</Button>
+            <Button variant="contained" style={{ marginLeft: '20px' }} className='btn1' onClick={reset}>ResetS</Button>
           </div>
         </div>
       </div>
 
       <div className="address-map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3190.5578592108477!2d174.80515409999998!3d-36.9009242!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d0d48e6197bb6b3%3A0x207961a16f132730!2s415%20Great%20South%20Road%2C%20Ellerslie%2C%20Auckland%201051%2C%20New%20Zealand!5e0!3m2!1sen!2sin!4v1711193921939!5m2!1sen!2sin" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" className='Map'></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3190.5578592108477!2d174.80515409999998!3d-36.9009242!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d0d48e6197bb6b3%3A0x207961a16f132730!2s415%20Great%20South%20Road%2C%20Ellerslie%2C%20Auckland%201051%2C%20New%20Zealand!5e0!3m2!1sen!2sin!4v1711193921939!5m2!1sen!2sin" width="600" height="450" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade" className='Map'></iframe>
       </div>
 
 
