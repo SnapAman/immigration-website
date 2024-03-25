@@ -6,10 +6,8 @@ function AboutUs() {
   return (
     <>
       <div className="AboutBackground">
-        <div className="txt1">
-        </div>
       </div>
-
+      
       <div className="header-body">
         <div className="image-sec">
           <img src="../src/assets/About-img1.jpg" alt="abc" className='im1' />

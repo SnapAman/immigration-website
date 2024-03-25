@@ -67,8 +67,8 @@ function App() {
               <li className="nav__item">
                 <NavLink to="/services" className="nav__link" onClick={closeMenuOnMobile}>SERVICES</NavLink>
                 </li>
-              <li className="nav__item"><NavLink to="/news" className="nav__link" onClick={closeMenuOnMobile}>NEWS / INFO</NavLink>
-              </li>
+              {/* <li className="nav__item"><NavLink to="/news" className="nav__link" onClick={closeMenuOnMobile}>NEWS / INFO</NavLink>
+              </li> */}
               <li className="nav__item">
                 <NavLink to="/contact" className="nav__link" onClick={closeMenuOnMobile}>CONTACT</NavLink>
               </li>
