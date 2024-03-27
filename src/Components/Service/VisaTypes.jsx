@@ -13,10 +13,22 @@ function VisaTypes({data,changeContent}) {
         centerMode: true,
         // dots: true,
         infinite: true,
-        speed: 500,
+        // speed: 500,
         slidesToShow: 3,
-        centerPadding: "100px",
-        // slidesToScroll: 1
+        // autoplay: true,
+        centerPadding: "-10px",
+        responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                infinite: true,
+                dots: true,
+                centerPadding: "0px",
+              }
+            }
+        ]
     };
 
     const sliderRef = React.useRef(null);
@@ -28,14 +40,7 @@ function VisaTypes({data,changeContent}) {
     const handleNext = () => {
         sliderRef.current.slickNext();
     };
-    useEffect(()=>{
-        const sliding = setInterval(()=>{
-            sliderRef.current.slickNext();
-        },3000)
-        return ()=>clearInterval(sliding)
-    },[])
 
-    
 
     return (
         <>
@@ -53,11 +58,11 @@ function VisaTypes({data,changeContent}) {
                             <div className="slideWrapper visaSlide">
 
                                 <div className="slide-image-container">
-                                    <img src={d.img} alt="" className="slide-image" />
+                                    <img src={d.img} alt="" className="slide-image2" />
                                 </div>
                                 <div className="slide-content">
-                                    <p className="slide-name">{d.name}</p>
-                                    <p className="slide-review">{d.review}</p>
+                                    <p className="slide-name2">{d.name}</p>
+                                    <p className="slide-review2">{d.review}</p>
                                 </div>
                                 <div className="btnBox">
                                     <button onClick={()=>{changeContent(index)}}>Learn more..</button>

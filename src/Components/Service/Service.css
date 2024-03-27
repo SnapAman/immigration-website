@@ -1,13 +1,14 @@
-.bannerBox{
+.bannerBox {
     position: relative;
 }
-.serviceBanner{
+
+.serviceBanner {
     width: 100%;
     object-fit: cover;
     height: 100vh;
 }
 
-.bannerBox h1{
+.bannerBox h1 {
     position: absolute;
     top: 40%;
     left: 50%;
@@ -16,7 +17,7 @@
     font-weight: 600;
 }
 
-.reachUsBox{
+.reachUsBox {
     position: relative;
     bottom: 0;
     left: 50%;
@@ -32,39 +33,42 @@
     padding: 20px;
 }
 
-.reachUsBox .left{
+.reachUsBox .left {
     display: flex;
     padding: 20px 0;
     gap: 20px;
     align-items: center;
     min-width: 40%;
 }
-.reachUsBox .left img{
+
+.reachUsBox .left img {
     border-radius: 50%;
     border: gray 3px solid;
     object-fit: cover;
     height: 60px;
     width: 60px;
 }
-.reachUsBox .left .call{
+
+.reachUsBox .left .call {
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 10px;
     font-size: 20px;
 }
-.reachUsBox .left .call p:nth-child(2){
-    font-weight:600;
+
+.reachUsBox .left .call p:nth-child(2) {
+    font-weight: 600;
     font-size: 22px;
 }
 
-.reachUsBox .middleStick{
+.reachUsBox .middleStick {
     width: 4px;
     background-color: #808080;
     margin: 0 10px;
 }
 
-.reachUsBox .right{
+.reachUsBox .right {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -73,11 +77,13 @@
     min-width: 40%;
     max-width: 50%;
 }
-.reachUsBox .right p{
+
+.reachUsBox .right p {
     font-size: 16px;
     text-align: center;
 }
-.reachUsBox .right button{
+
+.reachUsBox .right button {
     width: fit-content;
     margin: 0 auto;
     background-color: #808080;
@@ -88,17 +94,19 @@
     font-weight: 600;
 }
 
-.information{
+.information {
     padding: 50px 200px;
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
-.information .upper{
+
+.information .upper {
     display: flex;
     gap: 50px;
 }
-.information .upper img{
+
+.information .upper img {
     min-width: 300px;
     max-width: 300px;
     object-fit: cover;
@@ -106,36 +114,38 @@
     border-radius: 20px;
     overflow: hidden;
 }
-.information .upperRight{
+
+.information .upperRight {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
-.information .upperRight h1{
+
+.information .upperRight h1 {
     font-size: 50px;
     font-weight: 400;
-    font-size: rgb(38, 38, 38);
 }
-.information .upperRight p{
+
+.information .upperRight p {
     font-size: 30px;
-    font-size: rgb(63, 63, 63);
-}
-.information .bottom {
-    font-size: rgb(63, 63, 63);
-
 }
 
-.information .bottom li{
+.information .bottom {}
+
+.information .bottom li {
     font-size: 20px;
     padding: 2px 5px;
     margin-left: 30px;
-    font-size: rgb(63, 63, 63);
 }
-.conclusion{
-    height: 30vh;
+
+.conclusion {
     background-color: rgba(0, 0, 0, 0.66);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.conclusion h1{
+
+.conclusion h1 {
     color: white;
     font-size: 3rem;
     display: grid;
@@ -144,4 +154,200 @@
     /* margin-top: 40px; */
     padding: 40px;
     font-family: "Poppins", sans-serif;
+}
+
+
+@media (max-width:1200px) {
+
+    .bannerBox h1 {
+        font-size: 5rem;
+        font-weight: 600;
+    }
+
+    .information {
+        padding: 50px 100px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .information .upper {
+        gap: 20px;
+    }
+
+    .information .upper img {
+        width: 100%;
+        max-width: 250px;
+        aspect-ratio: 4/3;
+        object-fit: cover;
+    }
+
+    .information .upperRight {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .information .upperRight h1 {
+        font-size: 40px;
+        font-weight: 400;
+        font-size: rgb(38, 38, 38);
+    }
+
+    .information .upperRight p {
+        font-size: 20px;
+        font-size: rgb(63, 63, 63);
+    }
+
+    .information .bottom {
+        color: rgb(63, 63, 63);
+    }
+
+    .information .bottom li {
+        font-size: 16px;
+    }
+
+    .conclusion {
+        background-color: rgba(0, 0, 0, 0.66);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .conclusion h1 {
+        font-size: 2rem;
+        font-family: "Poppins";
+    }
+}
+
+@media (max-width:700px) {
+
+    .bannerBox h1 {
+        font-size: 3rem;
+        font-weight: 600;
+    }
+
+    .information {
+        padding: 30px 30px;
+        gap: 10px;
+    }
+
+    .information .upper {
+        gap: 10px;
+        flex-direction: column;
+    }
+
+    .information .upper img {
+        min-width: 100%;
+        aspect-ratio: 4/3;
+        object-fit: cover;
+    }
+
+    .information .upperRight {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .information .upperRight h1 {
+        font-size: 24px;
+        font-weight: 500;
+        font-size: rgb(38, 38, 38);
+    }
+
+    .information .upperRight p {
+        font-size: 18px;
+        font-size: rgb(63, 63, 63);
+    }
+
+    .information .bottom {
+        color: rgb(63, 63, 63);
+    }
+
+    .information .bottom h2 {
+        font-size: 17px;
+    }
+
+    .information .bottom li {
+        font-size: 14px;
+    }
+
+    .conclusion {
+        background-color: rgba(0, 0, 0, 0.66);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .conclusion h1 {
+        font-size: 1.5rem;
+        font-family: "Poppins";
+    }
+
+    .reachUsBox {
+        position: relative;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%) translateY(-100%);
+        max-width: 800px;
+
+        display: flex;
+        justify-content: space-between;
+        background-color: black;
+        color: white;
+        border-radius: 0px;
+        border: 0;
+        padding: 10px;
+    }
+
+    .reachUsBox .left {
+        padding: 0;
+        gap: 10px;
+        min-width: 40%;
+    }
+
+    .reachUsBox .left img {
+        object-fit: cover;
+        height: 30px;
+        width: 30px;
+    }
+
+    .reachUsBox .left .call {
+        gap: 10px;
+        font-size: 14px;
+    }
+
+    .reachUsBox .left .call p:nth-child(2) {
+        font-weight: 600;
+        font-size: 16px;
+    }
+
+    .reachUsBox .middleStick {
+        width: 3px;
+        background-color: #808080;
+        margin: 0 5px;
+    }
+
+    .reachUsBox .right {
+        padding: 10px 0;
+        gap: 10px;
+        min-width: 40%;
+        max-width: 50%;
+    }
+
+    .reachUsBox .right p {
+        font-size: 14px;
+    }
+
+    .reachUsBox .right button {
+        width: fit-content;
+        margin: 0 auto;
+        background-color: #808080;
+        color: white;
+        padding: 5px 10px;
+        border-radius: 10px;
+        font-size: 18px;
+        font-weight: 600;
+    }
+
 }

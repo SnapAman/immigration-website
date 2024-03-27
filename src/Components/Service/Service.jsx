@@ -98,7 +98,9 @@ function Service() {
       >
         <div className="information">
           <div className="upper">
-            <img src={img} alt="" />
+            <div className="img-box">
+              <img src={img} alt="" />
+            </div>
             <div className="upperRight">
               <h1>{title}</h1>
               <p>{review}</p>

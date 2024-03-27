@@ -20,6 +20,8 @@
     border: 1px solid gray;
     border-radius: 20px ;
     padding: 10px;
+    display: flex;
+    flex-direction: column;
 }
 
 .service-main .slide-content{
@@ -34,4 +36,72 @@
 .service-main .slick-slide.slick-center{
     transform: scale(1);
     opacity: 1;
+}
+
+.slide-image2{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
+}
+
+.visaSlide .slide-content{
+    font-family: 'Poppins';
+    /* margin-top: auto; */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.visaSlide .slide-name2{
+    font-size: 16px;
+    font-weight: 600;
+}
+.visaSlide .slide-review2{
+    font-size: 14px;
+}
+.visaSlide .btnBox{
+    margin-top: auto;
+}
+@media (max-width:1024px) {
+    .slide-image2{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    .slide-image-container{
+        height: 200px;
+    }
+    .slideWrapper {
+        margin: 0 150px;
+    }
+    .visaSlide{
+        min-height: 420px;
+    }
+}
+@media (max-width:780px) {
+    
+    .slide-image-container{
+        height: 200px;
+    }
+    .slideWrapper {
+        margin: 0 80px;
+    }
+    .visaSlide{
+        min-height: 420px;
+    }
+    .visaSlide .slide-name2{
+        font-size: 14px;
+        font-weight: 600;
+    }
+    .visaSlide .slide-review2{
+        font-size: 12px;
+    }
+}
+@media (max-width:500px) {
+    .slideWrapper {
+        margin: 0;
+    }
 }
