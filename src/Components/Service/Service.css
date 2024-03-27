@@ -1,3 +1,32 @@
+.gateway-wrapper {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0rem;
+}
+
+.gateway-wrapper h1 {
+    font-size: 3rem;
+    margin: 0px 0px;
+}
+.sep-line {
+    height: 7px;
+    border-radius: 50px;
+    background-color: black;
+    width: 20vw;
+}
+
+.gateway-wrapper-para {
+    padding: 0% 5%;
+}
+
+.gateway-wrapper-para p {
+    font-size: 1.3rem;
+    font-family: "Poppins", sans-serif;
+    margin-top: 10px;
+}
+
 .bannerBox {
     position: relative;
 }
@@ -147,7 +176,7 @@
 
 .conclusion h1 {
     color: white;
-    font-size: 3rem;
+    font-size: 2rem;
     display: grid;
     /* place-items: center; */
     text-align: center;
@@ -280,8 +309,9 @@
     }
 
     .conclusion h1 {
-        font-size: 1.5rem;
+        font-size: 0.2rem !important;
         font-family: "Poppins";
+        font-weight: 100;
     }
 
     .reachUsBox {

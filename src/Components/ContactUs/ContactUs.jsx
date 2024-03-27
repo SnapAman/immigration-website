@@ -38,7 +38,7 @@ function ContactUs() {
     <>
       <div className="ContactBackground">
         <div className="txt1">
-          <h1>Contact Us</h1>
+          <h2>Contact Us</h2>
         </div>
       </div>
 

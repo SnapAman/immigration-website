@@ -40,6 +40,41 @@ function Service() {
       name: 'Humanitarian Appeals',
       img: 'src/assets/Humanitarianvisa.jpg ',
     },
+    {
+      id: 7,
+      name: 'Accredited Employer Work Visa',
+      img: 'src/assets/WorkVisa.jpg',
+    },
+    {
+      id: 8,
+      name: 'Entreprenuer and Investor Category applications',
+      img: 'src/assets/partnerVisa.jpg ',
+    },
+    {
+      id: 9,
+      name: 'IPT Appeals',
+      img: 'src/assets/parentsVisa.jpg',
+    },
+    {
+      id: 10,
+      name: 'Post-Study Work Visa',
+      img: 'src/assets/visitorVisa.jpg',
+    },
+    {
+      id: 11,
+      name: 'Residence Class Visa - Migrant Investment Categories',
+      img: 'src/assets/InvestmentCategory.jpg ',
+    },
+    {
+      id: 12,
+      name: 'Residence Class Visa - Skilled Migrant Category',
+      img: 'src/assets/SkilledMigrant.jpg ',
+    },
+    {
+      id: 12,
+      name: 'Section 61 Requests and Special Directions to the Minister of Immigration',
+      img: 'src/assets/Section61.jpg ',
+    }
   ];
   function changeContent(idx) {
     setTitle(data[idx].name);
@@ -50,7 +85,10 @@ function Service() {
   const [review, setReview] = useState(data[0].review)
   const [img, setImg] = useState(data[0].img)
   return (
+    <>
     <div className="service-main">
+
+
       <div className="bannerBox">
         <img src={banner} className='serviceBanner' alt="" />
         <h1>Services</h1>
@@ -71,6 +109,21 @@ function Service() {
           </div>
         </div>
       </div>
+      <div className='gateway-wrapper'>
+    <h1>Your Gateway to Global Opportunities</h1>
+  <div className='sep-line'></div>
+    <div className='gateway-wrapper-para'>
+      <p>We are committed to assisting a diverse clientele around the world, regardless of their current location. Whether you reside internationally and require visa assistance for travel to New Zealand, or are already established within the country, our experienced team is here to guide you.</p>
+      <p>
+      Our firm possesses extensive experience in serving clients from various regions, including: Asia: India, China, Cambodia, and Vietnam, South Africa, Fiji, Iran, North America and Europe.
+      </p>
+      <p>
+      We consistently assist individuals migrating from overseas, offering ongoing support even if our initial consultation occurs upon their arrival with Resident Visas. Our comprehensive legal services encompass the full spectrum of immigration matters, including
+      </p>
+    </div>
+
+</div>
+
       <motion.div
         initial={{ opacity: 0.3 }}
         whileInView={{ opacity: 1 }}
@@ -80,7 +133,7 @@ function Service() {
           <VisaTypes data={data} changeContent={changeContent} />
         </div>
       </motion.div>
-      <motion.div
+      {/* <motion.div
         initial={{ opacity: 0.3, x: -100 }}
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ ease: "linear", duration: 0.5 }}
@@ -109,12 +162,13 @@ function Service() {
           </div>
 
         </div>
-      </motion.div>
+      </motion.div> */}
       <div className="conclusion">
         <h1>Unlocking Borders, Empowering Journeys: Your Trusted Partner in Immigration Services.</h1>
       </div>
       <Footer />
     </div>
+    </>
   );
 }
 

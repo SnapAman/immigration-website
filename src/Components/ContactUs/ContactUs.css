@@ -55,7 +55,7 @@
 
 .txt1 {
     color: #111111;
-    font-size: 80px;
+    font-size: 50px;
     text-align: center;
     opacity: 1;
     z-index: 1;
@@ -64,7 +64,7 @@
 /* Media query for smaller screens */
 @media only screen and (max-width: 768px) {
     .txt1 {
-        font-size: 40px; /* Adjust font size for smaller screens */
+        font-size: 30px; /* Adjust font size for smaller screens */
     }
     
     .ContactBackground {
@@ -171,7 +171,7 @@
 }
 
 .main-Contact {
-    font-size: 25px;
+    font-size: 1rem;
     font-weight: 200;
 }
 
