@@ -14,42 +14,31 @@ function Service() {
       id: 1,
       name: 'Residence Class Visa-Family Categories',
       img: 'src/assets/FamilyCategory.jpg',
-      review: 'Discover our Residence Class Visa - Family Categories, designed to reunite families in New Zealand. From spouse and child visas to parent and dependent relative options, we provide pathways for family members to join their loved ones.'
     },
     {
       id: 2,
       name: 'Visitor Visa',
       img: 'src/assets/VisitorV.jpg',
-      review:
-        'We handle the submission of your visa application to the appropriate immigration authorities, ensuring compliance with all regulations and deadlines.'
     },
     {
       id: 3,
       name: 'Student Visa',
       img: 'src/assets/Student.jpg',
-      review:
-        'The New Zealand government has strong quality assurance systems to ensure high-quality education at all levels of the education system, both public and private.'
     },
     {
       id: 4,
       name: 'Limited Visa',
       img: 'src/assets/Limitedvisa.jpg',
-      review:
-        '"Explore our Limited Visa options for temporary stays in New Zealand. Whether youre visiting for tourism, studying, or working, we provide tailored visa solutions to meet your needs. Our team is dedicated to facilitating smooth visa processing and ensuring your temporary stay is hassle free'
     },
     {
       id: 5,
       name: 'Partnership Visa',
       img: 'src/assets/Partnershipvisa.jpg',
-      review:
-        'Partnership Visa services tailored for New Zealand. Whether youre married, in a civil union, or a de facto relationship, we assist couples in reuniting and building a life together in this beautiful country. Our team specializes in navigating the intricacies of New Zealand immigration laws, ensuring a seamless application process for you and your partner.'
     },
     {
       id: 6,
       name: 'Humanitarian Appeals',
       img: 'src/assets/Humanitarianvisa.jpg ',
-      review:
-        'Explore our Humanitarian Appeals services tailored for New Zealand. If youre seeking refuge or facing persecution, our compassionate team is here to support you through the appeal process. We work tirelessly to ensure your voice is heard and your rights are upheld. Contact us today to learn more about how we can assist you in seeking humanitarian relief in New Zealand.'
     },
   ];
   function changeContent(idx) {

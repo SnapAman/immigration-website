@@ -64,9 +64,6 @@ function VisaTypes({data,changeContent}) {
                                     <p className="slide-name2">{d.name}</p>
                                     <p className="slide-review2">{d.review}</p>
                                 </div>
-                                <div className="btnBox">
-                                    <button onClick={()=>{changeContent(index)}}>Learn more..</button>
-                                </div>
                             </div>
                         </div>
                     ))}
