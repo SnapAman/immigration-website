@@ -9,6 +9,7 @@
 .gateway-wrapper h1 {
     font-size: 3rem;
     margin: 0px 0px;
+    margin-top: 20px;
 }
 .sep-line {
     height: 7px;
@@ -50,7 +51,7 @@
     position: relative;
     bottom: 0;
     left: 50%;
-    transform: translateX(-50%) translateY(-110%);
+    transform: translateX(-50%) translateY(0%);
     max-width: 800px;
 
     display: flex;

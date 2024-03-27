@@ -1,86 +1,163 @@
 import React from 'react';
 import '../Booking/Booking.css';
-// import Box from '@mui/joy/Box';
-// import Card from '@mui/joy/Card';
-// import CardCover from '@mui/joy/CardCover';
-// import CardContent from '@mui/joy/CardContent';
-// import Typography from '@mui/joy/Typography';
+import Card from '@mui/joy/Card';
+import AspectRatio from '@mui/joy/AspectRatio';
+import CardContent from '@mui/joy/CardContent';
+import Typography from '@mui/joy/Typography';
+import Advisor1 from '../../assets/Alastair.jpg'
+import Advisor2 from '../../assets/Sarfraz.jpg'
+import Advisor3 from '../../assets/Aakanksha.jpg'
+import Advisor4 from '../../assets/Naved.jpg'
+import Advisor5 from '../../assets/Shazia.jpg'
+import Footer from '../Footer/Footer';
+import Button from '@mui/material/Button';
 
 
 const Booking = () => {
   return (
     <>
-    <div className="BookingBackground">
-      <h1>Free&nbsp; Initial&nbsp; Appointment</h1>
-    </div>
-    {/* <div className='advisor-wrapper'>
-      <h1>Choose Your Advisor</h1>
-      <div className='advisor-container'>
-      <Box
-      sx={{
-        perspective: '1000px',
-        transition: 'transform 0.4s',
-        '& > div, & > div > div': {
-          transition: 'inherit',
-        },
-        '&:hover': {
-          '& > div': {
-            transform: 'rotateY(30deg)',
-            '& > div:nth-child(2)': {
-              transform: 'scaleY(0.9) translate3d(20px, 30px, 40px)',
-            },
-            '& > div:nth-child(3)': {
-              transform: 'translate3d(45px, 50px, 40px)',
-            },
-          },
-        },
-      }}
-    >
-      <Card
-        variant="outlined"
-        sx={{
-          minHeight: '280px',
-          width: 320,
-          backgroundColor: '#fff',
-          borderColor: '#000',
-        }}
-      >
-        <Typography level="h2" fontSize="lg" textColor="#000">
-          Card
-        </Typography>
-        <CardCover
-          sx={{
-            background:
-              'linear-gradient(to top, rgba(0,0,0,0.4), rgba(0,0,0,0) 200px), linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0) 300px)',
-            border: '1px solid',
-            borderColor: '#777',
-            backdropFilter: 'blur(1px)',
-          }}
-        >
-          <Typography level="h2" fontSize="lg" textColor="#fff">
-            Card Cover
-          </Typography>
-        </CardCover>
-        <CardContent
-          sx={{
-            alignItems: 'self-end',
-            justifyContent: 'flex-end',
-            background: 'linear-gradient(to top, rgba(0,0,0,0.3), rgba(0,0,0,0.3))',
-            border: '1px solid',
-            borderColor: '#000',
-            backdropFilter: 'blur(1px)',
-          }}
-        >
-          <Typography level="h2" fontSize="lg" textColor="#fff" m={2}>
-            Card Content
-          </Typography>
-        </CardContent>
-      </Card>
-    </Box>
-
+      <div className="BookingBackground">
+        <h1>Free&nbsp; Initial&nbsp; Appointment</h1>
       </div>
+      <div className='advisor-wrapper'>
+        <h1>Choose Your Advisor</h1>
+        <div className='advisor-container'>
+          <Card className='card' sx={{ transition: 'box-shadow 0.3s' }} onMouseOver={(e) => { e.currentTarget.style.boxShadow = '0px 0px 5px 1px rgba(0,0,0,0.5)'; }} onMouseOut={(e) => { e.currentTarget.style.boxShadow = 'none'; }}>
 
-    </div> */}
+            <AspectRatio minHeight="450px" maxHeight="500px">
+              <img
+                src={Advisor1}
+                loading="lazy"
+                alt=""
+              />
+            </AspectRatio>
+            <CardContent orientation="horizontal">
+              <div style={{textAlign : 'left'}}>
+                <Typography fontSize="lg" fontWeight="lg">Alastair McClymont</Typography>
+                <Typography level="body-xs">– BA, LLB</Typography>
+              </div>
+              <Button
+                variant="contained"
+                size="md"
+                color="primary"
+                aria-label="Explore Bahamas Islands"
+                sx={{ ml: 'auto', alignSelf: 'center', fontWeight: 600 }}>
+                Book Now
+              </Button>
+            </CardContent>
+          </Card>
+          <Card className='card' sx={{ transition: 'box-shadow 0.3s' }} onMouseOver={(e) => { e.currentTarget.style.boxShadow = '0px 0px 5px 1px rgba(0,0,0,0.5)'; }} onMouseOut={(e) => { e.currentTarget.style.boxShadow = 'none'; }} >
+
+            <AspectRatio minHeight="450px" maxHeight="500px">
+              <img
+                src={Advisor2}
+                loading="lazy"
+                alt=""
+              />
+            </AspectRatio>
+            <CardContent orientation="horizontal">
+              <div style={{textAlign : 'left'}}>
+                <Typography fontSize="lg" fontWeight="lg">Sarfraz (Saif) Shaikh</Typography>
+                <Typography level="body-xs">Licensed Adviser #200900488</Typography>
+              </div>
+              <Button
+                variant="contained"
+                size="md"
+                color="primary"
+                aria-label="Explore Bahamas Islands"
+                sx={{ ml: 'auto', alignSelf: 'center', fontWeight: 600 }}>
+                Book Now
+              </Button>
+            </CardContent>
+          </Card>
+          <Card className='card' sx={{ transition: 'box-shadow 0.3s' }} onMouseOver={(e) => { e.currentTarget.style.boxShadow = '0px 0px 5px 1px rgba(0,0,0,0.5)'; }} onMouseOut={(e) => { e.currentTarget.style.boxShadow = 'none'; }} >
+
+            <AspectRatio minHeight="450px" maxHeight="500px">
+              <img
+                src={Advisor3}
+                loading="lazy"
+                alt=""
+              />
+            </AspectRatio>
+            <CardContent orientation="horizontal">
+              <div style={{textAlign : 'left'}}>
+                <Typography fontSize="lg" fontWeight="lg">Aakanksha McClymont</Typography>
+                <Typography level="body-xs">- BA</Typography>
+              </div>
+              <Button
+                variant="contained"
+                size="md"
+                color="primary"
+                aria-label="Explore Bahamas Islands"
+                sx={{ ml: 'auto', alignSelf: 'center', fontWeight: 600 }}>
+                Book Now
+              </Button>
+            </CardContent>
+          </Card>
+          <Card className='card' sx={{ transition: 'box-shadow 0.3s' }} onMouseOver={(e) => { e.currentTarget.style.boxShadow = '0px 0px 5px 1px rgba(0,0,0,0.5)'; }} onMouseOut={(e) => { e.currentTarget.style.boxShadow = 'none'; }} >
+            <AspectRatio minHeight="450px" maxHeight="500px">
+              <img
+                src={Advisor4}
+                loading="lazy"
+                alt=""
+              />
+            </AspectRatio>
+            <CardContent orientation="horizontal">
+              <div style={{textAlign : 'left'}}>
+                <Typography fontSize="lg" fontWeight="lg">Naved Shaikh</Typography>
+                <Typography level="body-xs">Licensed Adviser #201500737</Typography>
+              </div>
+              <Button
+                variant="contained"
+                size="md"
+                color="primary"
+                aria-label="Explore Bahamas Islands"
+                sx={{ ml: 'auto', alignSelf: 'center', fontWeight: 600 }}>
+                Book Now
+              </Button>
+            </CardContent>
+          </Card>
+          <Card className='card' sx={{ transition: 'box-shadow 0.3s' }} onMouseOver={(e) => { e.currentTarget.style.boxShadow = '0px 0px 5px 1px rgba(0,0,0,0.5)'; }} onMouseOut={(e) => { e.currentTarget.style.boxShadow = 'none'; }} >
+
+            <AspectRatio minHeight="450px" maxHeight="500px">
+              <img
+                src={Advisor5}
+                loading="lazy"
+                alt=""
+              />
+            </AspectRatio>
+            <CardContent orientation="horizontal">
+              <div style={{textAlign : 'left'}}>
+                <Typography fontSize="lg" fontWeight="lg">Shazia Gill</Typography>
+                <Typography level="body-xs"></Typography>
+              </div>
+              <Button
+                variant="contained"
+                size="md"
+                color="primary"
+                aria-label="Explore Bahamas Islands"
+                sx={{ ml: 'auto', alignSelf: 'center', fontWeight: 600 }}>
+                Book Now
+              </Button>
+            </CardContent>
+          </Card>
+        </div>
+      </div>
+      <div className='parent-meetDiv'>
+        <div className='meetDiv'>
+          <h1>Meet Online or by Phone Call</h1>
+          <p>You can book an online meeting or phone call appointment with our advisors at your convenience.</p>
+          <p>Please be ready to receive the call from the adviser at your meeting time.</p>
+          <p>Phone call meetings are only available to people who are in New Zealand.</p>
+        </div>
+        <div className='meetDiv'>
+        <h1>Meet in Auckland Office</h1>
+          <p>We have Saif and Naved to be booked with in our Auckland head office. There is no charge for your first meeting. Please feel free to make an appointment online.</p>
+          <p>Please be prepared and bring the related documents with you to the meeting.</p>
+          <p><b>NOTE: You don’t need to book an appointment to drop documents off once you have signed up.</b></p>
+        </div>
+      </div>
+      <Footer></Footer>
     </>
   )
 }

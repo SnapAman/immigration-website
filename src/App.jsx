@@ -6,7 +6,6 @@ import CloseIcon from '@mui/icons-material/Close';
 
 import logo from '../src/assets/BLACK_LOGO.png';
 import Home from './Components/Home/Home.jsx';
-import VisaInfo from './Components/VisaInfo/VisaInfo';
 import AboutUs from './Components/AboutUs/AboutUs';
 import Services from './Components/Service/Service'
 import NewsInfo from './Components/NewsInfo/NewsInfo'
@@ -43,6 +42,12 @@ function App() {
       setShowMenu(false);
     }
   };
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth" // Add smooth scrolling behavior
+    });
+  };
 
   return (
 
@@ -51,27 +56,25 @@ function App() {
       <header id="header" className={scrolling ? 'navbar scrolled' : 'navbar'}>
         <nav className="nav container">
 
-          <NavLink to="/"><img width="200px" height="auto" src={logo} alt="Logo" /></NavLink>
+          <NavLink onClick={(event) => { scrollToTop(); closeMenuOnMobile(); }} to="/"><img width="200px" height="auto" src={logo} alt="Logo" /></NavLink>
           <div
             className={`nav__menu ${showMenu ? "show-menu" : ""}`}
             id="nav-menu"
           >
             <ul className="nav__list">
               <li className="nav__item">
-                <NavLink to="/" className="nav__link" onClick={closeMenuOnMobile}>HOME</NavLink>
+                <NavLink onClick={(event) => { scrollToTop(); closeMenuOnMobile(); }} to="/" className="nav__link">HOME</NavLink>
               </li>
+              
               <li className="nav__item">
-                <NavLink to="/visa" className="nav__link" onClick={closeMenuOnMobile}>VISA INFO</NavLink>
-              </li>
+                <NavLink onClick={(event) => { scrollToTop(); closeMenuOnMobile(); }} to="/about" className="nav__link">ABOUT US</NavLink></li>
               <li className="nav__item">
-                <NavLink to="/about" className="nav__link" onClick={closeMenuOnMobile}>ABOUT US</NavLink></li>
-              <li className="nav__item">
-                <NavLink to="/services" className="nav__link" onClick={closeMenuOnMobile}>SERVICES</NavLink>
+                <NavLink onClick={(event) => { scrollToTop(); closeMenuOnMobile(); }} to="/services" className="nav__link">SERVICES</NavLink>
                 </li>
-              <li className="nav__item"><NavLink to="/booking" className="nav__link" onClick={closeMenuOnMobile}>BOOKING</NavLink>
+              <li className="nav__item"><NavLink onClick={(event) => { scrollToTop(); closeMenuOnMobile(); }} to="/booking" className="nav__link">BOOKING</NavLink>
               </li>
               <li className="nav__item">
-                <NavLink to="/contact" className="nav__link" onClick={closeMenuOnMobile}>CONTACT</NavLink>
+                <NavLink onClick={(event) => { scrollToTop(); closeMenuOnMobile(); }} to="/contact" className="nav__link">CONTACT</NavLink>
               </li>
             </ul>
             <div className="nav__close" id="nav-close" onClick={toggleMenu}>
@@ -87,7 +90,6 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/visa" element={<VisaInfo />} />
         <Route path="/about" element={<AboutUs />} />
         <Route path="/services" element={<Services />} />
         <Route path="/news" element={<NewsInfo />} />

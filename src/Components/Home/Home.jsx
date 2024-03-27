@@ -5,6 +5,7 @@ import HomeCarosel from './HomeCarosel';
 import TeamCarousel from './TeamCarousel';
 import Footer from '../Footer/Footer';
 import { motion } from "framer-motion";
+import { NavLink } from 'react-router-dom';
 
 function Home() {
   return (
@@ -16,7 +17,9 @@ function Home() {
             <h1>to New Zealand</h1>
           </div>
           <div className="button">
-            <Button variant="contained" disableElevation className="grayButton">Book a Consultation</Button>
+            <NavLink to="/booking">
+              <Button variant="contained" disableElevation className="grayButton">Book a Consultation</Button>
+            </NavLink>
           </div>
         </div>
       </div>

@@ -19,8 +19,13 @@
 }
 
 .Footer-List {
-  margin-left: 17px;
-  padding: 5px;
+  padding: 5px 0px;
+}
+.footer-icon-link{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  
 }
 
 .Footer-List:hover {
@@ -29,4 +34,7 @@
 
 .Footer-List:hover p {
   text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
+}
+.Footer-List a:hover {
+  filter: drop-shadow(0 0 10px rgba(0,0,0,0.5)); /* Add a glow effect */
 }

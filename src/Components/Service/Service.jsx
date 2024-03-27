@@ -1,12 +1,11 @@
 // Service.jsx
 import './Service.css'
-import banner from '../../assets/servicesImg.jpg'
 import callLogo from '../../assets/call.svg'
 import VisaTypes from './VisaTypes';
-import visaImg from '../../assets/visa.png'
 import Footer from '../Footer/Footer';
 import { useState } from 'react';
 import { motion } from "framer-motion";
+import serviceBG from '../../assets/ServicesBG.jpg'
 
 function Service() {
   const data = [
@@ -86,12 +85,12 @@ function Service() {
   const [img, setImg] = useState(data[0].img)
   return (
     <>
-    <div className="service-main">
+      <div className="service-main">
 
 
-      <div className="bannerBox">
-        <img src={banner} className='serviceBanner' alt="" />
-        <h1>Services</h1>
+        <div className="bannerBox">
+          <img src={serviceBG} className='serviceBanner' alt="" />
+        </div>
         <div className="reachUsBox">
           <div className="left">
             <img src={callLogo} c alt=" " />
@@ -108,32 +107,31 @@ function Service() {
             <button>Book Appointment</button>
           </div>
         </div>
-      </div>
-      <div className='gateway-wrapper'>
-    <h1>Your Gateway to Global Opportunities</h1>
-  <div className='sep-line'></div>
-    <div className='gateway-wrapper-para'>
-      <p>We are committed to assisting a diverse clientele around the world, regardless of their current location. Whether you reside internationally and require visa assistance for travel to New Zealand, or are already established within the country, our experienced team is here to guide you.</p>
-      <p>
-      Our firm possesses extensive experience in serving clients from various regions, including: Asia: India, China, Cambodia, and Vietnam, South Africa, Fiji, Iran, North America and Europe.
-      </p>
-      <p>
-      We consistently assist individuals migrating from overseas, offering ongoing support even if our initial consultation occurs upon their arrival with Resident Visas. Our comprehensive legal services encompass the full spectrum of immigration matters, including
-      </p>
-    </div>
+        <div className='gateway-wrapper'>
+          <h1>Your Gateway to Global Opportunities</h1>
+          <div className='sep-line'></div>
+          <div className='gateway-wrapper-para'>
+            <p>We are committed to assisting a diverse clientele around the world, regardless of their current location. Whether you reside internationally and require visa assistance for travel to New Zealand, or are already established within the country, our experienced team is here to guide you.</p>
+            <p>
+              Our firm possesses extensive experience in serving clients from various regions, including: Asia: India, China, Cambodia, and Vietnam, South Africa, Fiji, Iran, North America and Europe.
+            </p>
+            <p>
+              We consistently assist individuals migrating from overseas, offering ongoing support even if our initial consultation occurs upon their arrival with Resident Visas. Our comprehensive legal services encompass the full spectrum of immigration matters, including
+            </p>
+          </div>
 
-</div>
-
-      <motion.div
-        initial={{ opacity: 0.3 }}
-        whileInView={{ opacity: 1 }}
-        transition={{ duration: .5 }}
-      >
-        <div className="visaTypeCrousal">
-          <VisaTypes data={data} changeContent={changeContent} />
         </div>
-      </motion.div>
-      {/* <motion.div
+
+        <motion.div
+          initial={{ opacity: 0.3 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: .5 }}
+        >
+          <div className="visaTypeCrousal">
+            <VisaTypes data={data} changeContent={changeContent} />
+          </div>
+        </motion.div>
+        {/* <motion.div
         initial={{ opacity: 0.3, x: -100 }}
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ ease: "linear", duration: 0.5 }}
@@ -163,11 +161,11 @@ function Service() {
 
         </div>
       </motion.div> */}
-      <div className="conclusion">
-        <h1>Unlocking Borders, Empowering Journeys: Your Trusted Partner in Immigration Services.</h1>
+        <div className="conclusion">
+          <h1>Unlocking Borders, Empowering Journeys: Your Trusted Partner in Immigration Services.</h1>
+        </div>
+        <Footer />
       </div>
-      <Footer />
-    </div>
     </>
   );
 }
