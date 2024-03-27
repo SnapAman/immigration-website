@@ -11,6 +11,7 @@ import AboutUs from './Components/AboutUs/AboutUs';
 import Services from './Components/Service/Service'
 import NewsInfo from './Components/NewsInfo/NewsInfo'
 import ContactUs from './Components/ContactUs/ContactUs';
+import Booking from './Components/Booking/Booking';
 
 function App() {
   const [scrolling, setScrolling] = useState(false);
@@ -67,8 +68,8 @@ function App() {
               <li className="nav__item">
                 <NavLink to="/services" className="nav__link" onClick={closeMenuOnMobile}>SERVICES</NavLink>
                 </li>
-              {/* <li className="nav__item"><NavLink to="/news" className="nav__link" onClick={closeMenuOnMobile}>NEWS / INFO</NavLink>
-              </li> */}
+              <li className="nav__item"><NavLink to="/booking" className="nav__link" onClick={closeMenuOnMobile}>BOOKING</NavLink>
+              </li>
               <li className="nav__item">
                 <NavLink to="/contact" className="nav__link" onClick={closeMenuOnMobile}>CONTACT</NavLink>
               </li>
@@ -91,6 +92,7 @@ function App() {
         <Route path="/services" element={<Services />} />
         <Route path="/news" element={<NewsInfo />} />
         <Route path="/contact" element={<ContactUs />} />
+        <Route path="/booking" element={<Booking />} />
       </Routes>
     </Router>
   );
