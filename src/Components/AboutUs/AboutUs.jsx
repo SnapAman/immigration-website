@@ -51,7 +51,7 @@ function AboutUs() {
           </div>
 
           <div className="mission-content">
-            <h1 className='t-head'>Our Vision:</h1>
+            <h1 className='t-head'>Our Values:</h1>
             <p className='t-body'>Our clients deserve to have accurate, up to date and transparent information regarding their immigration journey.Our clients deserve our respect, empathy and understanding regardless of race, gender, religion or beliefs.</p>
           </div>
         </div>
@@ -63,7 +63,8 @@ function AboutUs() {
           <div className="member">
             <img src="../src/assets/Member1.jpg" alt="abc" className='mimage1' />
             <div className="member-info">
-              <h1 className='mtitle'>Alastair McClymont– BA, LLB</h1>
+              <h1 className='mtitle'>Alastair McClymont</h1>
+              <h2 style={{ color: 'gray', fontWeight: '400', marginTop: '-15px', fontSize: '1.2rem' }}>– BA, LLB</h2>
               <p className='mpara'>McClymont has dedicated himself to Immigration Law since 1997. Graduating from Otago University with degrees in both History and Law, his legal career began in Auckland in 1997 at a large litigation and immigration firm. By 2000, he had honed his focus solely on immigration, specializing in refugee applications and appeals, along with appearances before the New Zealand High Court and Court of Appeal in immigration reviews. In 2001, Alastair founded Monk and McClymont, a two-lawyer firm in central Auckland dedicated solely to immigration matters. Transitioning to independent practice in 2005 as a barrister and solicitor, he maintained his exclusive focus on immigration law. Under his leadership, the firm expanded and operated as McClymont and Associates, a law firm now operating as a partner in McClymont Shaikh Immigration.
                 When not immersed in the intricacies of the law, Alastair enjoys mountain biking, studying toward post graduate qualifications and exploring new destinations.
               </p>
@@ -73,8 +74,11 @@ function AboutUs() {
           <div className="member">
             <div className="member-info">
               <h1 className='mtitle'>Sarfraz (Saif) Shaikh</h1>
-              <h2>  Licensed Adviser #200900488</h2>
-              <p className='mpara'>Introducing Sarfaraz Shaikh, a vital member of our immigration team. With a wealth of experience in navigating the complexities of immigration law, Sarfaraz brings expertise, dedication, and a personalized approach to each case he handles. His commitment to client satisfaction, combined with his empathetic nature, ensures that individuals receive tailored guidance and support throughout their immigration journey. Sarfaraz is passionate about empowering clients to achieve their immigration goals with confidence and ease. With over 15 years experience in the Immigration industry, Saif is one of the most experienced Licensed Immigration Advisers in New Zealand and widely known for his expertise to handle difficult applications. He is also a former NZ Immigration Officer and the Director of New Zealand Association for Migration & Immigration.</p>
+              <h2 style={{ color: 'gray', fontWeight: '400', marginTop: '-15px', fontSize: '1.2rem' }}>  Licensed Adviser #200900488</h2>
+              <p className='mpara'>With over 15 years of experience in the Immigration industry, Saif is one of the most
+                experienced Licensed Immigration Advisers in New Zealand and is widely known for his
+                expertise in handling difficult applications. He is also a former NZ Immigration Officer and
+                former Director of the New Zealand Association for Migration &amp; Immigration.</p>
             </div>
             <img src="../src/assets/Member6.jpg" alt="abc" className='mimage1' />
           </div>
@@ -83,6 +87,7 @@ function AboutUs() {
             <img src="../src/assets/Member2.jpg" alt="abc" className='mimage1' />
             <div className="member-info">
               <h1 className='mtitle'>Aakanksha McClymont</h1>
+              <h2 style={{ color: 'gray', fontWeight: '400', marginTop: '-15px', fontSize: '1.2rem' }}>- BA</h2>
               <p className='mpara'>Aakanksha McClymont, originally from Chandigarh, India, has been a dedicated member of McClymont & Associates for over twenty years. A graduate with a BA in Psychology, she takes immense pride in her Master's degree in Common Sense, a quality that shines through in her work. As the primary point of contact for many clients, Aakanksha champions their needs, guiding them through the intricacies of the immigration process and providing that personal touch. Aakanksha embraces a vibrant life filled with travel, social connections, exercise, and cherished time with loved ones.</p>
 
             </div>
@@ -101,7 +106,11 @@ function AboutUs() {
 
             <div className="member-info">
               <h1 className='mtitle'>Naved Shaikh</h1>
-              <p className='mpara'>Meet Naved Shaikh, an invaluable member of our immigration team. With years of experience in navigating the intricacies of immigration law, Naved brings a wealth of expertise and a steadfast commitment to client success. His dedication, coupled with his empathetic approach, ensures that each client receives personalized guidance and support on their immigration journey. Naved is passionate about making the process as smooth and stress-free as possible, empowering clients to achieve their immigration goals with confidence. Naved is a hard working and down to earth adviser. He works closely with clients, providing them proper and accurate advice. No matter how complicated the case is, his team are always providing the top class service. Over years of work, he has gained a number of loyal clients, who have also became good friends with him. </p>
+              <h2 style={{ color: 'gray', fontWeight: '400', marginTop: '-15px', fontSize: '1.2rem' }}> Licensed Adviser #201500737</h2>
+              <p className='mpara'>Naved is a hard-working and down-to-earth adviser. He works closely with clients, providing
+                them with proper and accurate advice. No matter how complicated the case is, his team are
+                always providing top-class service. Over years of work, he has gained a number of loyal
+                clients, who have remained good friends. </p>
             </div>
           </div>
 
