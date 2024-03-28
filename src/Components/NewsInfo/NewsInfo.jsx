@@ -34,8 +34,8 @@ function NewsInfo() {
       </div>
       <div className="news-container">
         {
-          news.map(n => (
-            <div className="newsBox">
+          news.map((n,idx) => (
+            <div className="newsBox" key={idx}>
               <a href={n.link} target='_blank' className="newsImg">
                 <img src={n.img} alt="" />
               </a>
