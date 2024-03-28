@@ -72,6 +72,7 @@ function AboutUs() {
 
           </div>
           <div className="member">
+            <img src="../src/assets/Member6.jpg" alt="abc" className='mimage1 img-left' />
             <div className="member-info">
               <h1 className='mtitle'>Sarfraz (Saif) Shaikh</h1>
               <h2 style={{ color: 'gray', fontWeight: '400', marginTop: '-15px', fontSize: '1.2rem' }}>  Licensed Adviser #200900488</h2>
@@ -80,11 +81,11 @@ function AboutUs() {
                 expertise in handling difficult applications. He is also a former NZ Immigration Officer and
                 former Director of the New Zealand Association for Migration &amp; Immigration.</p>
             </div>
-            <img src="../src/assets/Member6.jpg" alt="abc" className='mimage1' />
+            <img src="../src/assets/Member6.jpg" alt="abc" className='mimage1 img-right' />
           </div>
 
           <div className="member">
-            <img src="../src/assets/Member2.jpg" alt="abc" className='mimage1' />
+            <img src="../src/assets/Member2.jpg" alt="abc" className='mimage1 ' />
             <div className="member-info">
               <h1 className='mtitle'>Aakanksha McClymont</h1>
               <h2 style={{ color: 'gray', fontWeight: '400', marginTop: '-15px', fontSize: '1.2rem' }}>- BA</h2>
@@ -94,11 +95,12 @@ function AboutUs() {
           </div>
 
           <div className="member">
+            <img src="../src/assets/Member5.jpg" alt="abc" className='mimage1 img-left' />
             <div className="member-info">
               <h1 className='mtitle'>Shazia Gill</h1>
               <p className='mpara'>An indispensable member of McClymont and Associates since 2013, Shazia brings invaluable expertise to our immigration practice. Her deep understanding of the Indian community is a remarkable asset. For expert guidance and unwavering support, Shazia is your go-to resource. Fluent in English, Hindi, and Punjabi, she ensures seamless communication tailored to your comfort</p>
             </div>
-            <img src="../src/assets/Member5.jpg" alt="abc" className='mimage1' />
+            <img src="../src/assets/Member5.jpg" alt="abc" className='mimage1 img-right' />
           </div>
 
           <div className="member">

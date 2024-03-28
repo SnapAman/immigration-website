@@ -195,6 +195,13 @@
     font-size: 1.2rem;
 }
 
+.img-left{
+    display: none;
+    
+}
+.img-right{
+}
+
 @media (max-width:1200px) {
     .header-body {
         /* margin: 40px; */
@@ -358,7 +365,7 @@
     }
 
     .para {
-        font-size: 14px;
+        font-size: 18px;
         line-height: 1.5;
     }
     .image-sec{
@@ -380,6 +387,9 @@
         height: 200px;
         border-radius: 20px;
         overflow: hidden;
+    }
+    .im3 {
+        display: none;
     }
 
     .centerImg {
@@ -449,11 +459,18 @@
     }
 
     .t-body {
-        font-size: 20px;
+        font-size: 18px;
         text-align: left;
         line-height: 1.1;
     }
     .scrollable-div{
         padding: 20px;
+    }
+
+    .img-left{
+        display: block;
+    }
+    .img-right{
+        display: none;
     }
 }
