@@ -16,11 +16,13 @@
 }
 
 .visaSlide{
-    border: 1px solid gray;
+    /* border: 1px solid gray; */
+    box-shadow: 0px 1px 8px #c5c5c5;
     border-radius: 20px ;
     padding: 10px;
     display: flex;
     flex-direction: column;
+    margin: 0;
 }
 
 .service-main .slide-content{
@@ -62,6 +64,9 @@
 .visaSlide .btnBox{
     margin-top: auto;
 }
+.slick-list{
+    height: auto  !important;
+}
 @media (max-width:1024px) {
     .slide-image2{
         width: 100%;
@@ -77,7 +82,7 @@
         margin: 0 150px;
     }
     .visaSlide{
-        min-height: 420px;
+        /* min-height: 420px; */
     }
 }
 @media (max-width:780px) {
@@ -87,6 +92,8 @@
     }
     .slideWrapper {
         margin: 0 80px;
+        height: auto;
+        min-height: auto !important;
     }
     .visaSlide{
         min-height: 420px;
@@ -98,6 +105,7 @@
     .visaSlide .slide-review2{
         font-size: 12px;
     }
+    
 }
 @media (max-width:500px) {
     .slideWrapper {
