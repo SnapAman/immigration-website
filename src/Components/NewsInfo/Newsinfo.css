@@ -11,18 +11,8 @@
     object-fit: cover;
     height: 100vh;
     width: 100%;
-    opacity: 0.6;
+    
 }
-
-.newsPage .topBanner h1 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    color: white;
-    font-size: 5rem;
-}
-
 .news-container {
     padding: 50px 200px;
     display: flex;

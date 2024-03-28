@@ -31,7 +31,6 @@ function NewsInfo() {
     <div className='newsPage'>
       <div className="topBanner">
         <img src={banner} alt="" />
-        <h1>NEWS</h1>
       </div>
       <div className="news-container">
         {
