@@ -61,3 +61,21 @@
     text-align: center;
     margin-bottom: 10px;
   }
+  /* .whymacclymont{
+    padding: 0% 0%;
+  } */
+  .whymacclymont p{
+    font-size: 1.1rem;
+    font-family: "Poppins", sans-serif;
+    margin-top: 20px;
+    text-align: left;
+  }
+  .whymacclymont{
+    margin: 0 auto;
+    width: 80%;
+    position: relative;
+  }
+  .whymacclymont h1{
+    font-size: 3rem;
+    text-align: center;
+  }
