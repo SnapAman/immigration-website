@@ -19,15 +19,6 @@
     height: 100%;
     background-color: rgba(255, 255, 255, 0.3);
 }
-
-.txt1 {
-    color: #111111;
-    font-size: 50px;
-    text-align: center;
-    opacity: 1;
-    z-index: 1;
-}
-
 /* Media query for smaller screens */
 @media only screen and (max-width: 768px) {
     .txt1 {
@@ -74,9 +65,9 @@
   .address-map iframe {
     position: absolute;
     top: 20%;
-    left: 15%;
-    width: 70%;
-    height: 70%;
+    left: 20%;
+    width: 60%;
+    height: 60%;
     border: 0;
   }
 /* .Map {

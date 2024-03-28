@@ -57,7 +57,11 @@ const Footer = () => {
       </footer>
       <div style={{ display: 'flex', textAlign: 'center', justifyContent: 'center', padding: '40px 0px', backgroundColor: 'black', color: 'white' }}>
         <p>© 2024 | McClymont & Shaikh Associates | All Rights Reserved</p>
+        <span>Website developed by Snapfluence Media and Technology
+        <img src="src/assets/SnapLogo.svg" alt="abc" />
+        </span>
       </div>
+      
     </>
   );
 };
