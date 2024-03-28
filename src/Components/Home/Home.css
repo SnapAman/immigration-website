@@ -9,6 +9,7 @@
     align-items: center;
     position: relative;
 }
+
 .HomeBackground::before {
     content: "";
     position: absolute;
@@ -18,29 +19,35 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.0);
 }
+
 @media screen and (max-width: 1100px) {
     .HomeBackground {
-        background-position-x: -540px ;
+        background-position-x: -540px;
     }
+
     .HomeBackground::before {
         background-color: rgba(0, 0, 0, 0.2);
     }
 }
+
 @media screen and (max-width: 768px) {
     .HomeBackground {
-        background-position-x: -780px ;
+        background-position-x: -780px;
     }
+
     .HomeBackground::before {
         background-color: rgba(0, 0, 0, 0.2);
     }
 }
+
 @media screen and (max-width: 480px) {
     .HomeBackground {
         background-image: url('../src/assets/MS-98.jpg');
-        background-position-x: center ;
+        background-position-x: center;
     }
-    .overlay{
-    background-color: rgba(0, 0, 0, 0.5);
+
+    .overlay {
+        background-color: rgba(0, 0, 0, 0.5);
 
     }
 }
@@ -100,6 +107,40 @@
         font-size: 8vw;
     }
 }
+.whymacclymont p{
+    font-size: 1.1rem;
+    font-family: "Poppins", sans-serif;
+    margin-top: 20px;
+    text-align: left;
+  }
+  .whymacclymont{
+    margin: 0 auto;
+    width: 80%;
+    position: relative;
+  }
+  .whymacclymont h1{
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .inverted-border-radius-parent{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .inverted-border-radius {
+    position: relative;
+    height: 300px;
+    width: 50%;
+    background-color: #e5e5e5;
+    border-radius: 25px;
+    margin: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+  }
+  
 
 .sep-line {
     height: 7px;
@@ -120,7 +161,8 @@
 
 .conclusion-div {
     height: 30vh;
-    background-color: rgba(0, 0, 0, 0.66);
+    background: rgb(0, 0, 0);
+    background: linear-gradient(38deg, rgb(27, 27, 27) 15%, rgba(122, 122, 122, 1) 85%);
     color: white;
     font-size: 1.5rem;
     display: grid;
@@ -129,12 +171,20 @@
     font-family: "Poppins", sans-serif;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1100px) {
     .conclusion-div {
         height: auto;
         padding: 20px;
         text-align: center;
         font-size: 1.2rem;
+    }
+    .inverted-border-radius-parent{
+        flex-direction: column;
+
+    }
+    .inverted-border-radius{
+        width: 100%;
+        height: auto;
     }
 }
 
@@ -151,6 +201,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 50px;
 }
 
 .ourteam-wrapper h1 {

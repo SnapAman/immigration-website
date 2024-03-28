@@ -152,7 +152,7 @@ const Booking = () => {
         </div>
         <div className='meetDiv'>
         <h1>Meet in Auckland Office</h1>
-          <p>We have Saif and Naved to be booked with in our Auckland head office. There is no charge for your first meeting. Please feel free to make an appointment online.</p>
+          <p>Our Advisors are ready to be booked with in our Auckland head office. There is no charge for your first meeting. Please feel free to make an appointment online.</p>
           <p>Please be prepared and bring the related documents with you to the meeting.</p>
           <p><b>NOTE: You don’t need to book an appointment to drop documents off once you have signed up.</b></p>
         </div>

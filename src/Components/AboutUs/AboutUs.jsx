@@ -1,10 +1,13 @@
 import React from 'react';
 import '../AboutUs/AboutUs.css';
 import Footer from '../Footer/Footer';
+import banner from '../../assets/AboutUs.jpg'
+
 function AboutUs() {
   return (
     <>
-      <div className="AboutBackground">
+      <div className="aboutBanner">
+        <img src={banner} alt="" />
       </div>
 
       <div className="header-body">

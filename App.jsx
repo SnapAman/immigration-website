@@ -3,13 +3,14 @@ import { BrowserRouter as Router, Routes, Route, NavLink } from 'react-router-do
 import './App.css';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
+
 import logo from '../src/assets/BLACK_LOGO.png';
-import Home from './Components/Home/Home.jsx';
-import AboutUs from './Components/AboutUs/AboutUs';
-import Services from './Components/Service/Service'
-import NewsInfo from './Components/NewsInfo/NewsInfo'
-import ContactUs from './Components/ContactUs/ContactUs';
-import Booking from './Components/Booking/Booking';
+import Home from './src/Components/Home/Home.jsx';
+import AboutUs from './src/Components/AboutUs/AboutUs';
+import Services from './src/Components/Service/Service'
+import NewsInfo from './src/Components/NewsInfo/NewsInfo'
+import ContactUs from './src/Components/ContactUs/ContactUs';
+import Booking from './src/Components/Booking/Booking';
 
 function App() {
   const [scrolling, setScrolling] = useState(false);

@@ -27,7 +27,7 @@ const Footer = () => {
             <Grid item xs={12} sm={4}>
               <Typography variant="h6">CONTACTS</Typography>
               <ul>
-                <li className='Footer-List'><p variant="body1">Address: Level 1, 166 Harris Road East Tamaki, Auckland</p></li>
+                <li className='Footer-List'><p variant="body1">Address: 415 Great South Rd. Ellerslie, Auckland</p></li>
                 <li className='Footer-List'><p variant="body1">(+64) 09 272 4424</p></li>
                 <li className='Footer-List'><p variant="body1">contact@msimmigration.co.nz</p></li>
                 <li className='Footer-List'><p variant="body1">Monday - Friday: 9:30 AM - 06:00 PM</p></li>
