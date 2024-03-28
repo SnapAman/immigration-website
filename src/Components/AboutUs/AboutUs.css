@@ -172,7 +172,7 @@
 }
 
 .mimage1 {
-    width: 350px;
+    width: auto;
     height: 400px;
     border-radius: 20px;
 }
@@ -192,9 +192,7 @@
 }
 
 .mpara {
-    font-size: 25px;
-    /* font-weight: 100; */
-    line-height: 30px;
+    font-size: 1.2rem;
 }
 
 @media (max-width:1200px) {
