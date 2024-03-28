@@ -24,7 +24,7 @@ function VisaTypes({data,changeContent}) {
                 slidesToShow: 1,
                 slidesToScroll: 1,
                 infinite: true,
-                dots: true,
+                // dots: true,
                 centerPadding: "0px",
               }
             }
@@ -47,7 +47,6 @@ function VisaTypes({data,changeContent}) {
             <div className="carousel-container">
                 {/* <h1>SERVICES</h1> */}
                 <div className="slider-button left">
-
                     <IconButton onClick={handlePrevious}>
                         <ArrowBack />
                     </IconButton>
