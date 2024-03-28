@@ -247,7 +247,6 @@
     .conclusion h1 {
         font-size: 2rem;
         font-family: "Poppins";
-        font-weight: 300;
     }
 }
 
@@ -311,9 +310,9 @@
     }
 
     .conclusion h1 {
-        font-size: 0.2rem !important;
+        font-size: 1.5rem;
         font-family: "Poppins";
-        font-weight: 100;
+        font-weight: 300;
     }
 
     .reachUsBox {
