@@ -47,7 +47,6 @@ function VisaTypes({data,changeContent}) {
             <div className="carousel-container">
                 {/* <h1>SERVICES</h1> */}
                 <div className="slider-button left">
-
                     <IconButton onClick={handlePrevious}>
                         <ArrowBack />
                     </IconButton>

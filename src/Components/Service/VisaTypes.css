@@ -22,7 +22,7 @@
     padding: 10px;
     display: flex;
     flex-direction: column;
-    margin: 0;
+    margin: 10px;
 }
 
 .service-main .slide-content{
@@ -79,7 +79,7 @@
         height: 200px;
     }
     .slideWrapper {
-        margin: 0 150px;
+        margin: 10px 150px;
     }
     .visaSlide{
         /* min-height: 420px; */
@@ -91,7 +91,7 @@
         height: 200px;
     }
     .slideWrapper {
-        margin: 0 80px;
+        margin: 10px 80px;
         height: auto;
         min-height: auto !important;
     }
@@ -109,6 +109,6 @@
 }
 @media (max-width:500px) {
     .slideWrapper {
-        margin: 0;
+        margin: 10px;
     }
 }
