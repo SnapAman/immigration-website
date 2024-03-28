@@ -39,8 +39,8 @@ function AboutUs() {
 
           <div className="mission-content">
             <h1 className='t-head'>Our Mission:</h1>
-            <p className='t-body'>To provide expert and accurate Immigration Support in an understanding, sympathetic and supportive personal environment. </p>
-            <p className='t-body'>We aim to provide Happiness through our Expertise.</p>
+            <p className='t-body'>•	To provide expert and accurate Immigration Support in an understanding, sympathetic and supportive personal environment. </p>
+            <p className='t-body'>•	We aim to provide <b>Happiness</b> through our <b>Expertise</b>.</p>
 
           </div>
         </div>
@@ -55,7 +55,9 @@ function AboutUs() {
 
           <div className="mission-content">
             <h1 className='t-head'>Our Values:</h1>
-            <p className='t-body'>Our clients deserve to have accurate, up to date and transparent information regarding their immigration journey.Our clients deserve our respect, empathy and understanding regardless of race, gender, religion or beliefs.</p>
+            <p className='t-body'>•	Our clients deserve our respect, empathy and understanding regardless of race, gender, religion or beliefs. </p>
+            <p className='t-body'>•	Our clients deserve to be treated in a way that acknowledges and understands the natural stress and tension that often accompanies their immigration journey. </p>
+            <p className='t-body'>•	Our clients deserve to have accurate, up to date and transparent information regarding their immigration journey. </p>
           </div>
         </div>
       </div>
