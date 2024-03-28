@@ -1,5 +1,7 @@
 // ContactUs.js
 import React, { useState } from 'react';
+
+import { Typography, Container } from '@mui/material';
 import '../ContactUs/ContactUs.css';
 import HomeIcon from '@mui/icons-material/Home';
 import Button from '@mui/material/Button';
@@ -12,27 +14,23 @@ import MailOutlineIcon from '@mui/icons-material/MailOutline';
 
 function ContactUs() {
 
-  const [name, setName] = useState("")
-  const[email,setEmail]=useState("")
-  const[phone,setPhone]=useState("")
-  const[subject,setSubject]=useState("")
-  const[message,setMessage]=useState("")
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    subject: '',
+    description: '',
+  });
 
-  function submit() {
-    console.log(name)
-    console.log(email)
-    console.log(phone)
-    console.log(subject)
-    console.log(message)
-  }
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
 
-  function reset() {
-    setName("")
-    setEmail("")
-    setPhone("")
-    setSubject("")
-    setMessage("")
-  }
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(formData); // You can perform form submission logic here
+  };
 
   return (
     <>
@@ -51,8 +49,8 @@ function ContactUs() {
                 <LocationOnIcon style={{ color: 'white', fontSize: '2rem', margin: '10px' }} />
               </div>
               <div className="main-txt">
-                <h1 className='title'>Have any question?</h1>
-                <h3 className='main-Contact'>(+64) 09 272 4424</h3>
+                <h1 className='title'>Address</h1>
+                <h3 className='main-Contact'>415 Great South Rd. Ellerslie, Auckland</h3>
               </div>
             </div>
 
@@ -61,8 +59,8 @@ function ContactUs() {
                 <AccessTimeIcon style={{ color: 'white', fontSize: '2rem', margin: '10px' }} />
               </div>
               <div className="main-txt">
-                <h1 className='title'>Write Email</h1>
-                <h3 className='main-Contact'>contact@msimmigration.co.nz</h3>
+                <h1 className='title'>Timing</h1>
+                <h3 className='main-Contact'>Monday - Friday: 9:30 AM - 06:00 PM</h3>
               </div>
             </div>
           </div>
@@ -91,32 +89,69 @@ function ContactUs() {
         </div>
 
 
-        <div className="contact-form">
+          
+          <Container maxWidth="sm">
           <h1 className="txt2">FEEL FREE TO WRITE</h1>
-          <div className="input1">
-            <TextField id="outlined-basic" label="Enter Name" value={name} onChange={(e) => { setName(e.target.value) }} variant="outlined" required/>
-            <TextField id="outlined-basic" label="Enter Email" value={email} onChange={(e) => { setEmail(e.target.value) }} variant="outlined" required/>
-          </div>
-          <div className="input1">
-            <TextField id="outlined-basic" label="Enter Phone" value={phone} onChange={(e) => { setPhone(e.target.value) }} variant="outlined" required />
-            <TextField id="outlined-basic" label="Enter Subject" value={subject} onChange={(e) => { setSubject(e.target.value) }} variant="outlined" required />
-          </div>
-          <div className="input1">
-            <TextField
-              id="outlined-multiline-static"
-              label="Enter Message"
-              multiline
-              rows={4}
-              value={message} onChange={(e) => { setMessage(e.target.value) }}
-              required
-            />
-          </div>
-          <div className='button-div'>
-            <Button variant="contained" style={{ marginRight: '20px' }} className='btn1' onClick={submit}>Submit</Button>
-            <Button variant="contained" style={{ marginLeft: '20px' }} className='btn1' onClick={reset}>ResetS</Button>
-          </div>
+
+            <form className="contact-form" onSubmit={handleSubmit}>
+              <TextField
+                color='success'
+                className="textField"
+                label="Name"
+                variant="outlined"
+                fullWidth
+                name="name"
+                value={formData.name}
+                onChange={handleChange}
+              />
+              <TextField
+                color='success'
+                className="textField"
+                label="Email"
+                variant="outlined"
+                fullWidth
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
+              />
+              <TextField
+                color='success'
+                className="textField"
+                label="Phone Number"
+                variant="outlined"
+                fullWidth
+                name="phone"
+                value={formData.phone}
+                onChange={handleChange}
+              />
+              <TextField
+                color='success'
+                className="textField"
+                label="Subject"
+                variant="outlined"
+                fullWidth
+                name="subject"
+                value={formData.subject}
+                onChange={handleChange}
+              />
+              <TextField
+                color='success'
+                className="textField"
+                label="Description"
+                variant="outlined"
+                fullWidth
+                multiline
+                rows={4}
+                name="description"
+                value={formData.description}
+                onChange={handleChange}
+              />
+              <Button variant="contained" style={{backgroundColor : '#808080'}} type="submit" fullWidth>
+                Submit
+              </Button>
+            </form>
+          </Container>
         </div>
-      </div>
 
       <div className="address-map">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3190.5578592108477!2d174.80515409999998!3d-36.9009242!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d0d48e6197bb6b3%3A0x207961a16f132730!2s415%20Great%20South%20Road%2C%20Ellerslie%2C%20Auckland%201051%2C%20New%20Zealand!5e0!3m2!1sen!2sin!4v1711193921939!5m2!1sen!2sin" width="600" height="450" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade" className='Map'></iframe>

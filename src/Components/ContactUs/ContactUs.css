@@ -1,36 +1,3 @@
-/* .ContactBackground {
-    background-image: url('../src/assets/Contact.jpg');
-    height: 100vh;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-
-}
-.ContactBackground::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(255, 255, 255, 0.3);
-}
-
-
-.txt1 {
-    color: #111111;
-    font-size: 80px;
-    text-align: center;
-    opacity: 1;
-    z-index: 1;
-} */
-
-
-
 .ContactBackground {
     background-image: url('../src/assets/Contact.jpg');
     background-repeat: no-repeat;
@@ -40,7 +7,7 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    height: 100vh; /* Fallback height for older browsers */
+    height: 100vh;
 }
 
 .ContactBackground::before {
@@ -132,17 +99,13 @@
 
 .Contactcontainer {
     background-color: #F4F2F2;
-    width: 40%;
+    width: 35%;
     padding: 20px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     border-radius: 20px;
-}
-
-.headding {
-    margin-top: 10vh;
 }
 
 .txt2 {
@@ -155,9 +118,8 @@
 
 .sect2-body {
     width: auto;
-    padding: 20px;
+    padding: 5% 3%;
     display: flex;
-    margin-top: 30px;
 
 }
 
@@ -167,24 +129,26 @@
 }
 
 .title {
-    font-size: 30px;
+    font-size: 1.8rem;
+    font-weight: 500;
 }
 
 .main-Contact {
     font-size: 1rem;
-    font-weight: 200;
+    font-weight: 500;
 }
 
-
 .contact-form {
-    background-color: white;
-    padding: 0px 20px;
-    margin: 30px;
-    width: 60%;
-    height: 50%;
-    border: 1px solid #999797;
-    box-shadow: 10px 10px 10px rgba(136, 135, 135, 0.5);
-    border-radius: 10px;
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .textField {
+    margin-bottom: 16px;
 }
 
 .css-1u3bzj6-MuiFormControl-root-MuiTextField-root {

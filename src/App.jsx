@@ -63,18 +63,18 @@ function App() {
           >
             <ul className="nav__list">
               <li className="nav__item">
-                <NavLink onClick={(event) => { scrollToTop(); closeMenuOnMobile(); }} to="/" className="nav__link">HOME</NavLink>
+                <NavLink onClick={(event) => { scrollToTop(); closeMenuOnMobile(); }} to="/" className="nav__link" >HOME</NavLink>
               </li>
               
               <li className="nav__item">
-                <NavLink onClick={(event) => { scrollToTop(); closeMenuOnMobile(); }} to="/about" className="nav__link">ABOUT US</NavLink></li>
+                <NavLink onClick={(event) => { scrollToTop(); closeMenuOnMobile(); }} to="/about" className="nav__link" >ABOUT US</NavLink></li>
               <li className="nav__item">
-                <NavLink onClick={(event) => { scrollToTop(); closeMenuOnMobile(); }} to="/services" className="nav__link">SERVICES</NavLink>
+                <NavLink onClick={(event) => { scrollToTop(); closeMenuOnMobile(); }} to="/services" className="nav__link" >SERVICES</NavLink>
                 </li>
-              <li className="nav__item"><NavLink onClick={(event) => { scrollToTop(); closeMenuOnMobile(); }} to="/booking" className="nav__link">BOOKING</NavLink>
+              <li className="nav__item"><NavLink onClick={(event) => { scrollToTop(); closeMenuOnMobile(); }} to="/booking" className="nav__link" >BOOKING</NavLink>
               </li>
               <li className="nav__item">
-                <NavLink onClick={(event) => { scrollToTop(); closeMenuOnMobile(); }} to="/contact" className="nav__link">CONTACT</NavLink>
+                <NavLink onClick={(event) => { scrollToTop(); closeMenuOnMobile(); }} to="/contact" className="nav__link" >CONTACT</NavLink>
               </li>
             </ul>
             <div className="nav__close" id="nav-close" onClick={toggleMenu}>
