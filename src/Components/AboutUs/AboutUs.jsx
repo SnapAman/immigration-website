@@ -7,7 +7,7 @@ function AboutUs() {
     <>
       <div className="AboutBackground">
       </div>
-      
+
       <div className="header-body">
         <div className="image-sec">
           <img src="../src/assets/About-img1.jpg" alt="abc" className='im1' />
@@ -33,8 +33,8 @@ function AboutUs() {
             <div className="mission-content">
               <h1 className='t-head'>Our Mission:</h1>
               <p className='t-body'>To provide expert and accurate Immigration Support in an understanding, sympathetic and supportive personal environment. </p>
-                <p className='t-body'>We aim to provide Happiness through our Expertise.</p>
-             
+              <p className='t-body'>We aim to provide Happiness through our Expertise.</p>
+
             </div>
           </div>
 
@@ -47,8 +47,8 @@ function AboutUs() {
             </div>
 
             <div className="mission-content">
-              <h1 className='t-head'>Our Vision:</h1>
-               <p className='t-body'>Our clients deserve to have accurate, up to date and transparent information regarding their immigration journey.Our clients deserve our respect, empathy and understanding regardless of race, gender, religion or beliefs.</p>
+              <h1 className='t-head'>Our Values:</h1>
+              <p className='t-body'>Our clients deserve to have accurate, up to date and transparent information regarding their immigration journey.Our clients deserve our respect, empathy and understanding regardless of race, gender, religion or beliefs.</p>
             </div>
           </div>
 
@@ -59,30 +59,30 @@ function AboutUs() {
         <div className="our-team">
           <h1 className='team-head'>Meet Our Team:</h1>
           <div className="member">
-          <img src="../src/assets/Member6.jpg" alt="abc" className='mimage1' />
+            <img src="../src/assets/Member1.jpg" alt="abc" className='mimage1' />
             <div className="member-info">
-              <h1 className='mtitle'>Sarfaraz Shaikh</h1>
+              <h1 className='mtitle'>Alastair McClymont– BA, LLB</h1>
+              <p className='mpara'>McClymont has dedicated himself to Immigration Law since 1997. Graduating from Otago University with degrees in both History and Law, his legal career began in Auckland in 1997 at a large litigation and immigration firm. By 2000, he had honed his focus solely on immigration, specializing in refugee applications and appeals, along with appearances before the New Zealand High Court and Court of Appeal in immigration reviews. In 2001, Alastair founded Monk and McClymont, a two-lawyer firm in central Auckland dedicated solely to immigration matters. Transitioning to independent practice in 2005 as a barrister and solicitor, he maintained his exclusive focus on immigration law. Under his leadership, the firm expanded and operated as McClymont and Associates, a law firm now operating as a partner in McClymont Shaikh Immigration.
+                When not immersed in the intricacies of the law, Alastair enjoys mountain biking, studying toward post graduate qualifications and exploring new destinations.
+              </p>
+            </div>
+
+          </div>
+          <div className="member">
+            <div className="member-info">
+              <h1 className='mtitle'>Sarfraz (Saif) Shaikh</h1>
+              <h2>  Licensed Adviser #200900488</h2>
               <p className='mpara'>Introducing Sarfaraz Shaikh, a vital member of our immigration team. With a wealth of experience in navigating the complexities of immigration law, Sarfaraz brings expertise, dedication, and a personalized approach to each case he handles. His commitment to client satisfaction, combined with his empathetic nature, ensures that individuals receive tailored guidance and support throughout their immigration journey. Sarfaraz is passionate about empowering clients to achieve their immigration goals with confidence and ease. With over 15 years experience in the Immigration industry, Saif is one of the most experienced Licensed Immigration Advisers in New Zealand and widely known for his expertise to handle difficult applications. He is also a former NZ Immigration Officer and the Director of New Zealand Association for Migration & Immigration.</p>
             </div>
-          </div>
-
-
-          <div className="member">
-            <div className="member-info">
-              <h1 className='mtitle'>Alastair McClymont</h1>
-              <p className='mpara'>McClymont has dedicated himself to Immigration Law since 1997. Graduating from Otago University with degrees in both History and Law, his legal career began in Auckland in 1997 at a large litigation and immigration firm. By 2000, he had honed his focus solely on immigration, specializing in refugee applications and appeals, along with appearances before the New Zealand High Court and Court of Appeal in immigration reviews. In 2001, Alastair founded Monk and McClymont, a two-lawyer firm in central Auckland dedicated solely to immigration matters. Transitioning to independent practice in 2005 as a barrister and solicitor, he maintained his exclusive focus on immigration law. Under his leadership, the firm expanded and operated as McClymont and Associates, a law firm now operating as a partner in McClymont Shaikh Immigration.
-When not immersed in the intricacies of the law, Alastair enjoys mountain biking, studying toward post graduate qualifications and exploring new destinations.
-</p>
-            </div>
-            <img src="../src/assets/Member1.jpg" alt="abc" className='mimage1' />
+            <img src="../src/assets/Member6.jpg" alt="abc" className='mimage1' />
           </div>
 
           <div className="member">
-          <img src="../src/assets/Member2.jpg" alt="abc" className='mimage1' />
+            <img src="../src/assets/Member2.jpg" alt="abc" className='mimage1' />
             <div className="member-info">
               <h1 className='mtitle'>Aakanksha McClymont</h1>
               <p className='mpara'>Aakanksha McClymont, originally from Chandigarh, India, has been a dedicated member of McClymont & Associates for over twenty years. A graduate with a BA in Psychology, she takes immense pride in her Master's degree in Common Sense, a quality that shines through in her work. As the primary point of contact for many clients, Aakanksha champions their needs, guiding them through the intricacies of the immigration process and providing that personal touch. Aakanksha embraces a vibrant life filled with travel, social connections, exercise, and cherished time with loved ones.</p>
-            
+
             </div>
           </div>
 
