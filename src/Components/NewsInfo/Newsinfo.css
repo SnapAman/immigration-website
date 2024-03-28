@@ -1,0 +1,55 @@
+.newsPage {
+    display: flex;
+    flex-direction: column;
+}
+
+.newsPage .topBanner {
+    position: relative;
+}
+
+.newsPage .topBanner img {
+    object-fit: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+.newsPage .topBanner h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: white;
+    font-size: 5rem;
+}
+
+.news-container {
+    padding: 50px 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.newsBox {
+    display: flex;
+}
+.newsImg img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.newsContent{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.newsContent a{
+    color:black;
+    text-decoration: none;
+}
+
+.blueLink{
+    color: blue !important;
+    text-decoration: underline !important;
+}

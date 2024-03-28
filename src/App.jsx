@@ -76,6 +76,9 @@ function App() {
               <li className="nav__item">
                 <NavLink onClick={(event) => { scrollToTop(); closeMenuOnMobile(); }} to="/contact" className="nav__link" >CONTACT</NavLink>
               </li>
+              <li className="nav__item">
+                <NavLink onClick={(event) => { scrollToTop(); closeMenuOnMobile(); }} to="/news" className="nav__link" >NEWS</NavLink>
+              </li>
             </ul>
             <div className="nav__close" id="nav-close" onClick={toggleMenu}>
               <CloseIcon />
