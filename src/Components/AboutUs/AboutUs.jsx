@@ -1,4 +1,3 @@
-// AboutUs.js
 import React from 'react';
 import '../AboutUs/AboutUs.css';
 import Footer from '../Footer/Footer';
@@ -26,7 +25,7 @@ function AboutUs() {
 
         </div>
       </div>
-      <div style={{ display: 'flex', justifyContent: 'center' }}>
+      <div className='mission-container'>
         <div className="mission-vision">
           <div className="icon">
             <svg width="90" height="90" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -108,7 +107,6 @@ function AboutUs() {
 
         </div>
       </div>
-
       <Footer />
     </>
   );
