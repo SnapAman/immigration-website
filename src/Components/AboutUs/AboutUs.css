@@ -404,6 +404,7 @@
         height: 350px;
         border-radius: 10px;
         object-fit: cover;
+        object-position: 0 -100px;
     }
 
     .member-info {
