@@ -11,6 +11,7 @@
     object-fit: cover;
     height: 100vh;
     width: 100%;
+    opacity: 0.6;
 }
 
 .newsPage .topBanner h1 {
@@ -41,7 +42,7 @@
 .newsContent{
     display: flex;
     flex-direction: column;
-    padding: 40px;
+    padding: 20px 40px;
 }
 
 .newsContent a{
@@ -52,4 +53,49 @@
 .blueLink{
     color: blue !important;
     text-decoration: underline !important;
+}
+@media (max-width:1200px) {
+    .news-container{
+        padding: 50px 150px;
+    }
+}
+@media (max-width:1000px) {
+    .newsImg img{
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+    }
+    .newsContent{
+        padding: 10px 20px;
+    }
+    .news-container{
+        padding: 50px ;
+    }
+}
+@media (max-width:700px) {
+    .news-container{
+        padding: 20px;
+        gap: 20px;
+    }
+    .newsBox{
+        flex-direction: column;
+        align-items: center;
+    }
+    .newsImg img{
+        width: 85vw;
+        height: 200px;
+        object-fit: cover;
+    }
+    .newsContent{
+        padding: 10px ;
+    }
+    .newsContent h1{
+        font-size: 1.5rem;
+    }
+    .newsContent small{
+        font-size: 0.7rem;
+    }
+    .newsContent p{
+        font-size: 0.9rem;
+    }
 }
