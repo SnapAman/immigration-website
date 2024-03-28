@@ -26,6 +26,7 @@
     font-size: 1.3rem;
     font-family: "Poppins", sans-serif;
     margin-top: 10px;
+    margin-bottom: 30px;
 }
 
 .bannerBox {
@@ -160,8 +161,6 @@
     font-size: 30px;
 }
 
-.information .bottom {}
-
 .information .bottom li {
     font-size: 20px;
     padding: 2px 5px;
@@ -184,6 +183,7 @@
     /* margin-top: 40px; */
     padding: 40px;
     font-family: "Poppins", sans-serif;
+    font-weight: 300;
 }
 
 
@@ -247,6 +247,7 @@
     .conclusion h1 {
         font-size: 2rem;
         font-family: "Poppins";
+        font-weight: 300;
     }
 }
 
