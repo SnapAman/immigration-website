@@ -51,7 +51,7 @@
 }
 
 .blueLink{
-    color: blue !important;
+    color: rgb(0, 0, 116) !important;
     text-decoration: underline !important;
 }
 @media (max-width:1200px) {
