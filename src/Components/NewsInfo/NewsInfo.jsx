@@ -1,7 +1,7 @@
-// NewsInfo.js
 import React from 'react';
 import './Newsinfo.css'
 import banner from '/news.jpg'
+import Footer from '../Footer/Footer';
 
 function NewsInfo() {
   const news = [
@@ -28,6 +28,7 @@ function NewsInfo() {
     },
   ]
   return (
+    <>
     <div className='newsPage'>
       <div className="topBanner">
         <img src={banner} alt="" />
@@ -51,6 +52,8 @@ function NewsInfo() {
         }
       </div>
     </div>
+    <Footer/>
+    </>
   );
 }
 

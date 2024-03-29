@@ -40,7 +40,7 @@ const Footer = () => {
                 <li className='Footer-List'><NavLink onClick={scrollToTop} to="/services" href="#" variant="body1">Services</NavLink></li>
                 <li className='Footer-List'><NavLink onClick={scrollToTop} to="/booking" href="#" variant="body1">Booking</NavLink></li>
                 <li className='Footer-List'><NavLink onClick={scrollToTop} to="/contact" href="#" variant="body1">Contact Us</NavLink></li>
-                <li className='Footer-List'><NavLink onClick={scrollToTop} href="#" variant="body1">News/ Information</NavLink></li>
+                <li className='Footer-List'><NavLink onClick={scrollToTop} to="/news" href="#" variant="body1">News/ Information</NavLink></li>
               </ul>
             </Grid>
             <Grid item xs={12} sm={4}>
