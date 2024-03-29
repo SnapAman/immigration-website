@@ -46,10 +46,10 @@ const Footer = () => {
             <Grid item xs={12} sm={4}>
               <Typography variant="h6">SOCIALS</Typography>
               <ul>
-                <li className='Footer-List'><Link className='footer-icon-link'   href="#" target="_blank" variant="body1"><XIcon />X</Link></li>
+                {/* <li className='Footer-List'><Link className='footer-icon-link'   href="#" target="_blank" variant="body1"><XIcon />X</Link></li> */}
                 <li className='Footer-List'><Link className='footer-icon-link'  href="https://www.facebook.com/mcclymontandassociates" target="_blank" variant="body1"><FacebookIcon />Facebook</Link></li>
                 <li className='Footer-List'><Link className='footer-icon-link'  href="https://nz.linkedin.com/in/alastair-mcclymont-a66ab248?original_referer=https%3A%2F%2Fwww.google.com%2F" target="_blank" variant="body1"><LinkedInIcon />LinkedIn</Link></li>
-                <li className='Footer-List'><Link className='footer-icon-link'  href="#" target="_blank" variant="body1"><InstagramIcon />Instagram</Link></li>
+                {/* <li className='Footer-List'><Link className='footer-icon-link'  href="#" target="_blank" variant="body1"><InstagramIcon />Instagram</Link></li> */}
               </ul>
             </Grid>
           </Grid>
@@ -58,7 +58,7 @@ const Footer = () => {
       <div className='footer_last' style={{ display: 'flex',flexDirection:'column', textAlign: 'center', justifyContent: 'center', padding: '40px 0px', backgroundColor: 'black', color: 'white' }}>
         <p>© 2024 | McClymont Shaikh Immigration | All Rights Reserved</p>
         <span>Website developed by Snapfluence Technologies
-        <img src="src/assets/SnapLogo.svg" alt="abc"  />
+        <img src="/SnapLogo.svg" alt="abc"  />
         </span>
       </div>
       

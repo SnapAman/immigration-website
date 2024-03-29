@@ -69,7 +69,7 @@
 }
 @media screen and (max-width: 480px) {
     .HomeBackground {
-        background-image: url('../src/assets/MS-98.jpg');
+        background-image: url('/MS-98.jpg');
         background-position-x: center !important;
     }
 
