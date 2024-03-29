@@ -15,7 +15,7 @@ function TeamCarousel() {
         slidesToShow: 3,
         slidesToScroll: 1,
         centerPadding: "0px",
-        // autoplay: true,
+        autoplay: true,
         autoplaySpeed: 4000,
         pauseOnHover: false,
         adaptiveHeight: true,
