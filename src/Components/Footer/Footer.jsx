@@ -1,7 +1,7 @@
 import '../Footer/Footer.css'
 import React from 'react';
 import { Grid, Typography, Link } from '@mui/material';
-import CompanyLogo from '../../assets/WHITE_LOGO.png';
+// import CompanyLogo from '../../assets/WHITE_LOGO.png';
 import XIcon from '@mui/icons-material/X';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
@@ -21,7 +21,7 @@ const Footer = () => {
       <footer className="footer">
         <Grid container justifyContent="space-between" alignItems="center" className="footer-content">
           <Grid item>
-            <img className='company-logo' src={CompanyLogo} alt="Company Logo" />
+            <img className='company-logo' src="/WHITE_LOGO.png" alt="Company Logo" />
           </Grid>
           <Grid item container xs={12} sm={9} spacing={4}>
             <Grid item xs={12} sm={4}>
@@ -55,10 +55,10 @@ const Footer = () => {
           </Grid>
         </Grid>
       </footer>
-      <div style={{ display: 'flex', textAlign: 'center', justifyContent: 'center', padding: '40px 0px', backgroundColor: 'black', color: 'white' }}>
+      <div className='footer_last' style={{ display: 'flex',flexDirection:'column', textAlign: 'center', justifyContent: 'center', padding: '40px 0px', backgroundColor: 'black', color: 'white' }}>
         <p>© 2024 | McClymont Shaikh Immigration | All Rights Reserved</p>
         <span>Website developed by Snapfluence Technologies
-        <img src="src/assets/SnapLogo.svg" alt="abc" />
+        <img src="src/assets/SnapLogo.svg" alt="abc"  />
         </span>
       </div>
       

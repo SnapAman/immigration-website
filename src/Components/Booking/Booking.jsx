@@ -22,7 +22,7 @@ const Booking = () => {
       <div className='advisor-wrapper'>
         <h1>Choose Your Advisor</h1>
         <div className='advisor-container'>
-          <Card className='card' sx={{ transition: 'box-shadow 0.3s' }} onMouseOver={(e) => { e.currentTarget.style.boxShadow = '0px 0px 5px 1px rgba(0,0,0,0.5)'; }} onMouseOut={(e) => { e.currentTarget.style.boxShadow = 'none'; }}>
+          <Card className='card' sx={{ transition: 'box-shadow 0.3s' }} onMouseOver={(e) => { e.currentTarget.style.boxShadow = '0px 0px 5px 1px rgba(111,111,111,0.5)'; }} onMouseOut={(e) => { e.currentTarget.style.boxShadow = 'none'; }}>
 
             <AspectRatio minHeight="450px" maxHeight="500px">
               <img
@@ -46,7 +46,7 @@ const Booking = () => {
               </Button>
             </CardContent>
           </Card>
-          <Card className='card' sx={{ transition: 'box-shadow 0.3s' }} onMouseOver={(e) => { e.currentTarget.style.boxShadow = '0px 0px 5px 1px rgba(0,0,0,0.5)'; }} onMouseOut={(e) => { e.currentTarget.style.boxShadow = 'none'; }} >
+          <Card className='card' sx={{ transition: 'box-shadow 0.3s' }} onMouseOver={(e) => { e.currentTarget.style.boxShadow = '0px 0px 5px 1px rgba(111,111,111,0.5)'; }} onMouseOut={(e) => { e.currentTarget.style.boxShadow = 'none'; }} >
 
             <AspectRatio minHeight="450px" maxHeight="500px">
               <img
@@ -70,7 +70,7 @@ const Booking = () => {
               </Button>
             </CardContent>
           </Card>
-          <Card className='card' sx={{ transition: 'box-shadow 0.3s' }} onMouseOver={(e) => { e.currentTarget.style.boxShadow = '0px 0px 5px 1px rgba(0,0,0,0.5)'; }} onMouseOut={(e) => { e.currentTarget.style.boxShadow = 'none'; }} >
+          <Card className='card' sx={{ transition: 'box-shadow 0.3s' }} onMouseOver={(e) => { e.currentTarget.style.boxShadow = '0px 0px 5px 1px rgba(111,111,111,0.5)'; }} onMouseOut={(e) => { e.currentTarget.style.boxShadow = 'none'; }} >
 
             <AspectRatio minHeight="450px" maxHeight="500px">
               <img
@@ -94,7 +94,7 @@ const Booking = () => {
               </Button>
             </CardContent>
           </Card>
-          <Card className='card' sx={{ transition: 'box-shadow 0.3s' }} onMouseOver={(e) => { e.currentTarget.style.boxShadow = '0px 0px 5px 1px rgba(0,0,0,0.5)'; }} onMouseOut={(e) => { e.currentTarget.style.boxShadow = 'none'; }} >
+          <Card className='card' sx={{ transition: 'box-shadow 0.3s' }} onMouseOver={(e) => { e.currentTarget.style.boxShadow = '0px 0px 5px 1px rgba(111,111,111,0.5)'; }} onMouseOut={(e) => { e.currentTarget.style.boxShadow = 'none'; }} >
             <AspectRatio minHeight="450px" maxHeight="500px">
               <img
                 src={Advisor4}
@@ -117,7 +117,7 @@ const Booking = () => {
               </Button>
             </CardContent>
           </Card>
-          <Card className='card' sx={{ transition: 'box-shadow 0.3s' }} onMouseOver={(e) => { e.currentTarget.style.boxShadow = '0px 0px 5px 1px rgba(0,0,0,0.5)'; }} onMouseOut={(e) => { e.currentTarget.style.boxShadow = 'none'; }} >
+          <Card className='card' sx={{ transition: 'box-shadow 0.3s' }} onMouseOver={(e) => { e.currentTarget.style.boxShadow = '0px 0px 5px 1px rgba(111,111,111,0.5)'; }} onMouseOut={(e) => { e.currentTarget.style.boxShadow = 'none'; }} >
 
             <AspectRatio minHeight="450px" maxHeight="500px">
               <img
