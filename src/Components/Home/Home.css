@@ -209,6 +209,11 @@
         text-align: center;
         font-size: 1.2rem;
     }
+    .whymacclymont h1{
+        font-size: 2rem;
+        text-align: center;
+      }
+    
     .inverted-border-radius-parent{
         flex-direction: column;
 
