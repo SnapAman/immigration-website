@@ -1,7 +1,7 @@
 import React from 'react';
 import '../AboutUs/AboutUs.css';
 import Footer from '../Footer/Footer';
-import banner from '../../assets/AboutUs.jpg'
+import banner from '/AboutUs.jpg'
 
 function AboutUs() {
   return (
@@ -12,12 +12,12 @@ function AboutUs() {
 
       <div className="header-body">
         <div className="image-sec">
-          <img src="../src/assets/About-img1.jpg" alt="abc" className='im1' />
+          <img src="/About-img1.jpg" alt="abc" className='im1' />
           <div className="image-sec2">
-            <img src="../src/assets/About-img2.jpg" alt="pqr" className='im2' />
-            <img src="../src/assets/About-img3.jpg" alt="xyz" className='im3' />
+            <img src="/About-img2.jpg" alt="pqr" className='im2' />
+            <img src="/About-img3.jpg" alt="xyz" className='im3' />
           </div>
-          <img src="../src/assets/center.svg" className='centerImg' alt="" />
+          <img src="/center.svg" className='centerImg' alt="" />
         </div>
 
         <div className="content-sect">
@@ -66,7 +66,7 @@ function AboutUs() {
         <div className="our-team">
           <h1 className='team-head'>Meet Our Team:</h1>
           <div className="member">
-            <img src="../src/assets/Member1.jpg" alt="abc" className='mimage1' />
+            <img src="/Member1.jpg" alt="abc" className='mimage1' />
             <div className="member-info">
               <h1 className='mtitle'>Alastair McClymont</h1>
               <h2 style={{ color: 'gray', fontWeight: '400', marginTop: '-15px', fontSize: '1.2rem' }}>– BA, LLB</h2>
@@ -77,7 +77,7 @@ function AboutUs() {
 
           </div>
           <div className="member">
-            <img src="../src/assets/Member6.jpg" alt="abc" className='mimage1 img-left' />
+            <img src="/Member6.jpg" alt="abc" className='mimage1 img-left' />
             <div className="member-info">
               <h1 className='mtitle'>Sarfraz (Saif) Shaikh</h1>
               <h2 style={{ color: 'gray', fontWeight: '400', marginTop: '-15px', fontSize: '1.2rem' }}>  Licensed Adviser #200900488</h2>
@@ -86,11 +86,11 @@ function AboutUs() {
                 expertise in handling difficult applications. He is also a former NZ Immigration Officer and
                 former Director of the New Zealand Association for Migration &amp; Immigration.</p>
             </div>
-            <img src="../src/assets/Member6.jpg" alt="abc" className='mimage1 img-right' />
+            <img src="/Member6.jpg" alt="abc" className='mimage1 img-right' />
           </div>
 
           <div className="member">
-            <img src="../src/assets/Member2.jpg" alt="abc" className='mimage1 ' />
+            <img src="/Member2.jpg" alt="abc" className='mimage1 ' />
             <div className="member-info">
               <h1 className='mtitle'>Aakanksha McClymont</h1>
               <h2 style={{ color: 'gray', fontWeight: '400', marginTop: '-15px', fontSize: '1.2rem' }}>- BA</h2>
@@ -100,16 +100,16 @@ function AboutUs() {
           </div>
 
           <div className="member">
-            <img src="../src/assets/Member5.jpg" alt="abc" className='mimage1 img-left' />
+            <img src="/Member5.jpg" alt="abc" className='mimage1 img-left' />
             <div className="member-info">
               <h1 className='mtitle'>Shazia Gill</h1>
               <p className='mpara'>An indispensable member of McClymont and Associates since 2013, Shazia brings invaluable expertise to our immigration practice. Her deep understanding of the Indian community is a remarkable asset. For expert guidance and unwavering support, Shazia is your go-to resource. Fluent in English, Hindi, and Punjabi, she ensures seamless communication tailored to your comfort</p>
             </div>
-            <img src="../src/assets/Member5.jpg" alt="abc" className='mimage1 img-right' />
+            <img src="/Member5.jpg" alt="abc" className='mimage1 img-right' />
           </div>
 
           <div className="member">
-            <img src="../src/assets/Member4.jpg" alt="abc" className='mimage1' />
+            <img src="/Member4.jpg" alt="abc" className='mimage1' />
 
             <div className="member-info">
               <h1 className='mtitle'>Naved Shaikh</h1>

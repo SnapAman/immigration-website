@@ -93,6 +93,7 @@ function ContactUs() {
 
             <form className="contact-form" onSubmit={handleSubmit}>
               <TextField
+              disabled
                 color='success'
                 className="textField"
                 label="Name"
@@ -103,6 +104,7 @@ function ContactUs() {
                 onChange={handleChange}
               />
               <TextField
+              disabled
                 color='success'
                 className="textField"
                 label="Email"
@@ -113,6 +115,7 @@ function ContactUs() {
                 onChange={handleChange}
               />
               <TextField
+              disabled
                 color='success'
                 className="textField"
                 label="Phone Number"
@@ -123,6 +126,7 @@ function ContactUs() {
                 onChange={handleChange}
               />
               <TextField
+              disabled
                 color='success'
                 className="textField"
                 label="Subject"
@@ -133,6 +137,7 @@ function ContactUs() {
                 onChange={handleChange}
               />
               <TextField
+              disabled
                 color='success'
                 className="textField"
                 label="Description"
@@ -144,8 +149,8 @@ function ContactUs() {
                 value={formData.description}
                 onChange={handleChange}
               />
-              <Button variant="contained" style={{backgroundColor : '#808080'}} type="submit" fullWidth>
-                Submit
+              <Button disabled variant="contained" style={{backgroundColor : '#808080'}} type="submit" fullWidth>
+                Disabled
               </Button>
             </form>
           </Container>

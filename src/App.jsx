@@ -3,7 +3,8 @@ import { BrowserRouter as Router, Routes, Route, NavLink } from 'react-router-do
 import './App.css';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
-import logo from '../src/assets/BLACK_LOGO.png';
+
+import logo from '/BLACK_LOGO.png';
 import Home from './Components/Home/Home.jsx';
 import AboutUs from './Components/AboutUs/AboutUs';
 import Services from './Components/Service/Service'

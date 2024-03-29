@@ -1,5 +1,5 @@
 .HomeBackground {
-    background-image: url('../src/assets/hero-background.jpg');
+    background-image: url('/hero-background.jpg');
     height: 100vh;
     background-repeat: no-repeat;
     background-position: center;
