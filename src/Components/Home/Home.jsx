@@ -27,6 +27,7 @@ function Home() {
           </div>
         </div>
       </div>
+      
       <div className='gateway-wrapper'>
         <motion.div
           initial={{ scale: 0.5, opacity: 0 }}

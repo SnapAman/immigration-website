@@ -20,6 +20,77 @@
     background-color: rgba(0, 0, 0, 0.0);
 }
 
+.content-phone{
+    display: none;
+}
+
+.text h1 {
+    font-weight: 400;
+    color: #fff;
+    font-size: 4rem;
+}
+.content {
+    position: relative;
+    z-index: 1;
+    margin-left: 5%;
+    margin-top: -130px;
+    text-align: left;
+}
+.grayButton {
+    margin-top: 25px !important;
+    font-size: 1.2rem !important;
+    background-color: gray !important;
+}
+
+@media screen and (max-width: 768px) {
+    
+    .HomeBackground {
+        align-items: start;
+        background-position-x: -780px;
+    }
+    .HomeBackground::before {
+        background-color: rgba(0, 0, 0, 0.2);
+    }
+    .content{
+        margin-top: 30% !important;
+    }
+
+    .text h1 {
+        font-weight: 400;
+        color: white;
+        font-size: 2rem !important;
+    }
+    .grayButton {
+        margin-top: 25px !important;
+        font-size: 0.8rem !important;
+        background-color: gray !important;
+    }
+
+}
+@media screen and (max-width: 480px) {
+    .HomeBackground {
+        background-image: url('../src/assets/MS-98.jpg');
+        background-position-x: center !important;
+    }
+
+    .overlay {
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    .content{
+        margin-top: 32% !important;
+    }
+
+    .text h1 {
+        font-weight: 400;
+        color: white;
+        font-size: 1.8rem !important;
+    }
+    .grayButton {
+        margin-top: 20px !important;
+        font-size: 0.7rem !important;
+        background-color: gray !important;
+    }
+}
 @media screen and (max-width: 1100px) {
     .HomeBackground {
         background-position-x: -540px;
@@ -30,48 +101,8 @@
     }
 }
 
-@media screen and (max-width: 768px) {
-    .HomeBackground {
-        background-position-x: -780px;
-    }
 
-    .HomeBackground::before {
-        background-color: rgba(0, 0, 0, 0.2);
-    }
-}
 
-@media screen and (max-width: 480px) {
-    .HomeBackground {
-        background-image: url('../src/assets/MS-98.jpg');
-        background-position-x: center;
-    }
-
-    .overlay {
-        background-color: rgba(0, 0, 0, 0.5);
-
-    }
-}
-
-.content {
-    position: relative;
-    z-index: 1;
-    margin-left: 5%;
-    margin-top: -130px;
-    text-align: left;
-}
-
-.text h1 {
-    font-weight: 400;
-    font-size: 5vw;
-    color: #fff;
-}
-
-.grayButton {
-    margin-top: 25px !important;
-    font-size: 1.2rem !important;
-    background-color: gray !important;
-    /* width: 70%; */
-}
 
 .gateway-wrapper {
     text-align: center;

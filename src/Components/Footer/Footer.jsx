@@ -55,10 +55,10 @@ const Footer = () => {
           </Grid>
         </Grid>
       </footer>
-      <div style={{ display: 'flex', textAlign: 'center', justifyContent: 'center', padding: '40px 0px', backgroundColor: 'black', color: 'white' }}>
+      <div style={{ display: 'flex', flexDirection:'column', textAlign: 'center', justifyContent: 'center', padding: '40px 0px', backgroundColor: 'black', color: 'white' }}>
         <p>© 2024 | McClymont & Shaikh Associates | All Rights Reserved</p>
-        <span>Website developed by Snapfluence Media and Technology
-        <img src="src/assets/SnapLogo.svg" alt="abc" />
+        <span style={{marginTop : '15px'}}>Website developed by Snapfluence Media and Technology
+        <img src="src/assets/SnapLogo.svg" style={{marginLeft : '10px', marginBottom : '-10px', height : '25px'}} alt="abc" />
         </span>
       </div>
       
