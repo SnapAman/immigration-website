@@ -38,3 +38,12 @@
 .Footer-List a:hover {
   filter: drop-shadow(0 0 10px rgba(0,0,0,0.5)); /* Add a glow effect */
 }
+.footer_last span{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer_last img{
+  width: 30px;
+  height: 30px;
+}
