@@ -1,5 +1,5 @@
 .HomeBackground {
-    background-image: url('../src/assets/hero-background.jpg');
+    background-image: url('/hero-background.jpg');
     height: 100vh;
     background-repeat: no-repeat;
     background-position: center;
@@ -69,7 +69,7 @@
 }
 @media screen and (max-width: 480px) {
     .HomeBackground {
-        background-image: url('../src/assets/MS-98.jpg');
+        background-image: url('/MS-98.jpg');
         background-position-x: center !important;
     }
 
@@ -209,6 +209,11 @@
         text-align: center;
         font-size: 1.2rem;
     }
+    .whymacclymont h1{
+        font-size: 2rem;
+        text-align: center;
+      }
+    
     .inverted-border-radius-parent{
         flex-direction: column;
 

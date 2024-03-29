@@ -4,11 +4,11 @@ import Card from '@mui/joy/Card';
 import AspectRatio from '@mui/joy/AspectRatio';
 import CardContent from '@mui/joy/CardContent';
 import Typography from '@mui/joy/Typography';
-import Advisor1 from '../../assets/Alastair.jpg'
-import Advisor2 from '../../assets/Sarfraz.jpg'
-import Advisor3 from '../../assets/Aakanksha.jpg'
-import Advisor4 from '../../assets/Naved.jpg'
-import Advisor5 from '../../assets/Shazia.jpg'
+import Advisor1 from '/Alastair.jpg'
+import Advisor2 from '/Sarfraz.jpg'
+import Advisor3 from '/Aakanksha.jpg'
+import Advisor4 from '/Naved.jpg'
+import Advisor5 from '/Shazia.jpg'
 import Footer from '../Footer/Footer';
 import Button from '@mui/material/Button';
 

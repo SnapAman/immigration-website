@@ -1,78 +1,78 @@
 // Service.jsx
 import './Service.css'
-import callLogo from '../../assets/call.svg'
+import callLogo from '/call.svg'
 import VisaTypes from './VisaTypes';
 import Footer from '../Footer/Footer';
 import { useState } from 'react';
 import { motion } from "framer-motion";
-import serviceBG from '../../assets/ServicesBG.jpg'
+import serviceBG from '/ServicesBG.jpg'
 
 function Service() {
   const data = [
     {
       id: 1,
       name: 'Residence Class Visa-Family Categories',
-      img: 'src/assets/FamilyCategory.jpg',
+      img: '/FamilyCategory.jpg',
     },
     {
       id: 2,
       name: 'Visitor Visa',
-      img: 'src/assets/VisitorV.jpg',
+      img: '/VisitorV.jpg',
     },
     {
       id: 3,
       name: 'Student Visa',
-      img: 'src/assets/Student.jpg',
+      img: '/Student.jpg',
     },
     {
       id: 4,
       name: 'Limited Visa',
-      img: 'src/assets/Limitedvisa.jpg',
+      img: '/Limitedvisa.jpg',
     },
     {
       id: 5,
       name: 'Partnership Visa',
-      img: 'src/assets/Partnershipvisa.jpg',
+      img: '/Partnershipvisa.jpg',
     },
     {
       id: 6,
       name: 'Humanitarian Appeals',
-      img: 'src/assets/Humanitarianvisa.jpg ',
+      img: '/Humanitarianvisa.jpg ',
     },
     {
       id: 7,
       name: 'Accredited Employer Work Visa',
-      img: 'src/assets/WorkVisa.jpg',
+      img: '/WorkVisa.jpg',
     },
     {
       id: 8,
       name: 'Entreprenuer and Investor Category applications',
-      img: 'src/assets/partnerVisa.jpg ',
+      img: '/partnerVisa.jpg ',
     },
     {
       id: 9,
       name: 'IPT Appeals',
-      img: 'src/assets/parentsVisa.jpg',
+      img: '/parentsVisa.jpg',
     },
     {
       id: 10,
       name: 'Post-Study Work Visa',
-      img: 'src/assets/visitorVisa.jpg',
+      img: '/visitorVisa.jpg',
     },
     {
       id: 11,
       name: 'Residence Class Visa - Migrant Investment Categories',
-      img: 'src/assets/InvestmentCategory.jpg ',
+      img: '/InvestmentCategory.jpg ',
     },
     {
       id: 12,
       name: 'Residence Class Visa - Skilled Migrant Category',
-      img: 'src/assets/SkilledMigrant.jpg ',
+      img: '/SkilledMigrant.jpg ',
     },
     {
       id: 12,
       name: 'Section 61 Requests and Special Directions to the Minister of Immigration',
-      img: 'src/assets/Section61.jpg ',
+      img: '/Section61.jpg ',
     }
   ];
   function changeContent(idx) {

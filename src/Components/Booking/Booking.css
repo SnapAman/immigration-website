@@ -1,5 +1,5 @@
 .BookingBackground {
-    background-image: url('../src/assets/BookingBG.jpg');
+    background-image: url('/BookingBG.jpg');
     height: 100vh;
     background-repeat: no-repeat;
     background-position: center;

@@ -78,27 +78,27 @@ function TeamCarousel() {
 const data = [
     {
         name: 'Alastair McClymont',
-        img: 'src/assets/Alastair.jpg',
+        img: '/Alastair.jpg',
         review:'Alastair started in law in 1997, focusing on immigration. He founded Monk & McClymont in 2001, later expanding to McClymont Shaikh Immigration. Enjoys biking and learning.'
     },
     {
         name: 'Sarfraz (Saif) Shaikh',
-        img: 'src/assets/Sarfraz.jpg',
+        img: '/Sarfraz.jpg',
         review:"Saif, a seasoned Immigration Adviser in New Zealand, with 15+ years' experience, specializes in complex cases. Former NZ Immigration Officer and Association Director."
     },
     {
         name: 'Aakanksha McClymont',
-        img: 'src/assets/Aakanksha.jpg',
+        img: '/Aakanksha.jpg',
         review:'Aakanksha from Chandigarh, India, has worked at McClymont & Associates for 20 years. She helps clients with immigration, holding degrees in Psychology and Common Sense. She enjoys travel and family time.'
     },
     {
         name: 'Shazia Gill',
-        img: 'src/assets/Shazia.jpg',
+        img: '/Shazia.jpg',
         review:'Shazia, vital since 2013 at McClymont and Associates, excels in immigration law, especially with the Indian community. Fluent in English, Hindi, and Punjabi, offering expert support.'
     },
     {
         name: 'Naved Shaikh',
-        img: 'src/assets/Naved.jpg',
+        img: '/Naved.jpg',
         review:'Naved is a diligent advisor who gives reliable advice to clients. His team offers excellent service, building strong relationships with loyal clients.'
     }
 ];

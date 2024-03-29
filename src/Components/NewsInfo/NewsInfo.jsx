@@ -1,7 +1,7 @@
 // NewsInfo.js
 import React from 'react';
 import './Newsinfo.css'
-import banner from '../../assets/news.jpg'
+import banner from '/news.jpg'
 
 function NewsInfo() {
   const news = [
