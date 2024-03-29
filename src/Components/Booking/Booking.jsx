@@ -42,7 +42,7 @@ const Booking = () => {
                 color="primary"
                 aria-label="Explore Bahamas Islands"
                 sx={{ ml: 'auto', alignSelf: 'center', fontWeight: 600 }}>
-                Book Now
+                Book
               </Button>
             </CardContent>
           </Card>
@@ -66,7 +66,7 @@ const Booking = () => {
                 color="primary"
                 aria-label="Explore Bahamas Islands"
                 sx={{ ml: 'auto', alignSelf: 'center', fontWeight: 600 }}>
-                Book Now
+                Book
               </Button>
             </CardContent>
           </Card>
@@ -90,7 +90,7 @@ const Booking = () => {
                 color="primary"
                 aria-label="Explore Bahamas Islands"
                 sx={{ ml: 'auto', alignSelf: 'center', fontWeight: 600 }}>
-                Book Now
+                Book
               </Button>
             </CardContent>
           </Card>
@@ -113,7 +113,7 @@ const Booking = () => {
                 color="primary"
                 aria-label="Explore Bahamas Islands"
                 sx={{ ml: 'auto', alignSelf: 'center', fontWeight: 600 }}>
-                Book Now
+                Book
               </Button>
             </CardContent>
           </Card>
@@ -137,7 +137,7 @@ const Booking = () => {
                 color="primary"
                 aria-label="Explore Bahamas Islands"
                 sx={{ ml: 'auto', alignSelf: 'center', fontWeight: 600 }}>
-                Book Now
+                Book
               </Button>
             </CardContent>
           </Card>
