@@ -98,7 +98,9 @@ a {
 .nav__link:hover::after {
   width: 100%;
 }
-
+.nav__link.active::after{
+  width: 100%;
+}
 .nav__close {
   position: absolute;
   top: 1rem;
