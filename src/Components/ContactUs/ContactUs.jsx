@@ -35,6 +35,7 @@ function ContactUs() {
   return (
     <>
       <div className="ContactBackground">
+        <img src="/Contact.jpg" alt="" />
       </div>
 
       <div className="contact-info">

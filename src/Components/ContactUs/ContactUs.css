@@ -1,13 +1,7 @@
-.ContactBackground {
-    background-image: url('../src/assets/Contact.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
+.ContactBackground img{
     height: 100vh;
+    width: 100%;
+    object-fit: cover;
 }
 
 .ContactBackground::before {
@@ -20,16 +14,20 @@
     /* background-color: rgba(255, 255, 255, 0.3); */
 }
 /* Media query for smaller screens */
+@media only screen and (max-width: 1220px) {
+
+    .ContactBackground img{
+        width: 100vw;
+        height: auto;
+        object-fit: contain;
+    }
+}
+
 @media only screen and (max-width: 1100px) {
     .txt1 {
         font-size: 30px; /* Adjust font size for smaller screens */
     }
     
-    .ContactBackground {
-
-        height: auto; /* Remove fixed height */
-        min-height: 50vh; /* Ensure minimum height to cover viewport */
-    }
 }
 @media only screen and (max-width: 740px) {
     .txt1 {
