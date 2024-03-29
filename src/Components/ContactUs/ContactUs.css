@@ -68,6 +68,19 @@
     height: 60%;
     border: 0;
   }
+  .address-map h1{
+    color: white;
+     font-size: 3rem; 
+     margin-top: 150px;
+     font-weight: 300;
+  }
+  @media only screen and (max-width: 768px) {
+  .address-map h1{
+    font-size: 2rem;
+    margin-top: 40px;
+  }
+
+  }
 /* .Map {
     margin: 50px;
     margin-left: 30%;
