@@ -7,26 +7,26 @@ import { ArrowBack, ArrowForward } from '@mui/icons-material'; // Import icons
 import '../Home/HomeCarosel.css'; // Import external CSS file
 import './VisaTypes.css'
 
-function VisaTypes({data,changeContent}) {
+function VisaTypes({ data, changeContent }) {
     const settings = {
         className: "center",
         centerMode: true,
         // dots: true,
         infinite: true,
-        // speed: 500,
+        speed: 1000,
         slidesToShow: 3,
-        // autoplay: true,
+        autoplay: true,
         centerPadding: "-10px",
         responsive: [
             {
-              breakpoint: 1024,
-              settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                infinite: true,
-                // dots: true,
-                centerPadding: "0px",
-              }
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    autoplay: true,
+                    centerPadding: "0px",
+                }
             }
         ]
     };
