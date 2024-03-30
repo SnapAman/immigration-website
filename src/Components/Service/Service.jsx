@@ -6,6 +6,10 @@ import Footer from '../Footer/Footer';
 import { useState } from 'react';
 import { motion } from "framer-motion";
 import serviceBG from '/ServicesBG.jpg'
+import Button from '@mui/material/Button';
+
+import { NavLink } from 'react-router-dom';
+
 
 function Service() {
   const data = [
@@ -104,7 +108,9 @@ function Service() {
 
           <div className="right">
             <p>If you would like us to reach you then book your appointment by clinking the link below</p>
-            <button>Book Appointment</button>
+            <NavLink to="/booking">
+              <Button variant="contained" disableElevation className="grayButton">Book a Consultation</Button>
+            </NavLink>
           </div>
         </div>
         <div className='gateway-wrapper'>

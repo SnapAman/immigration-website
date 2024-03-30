@@ -7,6 +7,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .BookingBackground h1 {
@@ -20,24 +21,19 @@
 /* Responsive styles */
 @media screen and (max-width: 768px) {
     .BookingBackground {
-        height: 60vh;
-        margin-top: 130px;
+        height: 40vh;
+        margin-top: 120px;
     }
 
     .BookingBackground h1 {
-        font-size: 3rem;
-        /* Adjust font size for smaller screens */
-        margin-top: -50px;
-        /* Adjust margin for smaller screens */
+        font-size: 1.3rem;
+        margin-top: -120px;
     }
 }
 
 @media screen and (max-width: 480px) {
     .BookingBackground h1 {
-        font-size: 2rem;
-        /* Adjust font size for even smaller screens */
-        margin-top: -20px;
-        /* Adjust margin for even smaller screens */
+        font-size: 1.1rem;
     }
 }
 
@@ -96,4 +92,10 @@
         gap: 30px;
         flex-direction: column;
     }
+}
+
+.grayBookingButton {
+    /* margin-top: 25px !important; */
+    /* font-size: 1.2rem !important; */
+    background-color: gray !important;
 }

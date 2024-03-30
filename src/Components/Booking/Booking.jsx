@@ -37,6 +37,7 @@ const Booking = () => {
                 <Typography level="body-xs">– BA, LLB</Typography>
               </div>
               <Button
+              className='grayBookingButton'
                 variant="contained"
                 size="md"
                 color="primary"
@@ -61,6 +62,7 @@ const Booking = () => {
                 <Typography level="body-xs">Licensed Adviser #200900488</Typography>
               </div>
               <Button
+              className='grayBookingButton'
                 variant="contained"
                 size="md"
                 color="primary"
@@ -85,6 +87,7 @@ const Booking = () => {
                 <Typography level="body-xs">- BA</Typography>
               </div>
               <Button
+              className='grayBookingButton'
                 variant="contained"
                 size="md"
                 color="primary"
@@ -108,6 +111,7 @@ const Booking = () => {
                 <Typography level="body-xs">Licensed Adviser #201500737</Typography>
               </div>
               <Button
+              className='grayBookingButton'
                 variant="contained"
                 size="md"
                 color="primary"
@@ -132,6 +136,7 @@ const Booking = () => {
                 <Typography level="body-xs"></Typography>
               </div>
               <Button
+              className='grayBookingButton'
                 variant="contained"
                 size="md"
                 color="primary"
