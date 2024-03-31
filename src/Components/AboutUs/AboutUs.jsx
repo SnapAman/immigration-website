@@ -17,7 +17,6 @@ function AboutUs() {
             <img src="/About-img2.jpg" alt="pqr" className='im2' />
             <img src="/About-img3.jpg" alt="xyz" className='im3' />
           </div>
-          <img src="/center.svg" className='centerImg' alt="" />
         </div>
 
         <div className="content-sect">
