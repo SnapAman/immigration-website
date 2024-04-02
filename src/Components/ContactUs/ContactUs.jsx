@@ -1,9 +1,8 @@
 // ContactUs.js
+import Swal from 'sweetalert2';
 import React, { useState } from 'react';
-
 import { Typography, Container } from '@mui/material';
 import '../ContactUs/ContactUs.css';
-import HomeIcon from '@mui/icons-material/Home';
 import Button from '@mui/material/Button';
 import Footer from '../Footer/Footer';
 import TextField from '@mui/material/TextField';
@@ -13,25 +12,74 @@ import CallIcon from '@mui/icons-material/Call';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
 
 function ContactUs() {
-
+  // Define state variables for form inputs
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     phone: '',
     subject: '',
-    description: '',
+    description: ''
   });
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
+  // Event handler for form submission
+  const handleSubmit = (event) => {
+    event.preventDefault(); // Prevent default form submission behavior
+
+    // Call sendEmail function with form data
+    sendEmail(formData);
+  };
+
+  // Function to update form data state
+  const handleInputChange = (event) => {
+    const { name, value } = event.target;
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log(formData); // You can perform form submission logic here
-  };
+  // Function to send email using Email.js
+  const sendEmail = (formData) => {
+    // Use Email.js to send email
+    Email.send({
+      SecureToken: "b1d9ca2a-7837-40f3-8594-c4801dc7bf12",
+      To: 'contact@msimmigration.co.nz',
+      From: "info@snapfluencetech.com",
+      Subject: `${formData.name}'s mail from Immigrate website`,
+      Body: `
+        Name: ${formData.name}
+        Email: ${formData.email}
+        Phone: ${formData.phone}
+        Description: ${formData.description}
+      `
+    }).then(
+      (message) => {
+        // Show success message
+        Swal.fire({
+          icon: 'success',
+          title: 'Success!',
+          text: 'Your message has been sent successfully.',
+          timer: 3000, // Close alert after 3 seconds
+          timerProgressBar: true,
+          showConfirmButton: false
+        });
+        // Clear form fields after successful submission if needed
+        setFormData({
+          name: '',
+          email: '',
+          phone: '',
+          description: ''
+        });
+      }
+    ).catch((error) => {
+      // Handle error
+      Swal.fire({
+        icon: 'error',
+        title: 'Error!',
+        text: 'There was an error sending your message. Please try again later.'
+      });
 
+      // Log the error to the console
+      console.error('Error sending email:', error);
+    });
+  };
   return (
     <>
       <div className="ContactBackground">
@@ -86,75 +134,62 @@ function ContactUs() {
           </div>
         </div>
 
-
-          
-          <Container maxWidth="sm">
+        <Container maxWidth="sm">
           <h1 className="txt2">FEEL FREE TO WRITE</h1>
 
-            <form className="contact-form" onSubmit={handleSubmit}>
-              <TextField
-              disabled
-                color='success'
-                className="textField"
-                label="Name"
-                variant="outlined"
-                fullWidth
-                name="name"
-                value={formData.name}
-                onChange={handleChange}
-              />
-              <TextField
-              disabled
-                color='success'
-                className="textField"
-                label="Email"
-                variant="outlined"
-                fullWidth
-                name="email"
-                value={formData.email}
-                onChange={handleChange}
-              />
-              <TextField
-              disabled
-                color='success'
-                className="textField"
-                label="Phone Number"
-                variant="outlined"
-                fullWidth
-                name="phone"
-                value={formData.phone}
-                onChange={handleChange}
-              />
-              <TextField
-              disabled
-                color='success'
-                className="textField"
-                label="Subject"
-                variant="outlined"
-                fullWidth
-                name="subject"
-                value={formData.subject}
-                onChange={handleChange}
-              />
-              <TextField
-              disabled
-                color='success'
-                className="textField"
-                label="Description"
-                variant="outlined"
-                fullWidth
-                multiline
-                rows={4}
-                name="description"
-                value={formData.description}
-                onChange={handleChange}
-              />
-              <Button disabled variant="contained" style={{backgroundColor : '#808080'}} type="submit" fullWidth>
-                Disabled
-              </Button>
-            </form>
-          </Container>
-        </div>
+          <form className="contact-form" onSubmit={handleSubmit}>
+            <TextField
+              required
+              color="success"
+              className="textField"
+              label="Name"
+              variant="outlined"
+              fullWidth
+              name="name"
+              value={formData.name}
+              onChange={handleInputChange}
+            />
+            <TextField
+              required
+              color="success"
+              className="textField"
+              label="Email"
+              variant="outlined"
+              fullWidth
+              name="email"
+              value={formData.Email}
+              onChange={handleInputChange}
+            />
+            <TextField
+              required
+              color="success"
+              className="textField"
+              label="Phone Number"
+              variant="outlined"
+              fullWidth
+              name="phone"
+              value={formData.phone}
+              onChange={handleInputChange}
+            />
+            <TextField
+              required
+              color="success"
+              className="textField"
+              label="Description"
+              variant="outlined"
+              fullWidth
+              multiline
+              rows={4}
+              name="description"
+              value={formData.description}
+              onChange={handleInputChange}
+            />
+            <Button variant="contained" style={{ backgroundColor: '#808080' }} type="submit" fullWidth>
+              Submit
+            </Button>
+          </form>
+        </Container>
+      </div>
 
       <div className="address-map">
         <h1>FIND US HERE</h1>

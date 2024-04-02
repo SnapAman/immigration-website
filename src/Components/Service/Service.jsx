@@ -1,6 +1,6 @@
 // Service.jsx
 import './Service.css'
-import callLogo from '/call.svg'
+// import callLogo from '/call.svg'
 import VisaTypes from './VisaTypes';
 import Footer from '../Footer/Footer';
 import { useState } from 'react';
@@ -97,7 +97,7 @@ function Service() {
         </div>
         <div className="reachUsBox">
           <div className="left">
-            <img src={callLogo} c alt=" " />
+            {/* <img src={callLogo} c alt=" " /> */}
             <div className='call'>
               <p>CALL US NOW</p>
               <p>(+64) 09 272 4424</p>
