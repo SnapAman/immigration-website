@@ -6,7 +6,7 @@ import CardContent from '@mui/joy/CardContent';
 import Typography from '@mui/joy/Typography';
 import Advisor1 from '/Alastair.jpg'
 import Advisor2 from '/Sarfraz.jpg'
-import Advisor3 from '/Aakanksha.jpg'
+import Advisor3 from '/Member2.jpg'
 import Advisor4 from '/Naved.jpg'
 import Advisor5 from '/Shazia.jpg'
 import Footer from '../Footer/Footer';
@@ -14,6 +14,9 @@ import Button from '@mui/material/Button';
 
 
 const Booking = () => {
+  const handleClick = (url) => {
+    window.open(url, '_blank');
+  };
   return (
     <>
       <div className="BookingBackground">
@@ -42,8 +45,12 @@ const Booking = () => {
                 size="md"
                 color="primary"
                 aria-label="Explore Bahamas Islands"
-                sx={{ ml: 'auto', alignSelf: 'center', fontWeight: 600 }}>
+                sx={{ ml: 'auto', alignSelf: 'center', fontWeight: 600 }}
+                disabled
+                // onClick={() => handleClick('https://calendly.com/naved-ianzl')}
+                >
                 Book
+                
               </Button>
             </CardContent>
           </Card>
@@ -67,8 +74,10 @@ const Booking = () => {
                 size="md"
                 color="primary"
                 aria-label="Explore Bahamas Islands"
-                sx={{ ml: 'auto', alignSelf: 'center', fontWeight: 600 }}>
+                sx={{ ml: 'auto', alignSelf: 'center', fontWeight: 600 }}
+                onClick={() => handleClick('https://calendly.com/saif-ianzl')}>
                 Book
+                
               </Button>
             </CardContent>
           </Card>
@@ -90,10 +99,12 @@ const Booking = () => {
               className='grayBookingButton'
                 variant="contained"
                 size="md"
+                disabled
                 color="primary"
                 aria-label="Explore Bahamas Islands"
                 sx={{ ml: 'auto', alignSelf: 'center', fontWeight: 600 }}>
                 Book
+                
               </Button>
             </CardContent>
           </Card>
@@ -116,8 +127,10 @@ const Booking = () => {
                 size="md"
                 color="primary"
                 aria-label="Explore Bahamas Islands"
-                sx={{ ml: 'auto', alignSelf: 'center', fontWeight: 600 }}>
+                sx={{ ml: 'auto', alignSelf: 'center', fontWeight: 600 }}
+                onClick={() => handleClick('https://calendly.com/naved-ianzl')}>
                 Book
+                
               </Button>
             </CardContent>
           </Card>
@@ -136,13 +149,16 @@ const Booking = () => {
                 <Typography level="body-xs"></Typography>
               </div>
               <Button
+              disabled
               className='grayBookingButton'
                 variant="contained"
                 size="md"
                 color="primary"
                 aria-label="Explore Bahamas Islands"
-                sx={{ ml: 'auto', alignSelf: 'center', fontWeight: 600 }}>
+                sx={{ ml: 'auto', alignSelf: 'center', fontWeight: 600 }}
+                onClick={() => handleClick('URL_1')}>
                 Book
+                
               </Button>
             </CardContent>
           </Card>
