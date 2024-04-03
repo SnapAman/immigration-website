@@ -88,7 +88,7 @@ const data = [
     },
     {
         name: 'Aakanksha McClymont',
-        img: '/Aakanksha.jpg',
+        img: '/Member2.jpg',
         review:'Aakanksha from Chandigarh, India, has worked at McClymont & Associates for 20 years. She helps clients with immigration, holding degrees in Psychology and Common Sense. She enjoys travel and family time.'
     },
     {
