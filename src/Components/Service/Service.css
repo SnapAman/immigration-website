@@ -158,22 +158,23 @@
 }
 
 .conclusion {
-    background-color: rgba(0, 0, 0, 0.66);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(38deg, rgb(27, 27, 27) 15%, rgba(122, 122, 122, 1) 85%);
+    color: white;
+    font-size: 1.5rem;
+    display: grid;
+    place-items: center;
+    padding: 30px;
+    font-family: "Poppins", sans-serif;
 }
 
 .conclusion h1 {
     color: white;
-    font-size: 2rem;
     display: grid;
-    /* place-items: center; */
     text-align: center;
-    /* margin-top: 40px; */
     padding: 40px;
     font-family: "Poppins", sans-serif;
-    font-weight: 300;
+    font-weight: 500;
 }
 
 
@@ -228,15 +229,11 @@
     }
 
     .conclusion {
-        background-color: rgba(0, 0, 0, 0.66);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .conclusion h1 {
-        font-size: 2rem;
-        font-family: "Poppins";
+        font-size: 1.2rem;
+        display: grid;
+        place-items: center;
+        padding: 20px;
+        font-family: "Poppins", sans-serif;
     }
 }
 
@@ -293,16 +290,11 @@
     }
 
     .conclusion {
-        background-color: rgba(0, 0, 0, 0.66);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .conclusion h1 {
-        font-size: 1.5rem;
-        font-family: "Poppins";
-        font-weight: 300;
+        font-size: .8rem;
+        display: grid;
+        place-items: center;
+        padding: 5px;
+        font-family: "Poppins", sans-serif;
     }
 
     .reachUsBox {
