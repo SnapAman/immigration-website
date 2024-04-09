@@ -27,13 +27,13 @@ const Booking = () => {
         <div className='advisor-container'>
           <Card className='card' sx={{ transition: 'box-shadow 0.3s' }} onMouseOver={(e) => { e.currentTarget.style.boxShadow = '0px 0px 5px 1px rgba(111,111,111,0.5)'; }} onMouseOut={(e) => { e.currentTarget.style.boxShadow = 'none'; }}>
 
-            
+            <AspectRatio minHeight="450px" minWidth='450px'>
               <img
                 src={Advisor1}
                 loading="lazy"
                 alt=""
               />
-            
+            </AspectRatio>
             <CardContent orientation="horizontal">
               <div style={{textAlign : 'left'}}>
                 <Typography fontSize="lg" fontWeight="lg">Alastair McClymont</Typography>
@@ -56,13 +56,13 @@ const Booking = () => {
           </Card>
           <Card className='card' sx={{ transition: 'box-shadow 0.3s' }} onMouseOver={(e) => { e.currentTarget.style.boxShadow = '0px 0px 5px 1px rgba(111,111,111,0.5)'; }} onMouseOut={(e) => { e.currentTarget.style.boxShadow = 'none'; }} >
 
-            
+            <AspectRatio minHeight="450px" minWidth='450px'>
               <img
                 src={Advisor2}
                 loading="lazy"
                 alt=""
               />
-            
+            </AspectRatio>
             <CardContent orientation="horizontal">
               <div style={{textAlign : 'left'}}>
                 <Typography fontSize="lg" fontWeight="lg">Sarfraz (Saif) Shaikh</Typography>
@@ -83,13 +83,13 @@ const Booking = () => {
           </Card>
           <Card className='card' sx={{ transition: 'box-shadow 0.3s' }} onMouseOver={(e) => { e.currentTarget.style.boxShadow = '0px 0px 5px 1px rgba(111,111,111,0.5)'; }} onMouseOut={(e) => { e.currentTarget.style.boxShadow = 'none'; }} >
 
-            
+            <AspectRatio minHeight="450px" minWidth='450px'>
               <img
                 src={Advisor3}
                 loading="lazy"
                 alt=""
               />
-            
+            </AspectRatio>
             <CardContent orientation="horizontal">
               <div style={{textAlign : 'left'}}>
                 <Typography fontSize="lg" fontWeight="lg">Aakanksha McClymont</Typography>
@@ -109,13 +109,13 @@ const Booking = () => {
             </CardContent>
           </Card>
           <Card className='card' sx={{ transition: 'box-shadow 0.3s' }} onMouseOver={(e) => { e.currentTarget.style.boxShadow = '0px 0px 5px 1px rgba(111,111,111,0.5)'; }} onMouseOut={(e) => { e.currentTarget.style.boxShadow = 'none'; }} >
-            
+            <AspectRatio minHeight="450px" minWidth='450px'>
               <img
                 src={Advisor4}
                 loading="lazy"
                 alt=""
               />
-            
+            </AspectRatio>
             <CardContent orientation="horizontal">
               <div style={{textAlign : 'left'}}>
                 <Typography fontSize="lg" fontWeight="lg">Naved Shaikh</Typography>
@@ -136,13 +136,13 @@ const Booking = () => {
           </Card>
           <Card className='card' sx={{ transition: 'box-shadow 0.3s' }} onMouseOver={(e) => { e.currentTarget.style.boxShadow = '0px 0px 5px 1px rgba(111,111,111,0.5)'; }} onMouseOut={(e) => { e.currentTarget.style.boxShadow = 'none'; }} >
 
-            
+            <AspectRatio minHeight="450px" minWidth='450px'>
               <img
                 src={Advisor5}
                 loading="lazy"
                 alt=""
               />
-            
+            </AspectRatio>
             <CardContent orientation="horizontal">
               <div style={{textAlign : 'left'}}>
                 <Typography fontSize="lg" fontWeight="lg">Shazia Gill</Typography>
