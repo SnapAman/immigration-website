@@ -43,18 +43,17 @@
 }
 
 .advisor-container {
-    justify-content: center;
+    justify-content: space-around;
     display: flex;
     flex-grow: 1;
     flex-wrap: wrap;
 }
 
 .card {
-    width: calc(33.33% - 20px);
+    width: 400px;
     margin: 10px;
     display: flex;
     flex-direction: column;
-    
 }
 
 .card img {
